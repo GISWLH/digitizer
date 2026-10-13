@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "image": "input.png",
+  "image_sha256": "29fa7abae2ead642f1d3fce3850d4f56efc71ec57e3d0fe51115a3fddeb11d9d",
+  "image_size": [
+    969,
+    695
+  ],
+  "reviewed": true,
+  "review_note": "Target is solid blue measured NEE only. Red NEEmarsh, green GPP and black Reco are estimates. Shared ticks calibrated from full Fig. 5.",
+  "kind": "line",
+  "plot_bounds": [
+    12,
+    75,
+    967,
+    646
+  ],
+  "axes": {
+    "x": {
+      "anchors": [
+        [
+          126.70769230769224,
+          2
+        ],
+        [
+          857.7538461538461,
+          22
+        ]
+      ]
+    },
+    "y": {
+      "anchors": [
+        [
+          230.02871794871783,
+          0
+        ],
+        [
+          515.0307692307692,
+          -8
+        ]
+      ]
+    }
+  },
+  "series": [
+    {
+      "name": "measured_NEE",
+      "color": "#0000ff",
+      "parameters": {
+        "tolerance": 80,
+        "sigma": 45
+      }
+    }
+  ],
+  "exclusions": [],
+  "source_doi": "10.5194/bg-21-993-2024",
+  "figure": "Fig. 5d",
+  "unit": "umol CO2 m-2 s-1"
+}

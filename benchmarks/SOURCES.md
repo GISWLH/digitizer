@@ -25,3 +25,45 @@ The article license was checked on its official page on 2026-10-13.
 All 11 original benchmark inputs are preserved byte-for-byte. Their hashes and
 the source categories are in `manifest.json`. Personal machine paths were
 removed from public metadata. No complete paper PDFs are distributed.
+
+## FLUX papers added in v0.2.0
+
+All eight cases originate in the existing local FLUX paper library. Full PDFs
+are not redistributed. Each case under `benchmarks/flux/` contains a source
+hash, crop coordinates, page, units, series semantics and license in
+`provenance.json`. Preparation and independent scoring are reproducible with
+`scripts/prepare_flux.py` and `scripts/validate_flux.py`.
+
+### f01–f04 · Veenendaal et al. (2007)
+
+[CO2 exchange and carbon balance in two grassland sites on eutrophic drained
+peat soils](https://bg.copernicus.org/articles/4/1027/2007/), Biogeosciences 4,
+1027–1040. DOI: 10.5194/bg-4-1027-2007. Fig. 10a–c (PDF page 9) and Fig. 11
+(page 10). Copyright © Author(s) 2007.
+
+**CC BY-NC-SA 2.5**, as stated on the publisher's article page (checked
+2026-10-13): <https://creativecommons.org/licenses/by-nc-sa/2.5/>. The input crops,
+vector references, extraction CSVs and adapted visual evidence for these cases
+retain that license; the repository's software MIT license does not override it.
+Changes: panel crops, raster rendering, legend/annotation masks, extracted curves
+and new comparison/reconstruction figures. No endorsement is implied.
+
+Reference values represent original PDF path geometry, not raw author observations.
+NEE includes gap filling; respiration and GEP are partitioned estimates. The
+blue series is Stein and the red series is Oukoop. No new station admission is
+made. Three daily-series panels remain difficult and score below 90%.
+
+### f05–f08 · Mayen et al. (2024)
+
+[Atmospheric CO2 exchanges measured by eddy covariance over a temperate salt
+marsh and influence of environmental controlling factors](https://bg.copernicus.org/articles/21/993/2024/),
+Biogeosciences 21, 993–1016. DOI: 10.5194/bg-21-993-2024. Fig. 5a–d, PDF page 12.
+Copyright © Author(s) 2024, **CC BY 4.0**:
+<https://creativecommons.org/licenses/by/4.0/> (publisher page checked 2026-10-13).
+
+Changes: the embedded figure is cropped into four panels; masks, extracted CSV,
+overlays, reconstructions and comparisons are added. Extracted target: blue
+measured NEE only. Other curves are estimates, and the band is standard deviation.
+Author data are available upon request, not provided with this release. These
+four cases have no independent numerical reference and are explicitly unscored.
+No new station admission is made. No endorsement is implied.

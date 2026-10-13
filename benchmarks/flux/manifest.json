@@ -1,0 +1,106 @@
+[
+  {
+    "id": "f01",
+    "title": "泥炭草地 · 日 NEE",
+    "title_en": "Peat grassland · daily NEE",
+    "title_ja": "泥炭草地の日別 NEE",
+    "kind": "line",
+    "group": "flux",
+    "reference_kind": "independent_pdf_vector_geometry",
+    "ylim": [
+      -600,
+      800
+    ]
+  },
+  {
+    "id": "f02",
+    "title": "泥炭草地 · 生态系统呼吸",
+    "title_en": "Peat grassland · respiration",
+    "title_ja": "泥炭草地の生態系呼吸",
+    "kind": "line",
+    "group": "flux",
+    "reference_kind": "independent_pdf_vector_geometry",
+    "ylim": [
+      -150,
+      950
+    ]
+  },
+  {
+    "id": "f03",
+    "title": "泥炭草地 · 总生态系统光合",
+    "title_en": "Peat grassland · gross photosynthesis",
+    "title_ja": "泥炭草地の総生態系光合成",
+    "kind": "line",
+    "group": "flux",
+    "reference_kind": "independent_pdf_vector_geometry",
+    "ylim": [
+      -1000,
+      150
+    ]
+  },
+  {
+    "id": "f04",
+    "title": "泥炭草地 · 累积碳交换",
+    "title_en": "Peat grassland · cumulative NEE",
+    "title_ja": "泥炭草地の累積炭素交換",
+    "kind": "line",
+    "group": "flux",
+    "reference_kind": "independent_pdf_vector_geometry",
+    "ylim": [
+      -10,
+      15
+    ]
+  },
+  {
+    "id": "f05",
+    "title": "盐沼实测 NEE · 冬季",
+    "title_en": "Salt-marsh measured NEE · winter",
+    "title_ja": "塩性湿地の実測 NEE · 冬季",
+    "kind": "line",
+    "group": "flux",
+    "reference_kind": "none",
+    "ylim": [
+      -12,
+      4
+    ]
+  },
+  {
+    "id": "f06",
+    "title": "盐沼实测 NEE · 春季",
+    "title_en": "Salt-marsh measured NEE · spring",
+    "title_ja": "塩性湿地の実測 NEE · 春季",
+    "kind": "line",
+    "group": "flux",
+    "reference_kind": "none",
+    "ylim": [
+      -12,
+      4
+    ]
+  },
+  {
+    "id": "f07",
+    "title": "盐沼实测 NEE · 夏季",
+    "title_en": "Salt-marsh measured NEE · summer",
+    "title_ja": "塩性湿地の実測 NEE · 夏季",
+    "kind": "line",
+    "group": "flux",
+    "reference_kind": "none",
+    "ylim": [
+      -12,
+      4
+    ]
+  },
+  {
+    "id": "f08",
+    "title": "盐沼实测 NEE · 秋季",
+    "title_en": "Salt-marsh measured NEE · fall",
+    "title_ja": "塩性湿地の実測 NEE · 秋季",
+    "kind": "line",
+    "group": "flux",
+    "reference_kind": "none",
+    "ylim": [
+      -12,
+      4
+    ]
+  }
+]

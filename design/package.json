@@ -1,0 +1,14 @@
+{
+  "name": "digitizer-brand",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 8916"
+  },
+  "dependencies": {
+    "@excalidraw/excalidraw": "0.18.1",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "vite": "8.3.4"
+  }
+}

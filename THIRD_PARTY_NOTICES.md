@@ -21,3 +21,16 @@ design. No API credentials, model-edited images or remote recolouring are needed
 
 Scientific figures and author workbooks retain their own licenses and attribution;
 the software MIT license does not relicense them. See [case sources](benchmarks/SOURCES.md).
+
+## FLUX figures and brand rendering
+
+The f01–f04 Veenendaal et al. figure crops, vector references and derived evidence
+are CC BY-NC-SA 2.5. The f05–f08 Mayen et al. figure crops and derived evidence
+retain CC BY 4.0 attribution. These are exceptions to the software MIT license;
+see [SOURCES.md](benchmarks/SOURCES.md) for authors, DOI, modifications and terms.
+
+The optional brand studio uses Excalidraw 0.18.1 (MIT), Copyright (c) 2020
+Excalidraw. Exported SVGs embed the Virgil handwriting font supplied by Excalidraw.
+Excalidraw’s license is reproduced in [design/EXCALIDRAW-LICENSE](design/EXCALIDRAW-LICENSE).
+Virgil is by Ellinor Rapp, SIL OFL 1.1; see [design/VIRGIL-LICENSE](design/VIRGIL-LICENSE).
+Brand artwork is authored for this project; it does not imply Excalidraw endorsement.

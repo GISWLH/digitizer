@@ -1,6 +1,719 @@
 {
   "macro_accuracy_pct": 98.19971030854008,
+  "flux_summary": {
+    "protocol": "flux-pdf-geometry-v1",
+    "cases": [
+      {
+        "id": "f01",
+        "metric": "PDF vector geometry: within 1% y-axis range; missing = miss",
+        "reference_kind": "independent_pdf_vector_geometry",
+        "accuracy_pct": 52.244389027431424,
+        "source_doi": "10.5194/bg-4-1027-2007",
+        "license": "CC BY-NC-SA 2.5",
+        "input_sha256": "e7b6a980eb71c025cee01ecba783669fb915b7238b5a824c01c2e06ef2f98989",
+        "csv_sha256": "fea78c8564770923c4cc69ac5273989cae9e3c3d06fcd6bd17a9d276f953d39a",
+        "config_sha256": "c04d1958cd22610a7abc95fede76ced968c66448e288a8f794bc5d173ada8fe4",
+        "numeric_rows": 2157,
+        "source_data_semantics": "EC-derived published daily series includes gap filling; Reco and GEP are partitioned estimates, not independently measured fluxes.",
+        "coverage_pct": 87.78054862842893,
+        "expected": 802,
+        "matched": 419,
+        "series": [
+          {
+            "series": "Oukoop",
+            "expected": 401,
+            "matched": 168,
+            "extracted": 304,
+            "accuracy_pct": 41.895261845386536,
+            "coverage_pct": 75.81047381546135,
+            "nmae_pct": 1.5616512126591287
+          },
+          {
+            "series": "Stein",
+            "expected": 401,
+            "matched": 251,
+            "extracted": 400,
+            "accuracy_pct": 62.593516209476306,
+            "coverage_pct": 99.75062344139651,
+            "nmae_pct": 1.182351455503547
+          }
+        ],
+        "reference_sha256": "4d30df555559acd09d37a30fe292c93e20fdda8a0165e854f856d54f4eee8834",
+        "unmasked": {
+          "accuracy_pct": 51.745635910224436,
+          "coverage_pct": 87.65586034912718,
+          "expected": 802,
+          "matched": 415,
+          "series": [
+            {
+              "series": "Oukoop",
+              "expected": 401,
+              "matched": 167,
+              "extracted": 304,
+              "accuracy_pct": 41.64588528678304,
+              "coverage_pct": 75.81047381546135,
+              "nmae_pct": 2.2041205709052076
+            },
+            {
+              "series": "Stein",
+              "expected": 401,
+              "matched": 248,
+              "extracted": 399,
+              "accuracy_pct": 61.84538653366584,
+              "coverage_pct": 99.50124688279301,
+              "nmae_pct": 1.2379323379167628
+            }
+          ]
+        }
+      },
+      {
+        "id": "f02",
+        "metric": "PDF vector geometry: within 1% y-axis range; missing = miss",
+        "reference_kind": "independent_pdf_vector_geometry",
+        "accuracy_pct": 63.84039900249377,
+        "source_doi": "10.5194/bg-4-1027-2007",
+        "license": "CC BY-NC-SA 2.5",
+        "input_sha256": "a6deaf6fe4a4643618be0b3108bc0feedd84a56f30370d69379dfca37812684d",
+        "csv_sha256": "210d8ce0e930c9ad25ab684d392d009ff77f64ccf116bcff2671b7f150358312",
+        "config_sha256": "1a2634c2cf8c9d8e54cd0de86520e88cefd66e37bd483cc356f751e769468987",
+        "numeric_rows": 2148,
+        "source_data_semantics": "EC-derived published daily series includes gap filling; Reco and GEP are partitioned estimates, not independently measured fluxes.",
+        "coverage_pct": 87.03241895261846,
+        "expected": 802,
+        "matched": 512,
+        "series": [
+          {
+            "series": "Oukoop",
+            "expected": 401,
+            "matched": 205,
+            "extracted": 298,
+            "accuracy_pct": 51.12219451371571,
+            "coverage_pct": 74.3142144638404,
+            "nmae_pct": 0.9078851958758375
+          },
+          {
+            "series": "Stein",
+            "expected": 401,
+            "matched": 307,
+            "extracted": 400,
+            "accuracy_pct": 76.55860349127182,
+            "coverage_pct": 99.75062344139651,
+            "nmae_pct": 0.7115067936101879
+          }
+        ],
+        "reference_sha256": "76bd05dc54a394d2942f84d610d0cc5595fec2ade48436865fea6556b7e4218d",
+        "unmasked": {
+          "accuracy_pct": 63.84039900249377,
+          "coverage_pct": 87.03241895261846,
+          "expected": 802,
+          "matched": 512,
+          "series": [
+            {
+              "series": "Oukoop",
+              "expected": 401,
+              "matched": 205,
+              "extracted": 298,
+              "accuracy_pct": 51.12219451371571,
+              "coverage_pct": 74.3142144638404,
+              "nmae_pct": 0.9078851958758375
+            },
+            {
+              "series": "Stein",
+              "expected": 401,
+              "matched": 307,
+              "extracted": 400,
+              "accuracy_pct": 76.55860349127182,
+              "coverage_pct": 99.75062344139651,
+              "nmae_pct": 0.7115067936101879
+            }
+          ]
+        }
+      },
+      {
+        "id": "f03",
+        "metric": "PDF vector geometry: within 1% y-axis range; missing = miss",
+        "reference_kind": "independent_pdf_vector_geometry",
+        "accuracy_pct": 53.86533665835411,
+        "source_doi": "10.5194/bg-4-1027-2007",
+        "license": "CC BY-NC-SA 2.5",
+        "input_sha256": "d53fcbdb1bdb4ab9f3d623388579d6b684991898d43182e265afe88fc7c1fed6",
+        "csv_sha256": "fc73fea83068bc5f8a7ffff222aa48f007f8413d6585aa97e365c68b7fe94f90",
+        "config_sha256": "111849963f8a23046804bc0b1fc721b1fbc7ad769c818237c016bb212815c58e",
+        "numeric_rows": 2175,
+        "source_data_semantics": "EC-derived published daily series includes gap filling; Reco and GEP are partitioned estimates, not independently measured fluxes.",
+        "coverage_pct": 88.2793017456359,
+        "expected": 802,
+        "matched": 432,
+        "series": [
+          {
+            "series": "Oukoop",
+            "expected": 401,
+            "matched": 182,
+            "extracted": 315,
+            "accuracy_pct": 45.38653366583541,
+            "coverage_pct": 78.55361596009975,
+            "nmae_pct": 1.4898786674246889
+          },
+          {
+            "series": "Stein",
+            "expected": 401,
+            "matched": 250,
+            "extracted": 393,
+            "accuracy_pct": 62.34413965087282,
+            "coverage_pct": 98.00498753117208,
+            "nmae_pct": 1.2200753664376986
+          }
+        ],
+        "reference_sha256": "b2eea01a8459448718be0ea4b15154974d6ecb3ef1022d2af309dc3dccbeca2f",
+        "unmasked": {
+          "accuracy_pct": 53.86533665835411,
+          "coverage_pct": 88.2793017456359,
+          "expected": 802,
+          "matched": 432,
+          "series": [
+            {
+              "series": "Oukoop",
+              "expected": 401,
+              "matched": 182,
+              "extracted": 315,
+              "accuracy_pct": 45.38653366583541,
+              "coverage_pct": 78.55361596009975,
+              "nmae_pct": 1.4898786674246889
+            },
+            {
+              "series": "Stein",
+              "expected": 401,
+              "matched": 250,
+              "extracted": 393,
+              "accuracy_pct": 62.34413965087282,
+              "coverage_pct": 98.00498753117208,
+              "nmae_pct": 1.2200753664376986
+            }
+          ]
+        }
+      },
+      {
+        "id": "f04",
+        "metric": "PDF vector geometry: within 1% y-axis range; missing = miss",
+        "reference_kind": "independent_pdf_vector_geometry",
+        "accuracy_pct": 95.38653366583542,
+        "source_doi": "10.5194/bg-4-1027-2007",
+        "license": "CC BY-NC-SA 2.5",
+        "input_sha256": "53492562103a6469f111dada1441d5fe127f874cacc03e38bc8912ba5423905a",
+        "csv_sha256": "2192181498e909a252656210b22efdf7b926235fffa36f1965c3d41f79ed7d21",
+        "config_sha256": "342be5bef4e3d3bffebdbc376d024f9c0ef63bb36d88f28ab462d4ff3775938c",
+        "numeric_rows": 2331,
+        "source_data_semantics": "EC-derived published daily series includes gap filling; Reco and GEP are partitioned estimates, not independently measured fluxes.",
+        "coverage_pct": 99.00249376558604,
+        "expected": 802,
+        "matched": 765,
+        "series": [
+          {
+            "series": "Oukoop",
+            "expected": 401,
+            "matched": 374,
+            "extracted": 393,
+            "accuracy_pct": 93.26683291770574,
+            "coverage_pct": 98.00498753117208,
+            "nmae_pct": 0.25661721838868246
+          },
+          {
+            "series": "Stein",
+            "expected": 401,
+            "matched": 391,
+            "extracted": 401,
+            "accuracy_pct": 97.50623441396509,
+            "coverage_pct": 100.0,
+            "nmae_pct": 0.19728727743744856
+          }
+        ],
+        "reference_sha256": "12f5d8f6101427d9780b8e3bf7f384df9afd2727da7bea1c53bd24cd76203f30",
+        "unmasked": {
+          "accuracy_pct": 95.38653366583542,
+          "coverage_pct": 99.00249376558604,
+          "expected": 802,
+          "matched": 765,
+          "series": [
+            {
+              "series": "Oukoop",
+              "expected": 401,
+              "matched": 374,
+              "extracted": 393,
+              "accuracy_pct": 93.26683291770574,
+              "coverage_pct": 98.00498753117208,
+              "nmae_pct": 0.25661721838868246
+            },
+            {
+              "series": "Stein",
+              "expected": 401,
+              "matched": 391,
+              "extracted": 401,
+              "accuracy_pct": 97.50623441396509,
+              "coverage_pct": 100.0,
+              "nmae_pct": 0.19728727743744856
+            }
+          ]
+        }
+      },
+      {
+        "id": "f05",
+        "metric": "Unscored: no independent numerical reference",
+        "reference_kind": "none",
+        "accuracy_pct": null,
+        "source_doi": "10.5194/bg-21-993-2024",
+        "license": "CC BY 4.0",
+        "input_sha256": "53d807efc4e3ba5d60b47ad352411865a5b58c5887fa83da3d84d3b4a3202da8",
+        "csv_sha256": "4a699bb4b5c68ee2b5b7ff8fa0c0fbe16ef2e8260b1fa6ebe4e2933e9cf5e4c7",
+        "config_sha256": "eea7b23efa9a67dade093246c03b06d25a014fba5870a4cc67bd81e098bf54ec",
+        "numeric_rows": 792,
+        "source_data_semantics": "Seasonal diurnal mean of measured eddy-covariance NEE, 2020. Blue shaded area is standard deviation; it is not extracted as data.",
+        "accuracy_note": "Authors provide raw data on request. No independent reference available; do not assign accuracy from pixel support or visual similarity."
+      },
+      {
+        "id": "f06",
+        "metric": "Unscored: no independent numerical reference",
+        "reference_kind": "none",
+        "accuracy_pct": null,
+        "source_doi": "10.5194/bg-21-993-2024",
+        "license": "CC BY 4.0",
+        "input_sha256": "3958df2aa068810e4263bd5321c189028a5556e0dbc69349d307dc8002037b08",
+        "csv_sha256": "59085273becf87ef2c732ad992d4238dc5d8c04c906291d48c461673e074d754",
+        "config_sha256": "cac55aca648381d8940b80f87f6180b39bd48a10c32888abaf5b81f287c2664d",
+        "numeric_rows": 837,
+        "source_data_semantics": "Seasonal diurnal mean of measured eddy-covariance NEE, 2020. Blue shaded area is standard deviation; it is not extracted as data.",
+        "accuracy_note": "Authors provide raw data on request. No independent reference available; do not assign accuracy from pixel support or visual similarity."
+      },
+      {
+        "id": "f07",
+        "metric": "Unscored: no independent numerical reference",
+        "reference_kind": "none",
+        "accuracy_pct": null,
+        "source_doi": "10.5194/bg-21-993-2024",
+        "license": "CC BY 4.0",
+        "input_sha256": "86fb787d51f56282c44afe0cec2df6d460a8e9a57a0a35233d85b6e1de778a8d",
+        "csv_sha256": "5670268b647a60076e14e3a2daa5cd8d6dd2dd4aafa07a0a5732884488f43e82",
+        "config_sha256": "cef8171b33b1cb8fad4997add95dbd36fb5d82848476871d5cab2c1315791b84",
+        "numeric_rows": 807,
+        "source_data_semantics": "Seasonal diurnal mean of measured eddy-covariance NEE, 2020. Blue shaded area is standard deviation; it is not extracted as data.",
+        "accuracy_note": "Authors provide raw data on request. No independent reference available; do not assign accuracy from pixel support or visual similarity."
+      },
+      {
+        "id": "f08",
+        "metric": "Unscored: no independent numerical reference",
+        "reference_kind": "none",
+        "accuracy_pct": null,
+        "source_doi": "10.5194/bg-21-993-2024",
+        "license": "CC BY 4.0",
+        "input_sha256": "29fa7abae2ead642f1d3fce3850d4f56efc71ec57e3d0fe51115a3fddeb11d9d",
+        "csv_sha256": "d47472763c224f7bea3eff873534b2fe1fe142ba5ca00d67572e4a7d226b6349",
+        "config_sha256": "2d21d0e2400602fee59219f3f0b8f894d9a6887d097f01e355be9aeea5470ac6",
+        "numeric_rows": 800,
+        "source_data_semantics": "Seasonal diurnal mean of measured eddy-covariance NEE, 2020. Blue shaded area is standard deviation; it is not extracted as data.",
+        "accuracy_note": "Authors provide raw data on request. No independent reference available; do not assign accuracy from pixel support or visual similarity."
+      }
+    ],
+    "scored_cases": 4,
+    "unscored_cases": 4,
+    "macro_accuracy_pct": 66.33416458852868,
+    "scope": "Assisted development examples. PDF path geometry is independent of raster tracing, but is not raw author observation data. Reco/GEP include partitioned estimates. Salt-marsh panels are unscored."
+  },
   "cases": [
+    {
+      "id": "f04",
+      "title": "泥炭草地 · 累积碳交换",
+      "kind": "line",
+      "source_label": "FLUX 论文",
+      "metrics": {
+        "id": "f04",
+        "metric": "PDF vector geometry: within 1% y-axis range; missing = miss",
+        "reference_kind": "independent_pdf_vector_geometry",
+        "accuracy_pct": 95.38653366583542,
+        "source_doi": "10.5194/bg-4-1027-2007",
+        "license": "CC BY-NC-SA 2.5",
+        "input_sha256": "53492562103a6469f111dada1441d5fe127f874cacc03e38bc8912ba5423905a",
+        "csv_sha256": "2192181498e909a252656210b22efdf7b926235fffa36f1965c3d41f79ed7d21",
+        "config_sha256": "342be5bef4e3d3bffebdbc376d024f9c0ef63bb36d88f28ab462d4ff3775938c",
+        "numeric_rows": 2331,
+        "source_data_semantics": "EC-derived published daily series includes gap filling; Reco and GEP are partitioned estimates, not independently measured fluxes.",
+        "coverage_pct": 99.00249376558604,
+        "expected": 802,
+        "matched": 765,
+        "series": [
+          {
+            "series": "Oukoop",
+            "expected": 401,
+            "matched": 374,
+            "extracted": 393,
+            "accuracy_pct": 93.26683291770574,
+            "coverage_pct": 98.00498753117208,
+            "nmae_pct": 0.25661721838868246
+          },
+          {
+            "series": "Stein",
+            "expected": 401,
+            "matched": 391,
+            "extracted": 401,
+            "accuracy_pct": 97.50623441396509,
+            "coverage_pct": 100.0,
+            "nmae_pct": 0.19728727743744856
+          }
+        ],
+        "reference_sha256": "12f5d8f6101427d9780b8e3bf7f384df9afd2727da7bea1c53bd24cd76203f30",
+        "unmasked": {
+          "accuracy_pct": 95.38653366583542,
+          "coverage_pct": 99.00249376558604,
+          "expected": 802,
+          "matched": 765,
+          "series": [
+            {
+              "series": "Oukoop",
+              "expected": 401,
+              "matched": 374,
+              "extracted": 393,
+              "accuracy_pct": 93.26683291770574,
+              "coverage_pct": 98.00498753117208,
+              "nmae_pct": 0.25661721838868246
+            },
+            {
+              "series": "Stein",
+              "expected": 401,
+              "matched": 391,
+              "extracted": 401,
+              "accuracy_pct": 97.50623441396509,
+              "coverage_pct": 100.0,
+              "nmae_pct": 0.19728727743744856
+            }
+          ]
+        }
+      },
+      "group": "flux",
+      "doi": "10.5194/bg-4-1027-2007",
+      "license": "CC BY-NC-SA 2.5",
+      "title_en": "Peat grassland · cumulative NEE",
+      "title_ja": "泥炭草地の累積炭素交換"
+    },
+    {
+      "id": "f05",
+      "title": "盐沼实测 NEE · 冬季",
+      "kind": "line",
+      "source_label": "FLUX 论文",
+      "metrics": {
+        "id": "f05",
+        "metric": "Unscored: no independent numerical reference",
+        "reference_kind": "none",
+        "accuracy_pct": null,
+        "source_doi": "10.5194/bg-21-993-2024",
+        "license": "CC BY 4.0",
+        "input_sha256": "53d807efc4e3ba5d60b47ad352411865a5b58c5887fa83da3d84d3b4a3202da8",
+        "csv_sha256": "4a699bb4b5c68ee2b5b7ff8fa0c0fbe16ef2e8260b1fa6ebe4e2933e9cf5e4c7",
+        "config_sha256": "eea7b23efa9a67dade093246c03b06d25a014fba5870a4cc67bd81e098bf54ec",
+        "numeric_rows": 792,
+        "source_data_semantics": "Seasonal diurnal mean of measured eddy-covariance NEE, 2020. Blue shaded area is standard deviation; it is not extracted as data.",
+        "accuracy_note": "Authors provide raw data on request. No independent reference available; do not assign accuracy from pixel support or visual similarity."
+      },
+      "group": "flux",
+      "doi": "10.5194/bg-21-993-2024",
+      "license": "CC BY 4.0",
+      "title_en": "Salt-marsh measured NEE · winter",
+      "title_ja": "塩性湿地の実測 NEE · 冬季"
+    },
+    {
+      "id": "f06",
+      "title": "盐沼实测 NEE · 春季",
+      "kind": "line",
+      "source_label": "FLUX 论文",
+      "metrics": {
+        "id": "f06",
+        "metric": "Unscored: no independent numerical reference",
+        "reference_kind": "none",
+        "accuracy_pct": null,
+        "source_doi": "10.5194/bg-21-993-2024",
+        "license": "CC BY 4.0",
+        "input_sha256": "3958df2aa068810e4263bd5321c189028a5556e0dbc69349d307dc8002037b08",
+        "csv_sha256": "59085273becf87ef2c732ad992d4238dc5d8c04c906291d48c461673e074d754",
+        "config_sha256": "cac55aca648381d8940b80f87f6180b39bd48a10c32888abaf5b81f287c2664d",
+        "numeric_rows": 837,
+        "source_data_semantics": "Seasonal diurnal mean of measured eddy-covariance NEE, 2020. Blue shaded area is standard deviation; it is not extracted as data.",
+        "accuracy_note": "Authors provide raw data on request. No independent reference available; do not assign accuracy from pixel support or visual similarity."
+      },
+      "group": "flux",
+      "doi": "10.5194/bg-21-993-2024",
+      "license": "CC BY 4.0",
+      "title_en": "Salt-marsh measured NEE · spring",
+      "title_ja": "塩性湿地の実測 NEE · 春季"
+    },
+    {
+      "id": "f07",
+      "title": "盐沼实测 NEE · 夏季",
+      "kind": "line",
+      "source_label": "FLUX 论文",
+      "metrics": {
+        "id": "f07",
+        "metric": "Unscored: no independent numerical reference",
+        "reference_kind": "none",
+        "accuracy_pct": null,
+        "source_doi": "10.5194/bg-21-993-2024",
+        "license": "CC BY 4.0",
+        "input_sha256": "86fb787d51f56282c44afe0cec2df6d460a8e9a57a0a35233d85b6e1de778a8d",
+        "csv_sha256": "5670268b647a60076e14e3a2daa5cd8d6dd2dd4aafa07a0a5732884488f43e82",
+        "config_sha256": "cef8171b33b1cb8fad4997add95dbd36fb5d82848476871d5cab2c1315791b84",
+        "numeric_rows": 807,
+        "source_data_semantics": "Seasonal diurnal mean of measured eddy-covariance NEE, 2020. Blue shaded area is standard deviation; it is not extracted as data.",
+        "accuracy_note": "Authors provide raw data on request. No independent reference available; do not assign accuracy from pixel support or visual similarity."
+      },
+      "group": "flux",
+      "doi": "10.5194/bg-21-993-2024",
+      "license": "CC BY 4.0",
+      "title_en": "Salt-marsh measured NEE · summer",
+      "title_ja": "塩性湿地の実測 NEE · 夏季"
+    },
+    {
+      "id": "f08",
+      "title": "盐沼实测 NEE · 秋季",
+      "kind": "line",
+      "source_label": "FLUX 论文",
+      "metrics": {
+        "id": "f08",
+        "metric": "Unscored: no independent numerical reference",
+        "reference_kind": "none",
+        "accuracy_pct": null,
+        "source_doi": "10.5194/bg-21-993-2024",
+        "license": "CC BY 4.0",
+        "input_sha256": "29fa7abae2ead642f1d3fce3850d4f56efc71ec57e3d0fe51115a3fddeb11d9d",
+        "csv_sha256": "d47472763c224f7bea3eff873534b2fe1fe142ba5ca00d67572e4a7d226b6349",
+        "config_sha256": "2d21d0e2400602fee59219f3f0b8f894d9a6887d097f01e355be9aeea5470ac6",
+        "numeric_rows": 800,
+        "source_data_semantics": "Seasonal diurnal mean of measured eddy-covariance NEE, 2020. Blue shaded area is standard deviation; it is not extracted as data.",
+        "accuracy_note": "Authors provide raw data on request. No independent reference available; do not assign accuracy from pixel support or visual similarity."
+      },
+      "group": "flux",
+      "doi": "10.5194/bg-21-993-2024",
+      "license": "CC BY 4.0",
+      "title_en": "Salt-marsh measured NEE · fall",
+      "title_ja": "塩性湿地の実測 NEE · 秋季"
+    },
+    {
+      "id": "f01",
+      "title": "泥炭草地 · 日 NEE",
+      "kind": "line",
+      "source_label": "FLUX 论文",
+      "metrics": {
+        "id": "f01",
+        "metric": "PDF vector geometry: within 1% y-axis range; missing = miss",
+        "reference_kind": "independent_pdf_vector_geometry",
+        "accuracy_pct": 52.244389027431424,
+        "source_doi": "10.5194/bg-4-1027-2007",
+        "license": "CC BY-NC-SA 2.5",
+        "input_sha256": "e7b6a980eb71c025cee01ecba783669fb915b7238b5a824c01c2e06ef2f98989",
+        "csv_sha256": "fea78c8564770923c4cc69ac5273989cae9e3c3d06fcd6bd17a9d276f953d39a",
+        "config_sha256": "c04d1958cd22610a7abc95fede76ced968c66448e288a8f794bc5d173ada8fe4",
+        "numeric_rows": 2157,
+        "source_data_semantics": "EC-derived published daily series includes gap filling; Reco and GEP are partitioned estimates, not independently measured fluxes.",
+        "coverage_pct": 87.78054862842893,
+        "expected": 802,
+        "matched": 419,
+        "series": [
+          {
+            "series": "Oukoop",
+            "expected": 401,
+            "matched": 168,
+            "extracted": 304,
+            "accuracy_pct": 41.895261845386536,
+            "coverage_pct": 75.81047381546135,
+            "nmae_pct": 1.5616512126591287
+          },
+          {
+            "series": "Stein",
+            "expected": 401,
+            "matched": 251,
+            "extracted": 400,
+            "accuracy_pct": 62.593516209476306,
+            "coverage_pct": 99.75062344139651,
+            "nmae_pct": 1.182351455503547
+          }
+        ],
+        "reference_sha256": "4d30df555559acd09d37a30fe292c93e20fdda8a0165e854f856d54f4eee8834",
+        "unmasked": {
+          "accuracy_pct": 51.745635910224436,
+          "coverage_pct": 87.65586034912718,
+          "expected": 802,
+          "matched": 415,
+          "series": [
+            {
+              "series": "Oukoop",
+              "expected": 401,
+              "matched": 167,
+              "extracted": 304,
+              "accuracy_pct": 41.64588528678304,
+              "coverage_pct": 75.81047381546135,
+              "nmae_pct": 2.2041205709052076
+            },
+            {
+              "series": "Stein",
+              "expected": 401,
+              "matched": 248,
+              "extracted": 399,
+              "accuracy_pct": 61.84538653366584,
+              "coverage_pct": 99.50124688279301,
+              "nmae_pct": 1.2379323379167628
+            }
+          ]
+        }
+      },
+      "group": "flux",
+      "doi": "10.5194/bg-4-1027-2007",
+      "license": "CC BY-NC-SA 2.5",
+      "title_en": "Peat grassland · daily NEE",
+      "title_ja": "泥炭草地の日別 NEE"
+    },
+    {
+      "id": "f02",
+      "title": "泥炭草地 · 生态系统呼吸",
+      "kind": "line",
+      "source_label": "FLUX 论文",
+      "metrics": {
+        "id": "f02",
+        "metric": "PDF vector geometry: within 1% y-axis range; missing = miss",
+        "reference_kind": "independent_pdf_vector_geometry",
+        "accuracy_pct": 63.84039900249377,
+        "source_doi": "10.5194/bg-4-1027-2007",
+        "license": "CC BY-NC-SA 2.5",
+        "input_sha256": "a6deaf6fe4a4643618be0b3108bc0feedd84a56f30370d69379dfca37812684d",
+        "csv_sha256": "210d8ce0e930c9ad25ab684d392d009ff77f64ccf116bcff2671b7f150358312",
+        "config_sha256": "1a2634c2cf8c9d8e54cd0de86520e88cefd66e37bd483cc356f751e769468987",
+        "numeric_rows": 2148,
+        "source_data_semantics": "EC-derived published daily series includes gap filling; Reco and GEP are partitioned estimates, not independently measured fluxes.",
+        "coverage_pct": 87.03241895261846,
+        "expected": 802,
+        "matched": 512,
+        "series": [
+          {
+            "series": "Oukoop",
+            "expected": 401,
+            "matched": 205,
+            "extracted": 298,
+            "accuracy_pct": 51.12219451371571,
+            "coverage_pct": 74.3142144638404,
+            "nmae_pct": 0.9078851958758375
+          },
+          {
+            "series": "Stein",
+            "expected": 401,
+            "matched": 307,
+            "extracted": 400,
+            "accuracy_pct": 76.55860349127182,
+            "coverage_pct": 99.75062344139651,
+            "nmae_pct": 0.7115067936101879
+          }
+        ],
+        "reference_sha256": "76bd05dc54a394d2942f84d610d0cc5595fec2ade48436865fea6556b7e4218d",
+        "unmasked": {
+          "accuracy_pct": 63.84039900249377,
+          "coverage_pct": 87.03241895261846,
+          "expected": 802,
+          "matched": 512,
+          "series": [
+            {
+              "series": "Oukoop",
+              "expected": 401,
+              "matched": 205,
+              "extracted": 298,
+              "accuracy_pct": 51.12219451371571,
+              "coverage_pct": 74.3142144638404,
+              "nmae_pct": 0.9078851958758375
+            },
+            {
+              "series": "Stein",
+              "expected": 401,
+              "matched": 307,
+              "extracted": 400,
+              "accuracy_pct": 76.55860349127182,
+              "coverage_pct": 99.75062344139651,
+              "nmae_pct": 0.7115067936101879
+            }
+          ]
+        }
+      },
+      "group": "flux",
+      "doi": "10.5194/bg-4-1027-2007",
+      "license": "CC BY-NC-SA 2.5",
+      "title_en": "Peat grassland · respiration",
+      "title_ja": "泥炭草地の生態系呼吸"
+    },
+    {
+      "id": "f03",
+      "title": "泥炭草地 · 总生态系统光合",
+      "kind": "line",
+      "source_label": "FLUX 论文",
+      "metrics": {
+        "id": "f03",
+        "metric": "PDF vector geometry: within 1% y-axis range; missing = miss",
+        "reference_kind": "independent_pdf_vector_geometry",
+        "accuracy_pct": 53.86533665835411,
+        "source_doi": "10.5194/bg-4-1027-2007",
+        "license": "CC BY-NC-SA 2.5",
+        "input_sha256": "d53fcbdb1bdb4ab9f3d623388579d6b684991898d43182e265afe88fc7c1fed6",
+        "csv_sha256": "fc73fea83068bc5f8a7ffff222aa48f007f8413d6585aa97e365c68b7fe94f90",
+        "config_sha256": "111849963f8a23046804bc0b1fc721b1fbc7ad769c818237c016bb212815c58e",
+        "numeric_rows": 2175,
+        "source_data_semantics": "EC-derived published daily series includes gap filling; Reco and GEP are partitioned estimates, not independently measured fluxes.",
+        "coverage_pct": 88.2793017456359,
+        "expected": 802,
+        "matched": 432,
+        "series": [
+          {
+            "series": "Oukoop",
+            "expected": 401,
+            "matched": 182,
+            "extracted": 315,
+            "accuracy_pct": 45.38653366583541,
+            "coverage_pct": 78.55361596009975,
+            "nmae_pct": 1.4898786674246889
+          },
+          {
+            "series": "Stein",
+            "expected": 401,
+            "matched": 250,
+            "extracted": 393,
+            "accuracy_pct": 62.34413965087282,
+            "coverage_pct": 98.00498753117208,
+            "nmae_pct": 1.2200753664376986
+          }
+        ],
+        "reference_sha256": "b2eea01a8459448718be0ea4b15154974d6ecb3ef1022d2af309dc3dccbeca2f",
+        "unmasked": {
+          "accuracy_pct": 53.86533665835411,
+          "coverage_pct": 88.2793017456359,
+          "expected": 802,
+          "matched": 432,
+          "series": [
+            {
+              "series": "Oukoop",
+              "expected": 401,
+              "matched": 182,
+              "extracted": 315,
+              "accuracy_pct": 45.38653366583541,
+              "coverage_pct": 78.55361596009975,
+              "nmae_pct": 1.4898786674246889
+            },
+            {
+              "series": "Stein",
+              "expected": 401,
+              "matched": 250,
+              "extracted": 393,
+              "accuracy_pct": 62.34413965087282,
+              "coverage_pct": 98.00498753117208,
+              "nmae_pct": 1.2200753664376986
+            }
+          ]
+        }
+      },
+      "group": "flux",
+      "doi": "10.5194/bg-4-1027-2007",
+      "license": "CC BY-NC-SA 2.5",
+      "title_en": "Peat grassland · gross photosynthesis",
+      "title_ja": "泥炭草地の総生態系光合成"
+    },
     {
       "id": "r01",
       "title": "海洋热输送 × 图例与注释",
@@ -30,39 +743,6 @@
           "expected": 399,
           "matched": 384,
           "extracted": 395,
-          "hidden_values": 0
-        }
-      }
-    },
-    {
-      "id": "s02",
-      "title": "同色交叉线 × 内嵌图例",
-      "kind": "line",
-      "source_label": "合成图",
-      "metrics": {
-        "id": "s02",
-        "title": "同色交叉：实线与虚线",
-        "reference_kind": "synthetic_ground_truth",
-        "metric": "Within 1% of y-axis range (missing = miss)",
-        "accuracy_pct": 100.0,
-        "coverage_pct": 100.0,
-        "nmae_pct": 0.10446283333119649,
-        "expected": 373,
-        "matched": 373,
-        "extracted": 373,
-        "hidden_values": 0,
-        "input_sha256": "9c2d0503b61f9d766e0b12c4c14709476204b3886ecd5cdef861a3046f488aac",
-        "config_sha256": "70b2ccd19bfd9d21d9b2a2f8b580853960767aad1e2fb56c08c43b5211b0d969",
-        "csv_sha256": "a808098b36f151c712ba945f5bb87c63a6bda3aa5d0c9b44c9cc03366b411098",
-        "truth_sha256": "fc4de296f4a6a87ec73af6f8d2795fa16d67e9366d6280d05118775b51d63cab",
-        "unmasked": {
-          "metric": "Within 1% of y-axis range (missing = miss)",
-          "accuracy_pct": 95.97855227882037,
-          "coverage_pct": 100.0,
-          "nmae_pct": 2.5364154954999982,
-          "expected": 373,
-          "matched": 358,
-          "extracted": 373,
           "hidden_values": 0
         }
       }
@@ -99,10 +779,43 @@
       }
     },
     {
+      "id": "s02",
+      "title": "同色交叉线 × 内嵌图例",
+      "kind": "line",
+      "source_label": "合成回归",
+      "metrics": {
+        "id": "s02",
+        "title": "同色交叉：实线与虚线",
+        "reference_kind": "synthetic_ground_truth",
+        "metric": "Within 1% of y-axis range (missing = miss)",
+        "accuracy_pct": 100.0,
+        "coverage_pct": 100.0,
+        "nmae_pct": 0.10446283333119649,
+        "expected": 373,
+        "matched": 373,
+        "extracted": 373,
+        "hidden_values": 0,
+        "input_sha256": "9c2d0503b61f9d766e0b12c4c14709476204b3886ecd5cdef861a3046f488aac",
+        "config_sha256": "70b2ccd19bfd9d21d9b2a2f8b580853960767aad1e2fb56c08c43b5211b0d969",
+        "csv_sha256": "a808098b36f151c712ba945f5bb87c63a6bda3aa5d0c9b44c9cc03366b411098",
+        "truth_sha256": "fc4de296f4a6a87ec73af6f8d2795fa16d67e9366d6280d05118775b51d63cab",
+        "unmasked": {
+          "metric": "Within 1% of y-axis range (missing = miss)",
+          "accuracy_pct": 95.97855227882037,
+          "coverage_pct": 100.0,
+          "nmae_pct": 2.5364154954999982,
+          "expected": 373,
+          "matched": 358,
+          "extracted": 373,
+          "hidden_values": 0
+        }
+      }
+    },
+    {
       "id": "s08",
       "title": "低清 JPEG × 压缩伪影",
       "kind": "line",
-      "source_label": "合成图",
+      "source_label": "合成回归",
       "metrics": {
         "id": "s08",
         "title": "低分辨率 JPEG 折线",
@@ -135,7 +848,7 @@
       "id": "s06",
       "title": "密集重叠散点",
       "kind": "scatter",
-      "source_label": "合成图",
+      "source_label": "合成回归",
       "metrics": {
         "id": "s06",
         "title": "密集重叠散点",
@@ -228,7 +941,7 @@
       "id": "s03",
       "title": "阶梯线 × 不可见遮挡",
       "kind": "line",
-      "source_label": "合成图",
+      "source_label": "合成回归",
       "metrics": {
         "id": "s03",
         "title": "阶梯线与遮挡",
@@ -253,134 +966,6 @@
           "expected": 318,
           "matched": 309,
           "extracted": 309,
-          "hidden_values": 0
-        }
-      }
-    },
-    {
-      "id": "s07",
-      "title": "空心标记 × 网格",
-      "kind": "scatter",
-      "source_label": "合成图",
-      "metrics": {
-        "id": "s07",
-        "title": "空心散点与网格",
-        "reference_kind": "synthetic_ground_truth",
-        "metric": "F1 @ 1% axis-distance",
-        "accuracy_pct": 100.0,
-        "precision_pct": 100.0,
-        "recall_pct": 100.0,
-        "matched": 30,
-        "expected": 30,
-        "extracted": 30,
-        "input_sha256": "432537cb0b6bc33f2f33d46641cb6ba29d1beb2c803f65a5d956f095ed867d81",
-        "config_sha256": "03addd59f360e69d69a0befc39e23fcd32ac18d2532c32cc8b535a16f27a657d",
-        "csv_sha256": "12e8e7fa00914335fc5f86bdab754c68f71f2b39f7cad7d12877e4b26a6beab1",
-        "truth_sha256": "2f63fdf32e7cae92f5681528395a70fa4faafe02a440634f9060911244253321",
-        "unmasked": {
-          "metric": "F1 @ 1% axis-distance",
-          "accuracy_pct": 100.0,
-          "precision_pct": 100.0,
-          "recall_pct": 100.0,
-          "matched": 30,
-          "expected": 30,
-          "extracted": 30
-        }
-      }
-    },
-    {
-      "id": "s04",
-      "title": "对数坐标曲线",
-      "kind": "line",
-      "source_label": "合成图",
-      "metrics": {
-        "id": "s04",
-        "title": "对数坐标折线",
-        "reference_kind": "synthetic_ground_truth",
-        "metric": "Within 1% of y-axis range (missing = miss)",
-        "accuracy_pct": 100.0,
-        "coverage_pct": 100.0,
-        "nmae_pct": 0.133330877283995,
-        "expected": 339,
-        "matched": 339,
-        "extracted": 339,
-        "hidden_values": 0,
-        "input_sha256": "51b0b285abf818e6cca791c7df7a1e8d0bfd473500f9f8a4be1b63caced26580",
-        "config_sha256": "f71709366d3e8a3707c88e8483966e129c88040d846faef36d68214c7cabafdc",
-        "csv_sha256": "069e6f034ffdb1b551d02ae50f6a51ba6268eb6e0de12065b461d6d52c49d363",
-        "truth_sha256": "3e2010ba03767701dee91ae29d994bc852623608af47e29eb193618147098932",
-        "unmasked": {
-          "metric": "Within 1% of y-axis range (missing = miss)",
-          "accuracy_pct": 100.0,
-          "coverage_pct": 100.0,
-          "nmae_pct": 0.133330877283995,
-          "expected": 339,
-          "matched": 339,
-          "extracted": 339,
-          "hidden_values": 0
-        }
-      }
-    },
-    {
-      "id": "s05",
-      "title": "稀疏实心散点",
-      "kind": "scatter",
-      "source_label": "合成图",
-      "metrics": {
-        "id": "s05",
-        "title": "稀疏填充散点",
-        "reference_kind": "synthetic_ground_truth",
-        "metric": "F1 @ 1% axis-distance",
-        "accuracy_pct": 100.0,
-        "precision_pct": 100.0,
-        "recall_pct": 100.0,
-        "matched": 30,
-        "expected": 30,
-        "extracted": 30,
-        "input_sha256": "cba7f9671627145d981394329d73e693ad4a1ee02ec01256921585528f9182fd",
-        "config_sha256": "f5de05add2f70528790b15fe04be3924b312b3537a4b54fa65c29348d481ab6d",
-        "csv_sha256": "8a985b800959b8fd767b8d75b2359705262801612c97a45806f936f9ee3ab7e4",
-        "truth_sha256": "f5f4cec1c62cff5f20a5a621c825603ca8ca4fab70f81890ad7b001b3e09ad35",
-        "unmasked": {
-          "metric": "F1 @ 1% axis-distance",
-          "accuracy_pct": 100.0,
-          "precision_pct": 100.0,
-          "recall_pct": 100.0,
-          "matched": 30,
-          "expected": 30,
-          "extracted": 30
-        }
-      }
-    },
-    {
-      "id": "s01",
-      "title": "清晰彩色折线",
-      "kind": "line",
-      "source_label": "合成图",
-      "metrics": {
-        "id": "s01",
-        "title": "简洁彩色折线",
-        "reference_kind": "synthetic_ground_truth",
-        "metric": "Within 1% of y-axis range (missing = miss)",
-        "accuracy_pct": 100.0,
-        "coverage_pct": 100.0,
-        "nmae_pct": 0.10565697073237161,
-        "expected": 373,
-        "matched": 373,
-        "extracted": 373,
-        "hidden_values": 0,
-        "input_sha256": "7b3e4a9ab569d82757cac6cfe85f66a2f84470cc3b4a462ddd52b5de0edd381f",
-        "config_sha256": "fc022c337b40e7284c82dbd13253e1ac673c632e3ea5377fbe59610edf35c7ce",
-        "csv_sha256": "24acd1b1209360cfec855fcb3399d9b2374f4bc64b7bb7b3a4380e1bbc03374e",
-        "truth_sha256": "fc4de296f4a6a87ec73af6f8d2795fa16d67e9366d6280d05118775b51d63cab",
-        "unmasked": {
-          "metric": "Within 1% of y-axis range (missing = miss)",
-          "accuracy_pct": 100.0,
-          "coverage_pct": 100.0,
-          "nmae_pct": 0.10565697073237161,
-          "expected": 373,
-          "matched": 373,
-          "extracted": 373,
           "hidden_values": 0
         }
       }

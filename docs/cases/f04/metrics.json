@@ -1,0 +1,63 @@
+{
+  "id": "f04",
+  "metric": "PDF vector geometry: within 1% y-axis range; missing = miss",
+  "reference_kind": "independent_pdf_vector_geometry",
+  "accuracy_pct": 95.38653366583542,
+  "source_doi": "10.5194/bg-4-1027-2007",
+  "license": "CC BY-NC-SA 2.5",
+  "input_sha256": "53492562103a6469f111dada1441d5fe127f874cacc03e38bc8912ba5423905a",
+  "csv_sha256": "2192181498e909a252656210b22efdf7b926235fffa36f1965c3d41f79ed7d21",
+  "config_sha256": "342be5bef4e3d3bffebdbc376d024f9c0ef63bb36d88f28ab462d4ff3775938c",
+  "numeric_rows": 2331,
+  "source_data_semantics": "EC-derived published daily series includes gap filling; Reco and GEP are partitioned estimates, not independently measured fluxes.",
+  "coverage_pct": 99.00249376558604,
+  "expected": 802,
+  "matched": 765,
+  "series": [
+    {
+      "series": "Oukoop",
+      "expected": 401,
+      "matched": 374,
+      "extracted": 393,
+      "accuracy_pct": 93.26683291770574,
+      "coverage_pct": 98.00498753117208,
+      "nmae_pct": 0.25661721838868246
+    },
+    {
+      "series": "Stein",
+      "expected": 401,
+      "matched": 391,
+      "extracted": 401,
+      "accuracy_pct": 97.50623441396509,
+      "coverage_pct": 100.0,
+      "nmae_pct": 0.19728727743744856
+    }
+  ],
+  "reference_sha256": "12f5d8f6101427d9780b8e3bf7f384df9afd2727da7bea1c53bd24cd76203f30",
+  "unmasked": {
+    "accuracy_pct": 95.38653366583542,
+    "coverage_pct": 99.00249376558604,
+    "expected": 802,
+    "matched": 765,
+    "series": [
+      {
+        "series": "Oukoop",
+        "expected": 401,
+        "matched": 374,
+        "extracted": 393,
+        "accuracy_pct": 93.26683291770574,
+        "coverage_pct": 98.00498753117208,
+        "nmae_pct": 0.25661721838868246
+      },
+      {
+        "series": "Stein",
+        "expected": 401,
+        "matched": 391,
+        "extracted": 401,
+        "accuracy_pct": 97.50623441396509,
+        "coverage_pct": 100.0,
+        "nmae_pct": 0.19728727743744856
+      }
+    ]
+  }
+}

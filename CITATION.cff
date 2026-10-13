@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "Please cite this software and the original papers whose figures you use."
+type: software
+title: "Digitizer: legend-aware scientific figure digitization"
+version: 0.2.0
+date-released: 2026-10-13
+authors:
+  - name: GISWLH
+repository-code: "https://github.com/GISWLH/digitizer"
+url: "https://giswlh.github.io/digitizer/"
+license: MIT
+abstract: "THU-based scientific figure digitization with reviewed legend masks, auditable CSV, source provenance and openly reported validation. Figure and data licenses are separate from the software license."
+keywords:
+  - scientific figures
+  - digitization
+  - eddy covariance
+  - reproducibility

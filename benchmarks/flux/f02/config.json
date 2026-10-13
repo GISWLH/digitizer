@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "image": "input.png",
+  "image_sha256": "a6deaf6fe4a4643618be0b3108bc0feedd84a56f30370d69379dfca37812684d",
+  "image_size": [
+    1416,
+    320
+  ],
+  "reviewed": true,
+  "review_note": "PDF ticks, series and event arrows visually reviewed; shared x axis for Fig. 10 a/b uses panel c. PDF paths are validation only.",
+  "kind": "line",
+  "plot_bounds": [
+    156,
+    12,
+    1388,
+    304
+  ],
+  "axes": {
+    "x": {
+      "anchors": [
+        [
+          156.89599999999996,
+          275
+        ],
+        [
+          1373.024,
+          635
+        ]
+      ]
+    },
+    "y": {
+      "anchors": [
+        [
+          282.8399999999999,
+          0
+        ],
+        [
+          18.11999999999989,
+          900
+        ]
+      ]
+    }
+  },
+  "series": [
+    {
+      "name": "Oukoop",
+      "color": "#ff0000",
+      "parameters": {
+        "smoothness": 0.02,
+        "tolerance": 85,
+        "sigma": 45
+      }
+    },
+    {
+      "name": "Stein",
+      "color": "#0000bf",
+      "parameters": {
+        "smoothness": 0.02,
+        "tolerance": 85,
+        "sigma": 45
+      }
+    }
+  ],
+  "exclusions": [
+    {
+      "type": "rectangle",
+      "bounds": [
+        652,
+        128,
+        680,
+        204
+      ],
+      "verified": true,
+      "reason": "Published event arrow; not an observation"
+    }
+  ],
+  "source_doi": "10.5194/bg-4-1027-2007",
+  "figure": "Fig. 10b",
+  "unit": "mmol CO2 m-2 d-1"
+}

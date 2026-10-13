@@ -1,0 +1,28 @@
+{
+  "doi": "10.5194/bg-4-1027-2007",
+  "title": "CO2 exchange and carbon balance in two grassland sites on eutrophic drained peat soils",
+  "authors": "Veenendaal et al.",
+  "year": 2007,
+  "pdf_page": 9,
+  "pdf_sha256": "7ae6c2e3f79e59ae7cd0db31c594d75a03dfd0dd13d10c9d4bad1fc87f5a9360",
+  "pdf_url": "https://bg.copernicus.org/articles/4/1027/2007/bg-4-1027-2007.pdf",
+  "license": "CC BY-NC-SA 2.5",
+  "license_url": "https://creativecommons.org/licenses/by-nc-sa/2.5/",
+  "crop_pdf_points": [
+    120,
+    308,
+    474,
+    403
+  ],
+  "render_scale": 4,
+  "reference_kind": "independent_pdf_vector_geometry",
+  "reference_path_indices": [
+    158,
+    161
+  ],
+  "reference_sha256": "4d30df555559acd09d37a30fe292c93e20fdda8a0165e854f856d54f4eee8834",
+  "variable": "NEE",
+  "source_data_semantics": "EC-derived published daily series includes gap filling; Reco and GEP are partitioned estimates, not independently measured fluxes.",
+  "x_semantics": "Unwrapped Julian day: 2004 DOY, then 366 + 2005 DOY. Not a calendar timestamp.",
+  "station_admission": "demonstration_only; no new station claim or Result/Output admission"
+}

@@ -1,0 +1,30 @@
+name: Real paper figure / 真实论文案例
+description: Add a reproducible extraction case, including failures.
+title: "[Figure] "
+body:
+  - type: textarea
+    id: source
+    attributes:
+      label: DOI, figure/panel, page and license
+      description: Link the paper and identify the figure's reuse license. Do not upload restricted full PDFs.
+    validations:
+      required: true
+  - type: textarea
+    id: target
+    attributes:
+      label: Target series, axes, units and legend problem
+      description: Distinguish measured observations, gap-filled values and model/partitioned estimates.
+    validations:
+      required: true
+  - type: textarea
+    id: reference
+    attributes:
+      label: Independent reference values
+      description: Provide provenance and license, or explicitly state that none are available.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Config, command, CSV and comparison
+      description: Include source SHA-256, expected behavior and visible failures where available.

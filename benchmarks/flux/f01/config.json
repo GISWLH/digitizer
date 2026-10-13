@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "image": "input.png",
+  "image_sha256": "e7b6a980eb71c025cee01ecba783669fb915b7238b5a824c01c2e06ef2f98989",
+  "image_size": [
+    1416,
+    380
+  ],
+  "reviewed": true,
+  "review_note": "PDF ticks, series and event arrows visually reviewed; shared x axis for Fig. 10 a/b uses panel c. PDF paths are validation only.",
+  "kind": "line",
+  "plot_bounds": [
+    164,
+    52,
+    1388,
+    340
+  ],
+  "axes": {
+    "x": {
+      "anchors": [
+        [
+          166.024,
+          275
+        ],
+        [
+          1373.236,
+          635
+        ]
+      ]
+    },
+    "y": {
+      "anchors": [
+        [
+          216.20000000000005,
+          0
+        ],
+        [
+          60.799999999999955,
+          750
+        ]
+      ]
+    }
+  },
+  "series": [
+    {
+      "name": "Oukoop",
+      "color": "#ff0000",
+      "parameters": {
+        "smoothness": 0.02,
+        "tolerance": 85,
+        "sigma": 45
+      }
+    },
+    {
+      "name": "Stein",
+      "color": "#0000bf",
+      "parameters": {
+        "smoothness": 0.02,
+        "tolerance": 85,
+        "sigma": 45
+      }
+    }
+  ],
+  "exclusions": [
+    {
+      "type": "polygon",
+      "points": [
+        [
+          928,
+          60
+        ],
+        [
+          936,
+          60
+        ],
+        [
+          936,
+          92
+        ],
+        [
+          946,
+          92
+        ],
+        [
+          932,
+          126
+        ],
+        [
+          919,
+          92
+        ],
+        [
+          928,
+          92
+        ]
+      ],
+      "series": [
+        "Oukoop"
+      ],
+      "verified": true,
+      "reason": "Tight event-arrow outline; preserves nearby visible curve pixels"
+    },
+    {
+      "type": "polygon",
+      "points": [
+        [
+          1027,
+          52
+        ],
+        [
+          1035,
+          52
+        ],
+        [
+          1035,
+          84
+        ],
+        [
+          1044,
+          84
+        ],
+        [
+          1031,
+          117
+        ],
+        [
+          1017,
+          84
+        ],
+        [
+          1027,
+          84
+        ]
+      ],
+      "series": [
+        "Stein"
+      ],
+      "verified": true,
+      "reason": "Tight event-arrow outline; preserves nearby visible curve pixels"
+    }
+  ],
+  "source_doi": "10.5194/bg-4-1027-2007",
+  "figure": "Fig. 10a",
+  "unit": "mmol CO2 m-2 d-1"
+}

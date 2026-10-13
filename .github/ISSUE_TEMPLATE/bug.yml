@@ -1,0 +1,22 @@
+name: Extraction bug / 提取问题
+description: Report a reproducible failure.
+title: "[Bug] "
+body:
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction command, configuration and input
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Expected result and actual result
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: OS, Python version and Digitizer version
+    validations:
+      required: true

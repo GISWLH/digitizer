@@ -90,3 +90,14 @@ not arbitrary papers or autonomous legend detection.
 
 When used inside a research subproject, retain its provenance, station rules,
 unit conventions and required long-table schema in the downstream export.
+
+## FLUX figures
+
+For eddy-covariance figures, read [FLUX validation](references/flux-validation.md).
+Distinguish measured NEE, gap-filled time series and partitioned Reco/GEP.
+Preserve hour-of-day versus calendar-date or unwrapped Julian-day semantics.
+The eight bundled real-paper panels include three difficult cases below 90% and
+four without independent numerical references. Never transfer the original
+regression suite's headline score to these cases or infer accuracy from appearance.
+Run `python scripts/validate_flux.py` for the complete evidence. Reuse as a
+scientific station dataset requires the subproject's baseline/admission workflow.

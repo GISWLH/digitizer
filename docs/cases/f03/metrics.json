@@ -1,0 +1,63 @@
+{
+  "id": "f03",
+  "metric": "PDF vector geometry: within 1% y-axis range; missing = miss",
+  "reference_kind": "independent_pdf_vector_geometry",
+  "accuracy_pct": 53.86533665835411,
+  "source_doi": "10.5194/bg-4-1027-2007",
+  "license": "CC BY-NC-SA 2.5",
+  "input_sha256": "d53fcbdb1bdb4ab9f3d623388579d6b684991898d43182e265afe88fc7c1fed6",
+  "csv_sha256": "fc73fea83068bc5f8a7ffff222aa48f007f8413d6585aa97e365c68b7fe94f90",
+  "config_sha256": "111849963f8a23046804bc0b1fc721b1fbc7ad769c818237c016bb212815c58e",
+  "numeric_rows": 2175,
+  "source_data_semantics": "EC-derived published daily series includes gap filling; Reco and GEP are partitioned estimates, not independently measured fluxes.",
+  "coverage_pct": 88.2793017456359,
+  "expected": 802,
+  "matched": 432,
+  "series": [
+    {
+      "series": "Oukoop",
+      "expected": 401,
+      "matched": 182,
+      "extracted": 315,
+      "accuracy_pct": 45.38653366583541,
+      "coverage_pct": 78.55361596009975,
+      "nmae_pct": 1.4898786674246889
+    },
+    {
+      "series": "Stein",
+      "expected": 401,
+      "matched": 250,
+      "extracted": 393,
+      "accuracy_pct": 62.34413965087282,
+      "coverage_pct": 98.00498753117208,
+      "nmae_pct": 1.2200753664376986
+    }
+  ],
+  "reference_sha256": "b2eea01a8459448718be0ea4b15154974d6ecb3ef1022d2af309dc3dccbeca2f",
+  "unmasked": {
+    "accuracy_pct": 53.86533665835411,
+    "coverage_pct": 88.2793017456359,
+    "expected": 802,
+    "matched": 432,
+    "series": [
+      {
+        "series": "Oukoop",
+        "expected": 401,
+        "matched": 182,
+        "extracted": 315,
+        "accuracy_pct": 45.38653366583541,
+        "coverage_pct": 78.55361596009975,
+        "nmae_pct": 1.4898786674246889
+      },
+      {
+        "series": "Stein",
+        "expected": 401,
+        "matched": 250,
+        "extracted": 393,
+        "accuracy_pct": 62.34413965087282,
+        "coverage_pct": 98.00498753117208,
+        "nmae_pct": 1.2200753664376986
+      }
+    ]
+  }
+}

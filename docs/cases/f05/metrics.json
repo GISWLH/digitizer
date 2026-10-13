@@ -1,0 +1,14 @@
+{
+  "id": "f05",
+  "metric": "Unscored: no independent numerical reference",
+  "reference_kind": "none",
+  "accuracy_pct": null,
+  "source_doi": "10.5194/bg-21-993-2024",
+  "license": "CC BY 4.0",
+  "input_sha256": "53d807efc4e3ba5d60b47ad352411865a5b58c5887fa83da3d84d3b4a3202da8",
+  "csv_sha256": "4a699bb4b5c68ee2b5b7ff8fa0c0fbe16ef2e8260b1fa6ebe4e2933e9cf5e4c7",
+  "config_sha256": "eea7b23efa9a67dade093246c03b06d25a014fba5870a4cc67bd81e098bf54ec",
+  "numeric_rows": 792,
+  "source_data_semantics": "Seasonal diurnal mean of measured eddy-covariance NEE, 2020. Blue shaded area is standard deviation; it is not extracted as data.",
+  "accuracy_note": "Authors provide raw data on request. No independent reference available; do not assign accuracy from pixel support or visual similarity."
+}
