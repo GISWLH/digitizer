@@ -1,0 +1,149 @@
+{
+  "schema_version": 1,
+  "method": "AI spatial prior + original-pixel support + THU",
+  "prompt_version": "visible-selection-v2",
+  "source_sha256": "53d807efc4e3ba5d60b47ad352411865a5b58c5887fa83da3d84d3b4a3202da8",
+  "generated_sha256": "dd8c8ccb5018a555654c60fba93edffb6de0176aee8865a09748cd8267d13e00",
+  "prompt_sha256": "6817c1ced959575c76370db19133a41aada1b198ae582c1676a1587929482bd7",
+  "csv_sha256": "95b0840c3d42839fb7962c67ec62fa7e7334384f7e63504d440c3cd8986e6d29",
+  "review": {
+    "reviewed": true,
+    "source_sha256": "53d807efc4e3ba5d60b47ad352411865a5b58c5887fa83da3d84d3b4a3202da8",
+    "generated_sha256": "dd8c8ccb5018a555654c60fba93edffb6de0176aee8865a09748cd8267d13e00",
+    "anchor_pairs": [
+      [
+        127,
+        72,
+        159,
+        104
+      ],
+      [
+        1084,
+        72,
+        1116,
+        104
+      ],
+      [
+        127,
+        644,
+        159,
+        675
+      ],
+      [
+        1084,
+        644,
+        1116,
+        675
+      ]
+    ],
+    "review_note": "Visually compared original and returned image. Measured plot spines/ticks, not canvas dimensions. Target identity, legend removal and missing spans inspected. No hidden-data reconstruction authorized; all final geometry gated by original colour evidence."
+  },
+  "transform_edited_to_original": [
+    [
+      0.9999999999999999,
+      0.0,
+      -32.00000000000002
+    ],
+    [
+      0.0,
+      1.001751313485114,
+      -32.182136602451735
+    ]
+  ],
+  "max_anchor_residual_px": 3.2155493553843715e-13,
+  "support_radius_px": 3,
+  "prior_red_pixels": 4378,
+  "accepted_original_pixels": 3194,
+  "unsupported_red_pixels": 826,
+  "numeric_rows": 759,
+  "grid_rows": 49,
+  "limitations": "Original pixel proximity does not prove series identity. Review crossings and false selections. No independent accuracy implied.",
+  "source_config": {
+    "schema_version": 1,
+    "image": "input.png",
+    "image_sha256": "53d807efc4e3ba5d60b47ad352411865a5b58c5887fa83da3d84d3b4a3202da8",
+    "image_size": [
+      1096,
+      653
+    ],
+    "reviewed": true,
+    "review_note": "Target is solid blue measured NEE only. Red NEEmarsh, green GPP and black Reco are estimates. Shared ticks calibrated from full Fig. 5.",
+    "kind": "line",
+    "plot_bounds": [
+      128,
+      73,
+      1094,
+      642
+    ],
+    "axes": {
+      "x": {
+        "anchors": [
+          [
+            243.68205128205128,
+            2
+          ],
+          [
+            973.6687179487179,
+            22
+          ]
+        ]
+      },
+      "y": {
+        "anchors": [
+          [
+            225.67076923076922,
+            0
+          ],
+          [
+            510.67282051282046,
+            -8
+          ]
+        ]
+      }
+    },
+    "series": [
+      {
+        "name": "measured_NEE",
+        "color": "#0000ff",
+        "parameters": {
+          "tolerance": 80,
+          "sigma": 45
+        }
+      }
+    ],
+    "exclusions": [
+      {
+        "type": "rectangle",
+        "bounds": [
+          809,
+          453,
+          1083,
+          640
+        ],
+        "verified": true,
+        "reason": "Four-series legend; preserves visible NEE above it"
+      }
+    ],
+    "source_doi": "10.5194/bg-21-993-2024",
+    "figure": "Fig. 5a",
+    "unit": "umol CO2 m-2 s-1"
+  },
+  "request": {
+    "provider": "apiyi",
+    "model": "gpt-image-2.5-vip",
+    "endpoint": "https://api.apiyi.com/v1/images/edits",
+    "started_at": "2026-10-13T16:01:14.829733+00:00",
+    "prompt_sha256": "6817c1ced959575c76370db19133a41aada1b198ae582c1676a1587929482bd7",
+    "input_sha256": "b418d093b611a708d32a9796e20ec262ee7784fe4792d2ce992eb13b34fe101f",
+    "status": "completed",
+    "attempts": 1,
+    "http_status": 200,
+    "response_image_sha256": "b635ddfb4d13aa7ec6b1b99ffee99b581f404a4536b74cf934d8581b3b28764e",
+    "output_size": [
+      1536,
+      1024
+    ],
+    "output_sha256": "dd8c8ccb5018a555654c60fba93edffb6de0176aee8865a09748cd8267d13e00",
+    "elapsed_seconds": 52.873
+  }
+}

@@ -1,0 +1,12 @@
+SCIENTIFIC IMAGE SEGMENTATION — visible-selection-v2
+Edit the supplied image, preserving the exact 1536×1024 canvas and layout.
+ONE target: the BLUE circular observation markers with white outlines belonging to S0 Ocean; markers only, NOT the smooth dark blue fitted curve
+The plot rectangle on this padded canvas is (156, 133) to (1020, 699), inclusive.
+
+1. GEOMETRY LOCK. Outside this plot rectangle preserve every pixel, axis label, tick, panel title and blank margin. Inside it preserve axis/spine positions. Do not crop, zoom, stretch, rotate, re-typeset or redraw the chart. Never use a nicer representative curve.
+2. EXCLUDE FIRST. White rectangles already applied are reviewed legend/annotation exclusions. Keep them blank. Remove all remaining legend samples, legend text, panel annotations and decorative symbols INSIDE the plot. A legend key is never a data point even when its colour matches the target. Do not erase an entire column merely because it contains a legend.
+3. SELECT. Identify the target by its original colour AND line/marker style AND series identity. Fill ONLY the already-visible target marker interiors solid red (#ff0000). Preserve each centre, outer boundary, diameter and partial edge clipping. Do not create circles at inferred locations. Do not recolour the fitted line, error bars, or confidence bands.
+4. CLEAN. Erase all other curves, markers, gridlines, uncertainty ribbons, error bars, fit lines and text inside the plot to white, except the selected target and axis spines. Remove any pre-existing red non-target series. Red must encode the target alone, never the background or axes.
+5. NO INVENTION. Hidden, occluded, ambiguous or inseparable marks stay blank. Never reconstruct data under a removed legend, fill a confidence band, complete a partial marker, add points on a smooth fit, or extrapolate endpoints. Do not output numbers, tables, a new legend, or a drawing of an extraction grid.
+6. CHECK. Output one edited image only: identical canvas, same axes, target-visible-pixels in pure red (#ff0000), other plot content white. If selection is ambiguous, omit it rather than inventing geometry.
+

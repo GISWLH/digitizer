@@ -19,6 +19,58 @@
 - **完整证据包**：CSV、原图、遮罩、覆盖图、CSV 重绘、并排对比、误差估计和 SHA-256 来源记录。
 - **多种图形**：连续折线、线性/对数坐标、实心/空心散点、柱图、热图；校准和系列含义需要视觉复核。
 
+## AI 填色提取：Nano Banana / GPT image 2.5
+
+**先清理图例与干扰 → 单一目标填红 → 原图像素复核 → THU 提取 → 网格 CSV。**
+新接入的 [paper-figure-csv-ai 技能](skills/paper-figure-csv-ai/SKILL.md) 包含可运行命令、版本化 prompt、原图与返回图双哈希、坐标复核和离线回放。AI 提供选区，最终测量仍来自原图；隐藏数据保持为空。
+
+![真实 FLUX：图例遮罩、AI 填色、原图复核、网格与 CSV 重绘](docs/ai/a02/process.png)
+
+2026-10-13 实际调用 APIYI：GPT 两个案例及一个旧 prompt 对照、Nano Banana 一个案例。以下是**完整流程的分数**，并同时展示相同目标的直接 THU 基线。每个 prompt 仅一次成功生成，不构成模型排名，也不证明填色必然提高准确率。
+
+| 案例 | 模型与目标 | AI 辅助结果 | 直接 THU | 过程与数据 |
+|---|---|---:|---:|---|
+| a01 · 同色散点与拟合线（书稿） | GPT · 蓝色圆点填色 | **96.77% F1**，15/16 匹配 | 96.77% | [过程](docs/ai/a01/process.png) · [CSV](docs/ai/a01/data.csv) |
+| a02 · 真实盐沼 NEE | GPT · 蓝线、色带与估算线分离 | **未评分**；759 列数值 | 792 列数值 | [过程](docs/ai/a02/process.png) · [网格 CSV](docs/ai/a02/grid.csv) |
+| a03 · 真实泥炭草地累积 NEE | Nano Banana Pro · Stein 蓝线 | **97.51%**，391/401 命中 | 97.51% | [过程](docs/ai/a03/process.png) · [CSV](docs/ai/a03/data.csv) |
+
+散点使用一对一 F1；a03 按独立 PDF 矢量路径、y 轴量程 1% 容差评分，漏点计错。a03 只测 Stein 单曲线，与上文/下文 f04 双曲线 95.39% 的范围不同。a02 没有独立作者数值，不用外观或颜色覆盖率冒充准确率。这些案例不计入原有 11 例宏平均。
+
+### Prompt 的具体改进
+
+旧写法“把目标改成红色，其余曲线和图例保持不变”会留下原有红色干扰。新 prompt 明确约束：**一个系列、原位几何、清除图例和无关曲线/色带/误差棒、保留校准标记、禁止补画缺失**。散点先在原图中验证形状，避免 AI 把拟合线片段截成假圆点。
+
+![相同输入和模型的旧、新 prompt 对照](docs/ai/a02/prompt-ab.png)
+
+在这次相同遮罩输入的 A/B 中，配准后红色像素中“原图目标色邻域不支持”的比例从 **34.81% → 18.87%**；这是清理诊断，**不是准确率**。最终有效列也从 788 降为 759，完整保留覆盖率代价。[新 prompt](docs/ai/a02/prompt.txt) · [旧 prompt](docs/ai/a02/legacy-prompt.txt) · [全部结果](benchmarks/ai/results.json)
+
+<details><summary>展开 Nano Banana 真实论文过程与 GPT 散点填色过程</summary>
+
+![Nano Banana：真实 FLUX 单曲线提取](docs/ai/a03/process.png)
+
+![GPT：同色散点填色与原图形状复核](docs/ai/a01/process.png)
+
+Nano Banana 返回图尺寸发生变化；四个实测边框锚点用于配准，未按图片尺寸比例盲目缩放。[坐标复核](docs/ai/a03/review.json) · [原始返回图](docs/ai/a03/generated.png) · [调用记录](docs/ai/a03/request.json)
+
+</details>
+
+### 网格化提取：曲线采样与热图单元
+
+曲线按固定 x 网格取最近原图列，缺失位置留空，不插值跨越遮挡。热图按 **32 × 21 = 672** 个单元保留行列标签、色标和饱和区间；定量热图直接读取原色，不能先用生成模型改变色值。
+
+![真实论文热图：原图、网格与逐单元提取](docs/ai/grid/process.png)
+
+[672 单元 CSV](docs/ai/grid/grid.csv) · [49 位置曲线网格](docs/ai/a02/grid.csv) · [详细方法、调用与离线回放](references/ai-workflow.md)
+
+```bash
+python -m pip install -e '.[ai,dev,pdf]'
+# 免费离线回放已保存的真实模型返回图；不调用 API。
+python scripts/validate_ai.py --require-90
+digitizer grid --config benchmarks/flux/f05/config.json --columns 49 --out runs/line-grid
+digitizer grid --config benchmarks/cases/p01/config.json --out runs/heatmap-grid
+# 新图的付费调用由 ai-edit 显式触发，详见方法文档。
+```
+
 ## 来自 FLUX 真实论文的 8 个面板
 
 本次新增来自 **2 篇论文的 8 个面板、12 条曲线**。这些是数字化示范，不计为新站点，不写入研究子项目的站点成果表。NEE、呼吸和光合分解量的语义分别记录。

@@ -101,3 +101,13 @@ four without independent numerical references. Never transfer the original
 regression suite's headline score to these cases or infer accuracy from appearance.
 Run `python scripts/validate_flux.py` for the complete evidence. Reuse as a
 scientific station dataset requires the subproject's baseline/admission workflow.
+
+## AI fill-and-extract and grids
+
+For Nano Banana / GPT image recolouring or fill-then-extract tasks, use the
+bundled [paper-figure-csv-ai skill](skills/paper-figure-csv-ai/SKILL.md) and
+[AI workflow](references/ai-workflow.md). `ai-prepare` is offline; `ai-edit`
+explicitly makes one paid provider call; `ai-extract` requires reviewed source/
+generated landmarks and measures original pixels. Models never fill hidden data.
+`grid` exports fixed-column line samples or original-colour heatmap cells.
+Run `python scripts/validate_ai.py --require-90` for offline frozen-output replay.

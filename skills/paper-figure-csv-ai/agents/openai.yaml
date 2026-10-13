@@ -1,0 +1,6 @@
+interface:
+  display_name: "Paper Figure CSV AI"
+  short_description: "Legend cleanup, AI colour selection and auditable grid CSV"
+  default_prompt: "Use $paper-figure-csv-ai to select visible figure data, review legends and axes, and export source-supported CSV with process images."
+policy:
+  allow_implicit_invocation: true

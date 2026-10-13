@@ -1,0 +1,28 @@
+[
+  {
+    "provider": "apiyi",
+    "model": "gpt-img-2.5-vip",
+    "endpoint": "https://api.apiyi.com/v1/images/edits",
+    "started_at": "2026-10-13T15:59:06.680660+00:00",
+    "prompt_sha256": "164e5c3b19a29e50b45284207f8615ef2467757d60e14589e8bd21d1656d2547",
+    "input_sha256": "b418d093b611a708d32a9796e20ec262ee7784fe4792d2ce992eb13b34fe101f",
+    "status": "failed_or_unknown",
+    "attempts": 1,
+    "http_status": 503,
+    "error_type": "ValueError",
+    "elapsed_seconds": 6.539
+  },
+  {
+    "provider": "apiyi",
+    "model": "gpt-img-2.5-vip",
+    "endpoint": "https://api.apiyi.com/v1/images/edits",
+    "started_at": "2026-10-13T15:59:17.678637+00:00",
+    "prompt_sha256": "3d341dab4e8c9ab19cbd9fb42df06e785c94bec78e8f78dcf0d70dce209fb7bf",
+    "input_sha256": "c4afd13b84ca7a050a76ed1fa4e4b42b0099e96506217581819885f35498d2c7",
+    "status": "failed_or_unknown",
+    "attempts": 1,
+    "http_status": 503,
+    "error_type": "ValueError",
+    "elapsed_seconds": 6.476
+  }
+]

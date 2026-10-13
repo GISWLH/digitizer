@@ -6,6 +6,9 @@ Progress is measured by reproducible results, not feature counts.
 - [x] Public CSV, masks, overlays, reconstructions and machine-readable scores.
 - [x] Real FLUX paper panels, including unsuccessful and unscored cases.
 - [x] Complete Chinese, English and Japanese READMEs; editable Excalidraw identity.
+- [x] AI colour selection with original-pixel checks, prompt A/B and offline captured-output replay.
+- [x] Fixed-column curve grids and labelled heatmap-cell grids.
+- [ ] Multi-run, held-out evaluation of prompt variants and provider stability.
 - [ ] Improve dense daily series: model stroke geometry near sharp turns and
       quantify visible-vs-occluded support without filling hidden spans.
 - [ ] Add independently archived author time series with redistribution rights.

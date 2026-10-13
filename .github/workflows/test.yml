@@ -11,12 +11,14 @@ jobs:
         with:
           python-version: '3.13'
           cache: pip
-      - run: python -m pip install -e '.[dev,pdf]'
+      - run: python -m pip install -e '.[dev,pdf,ai]'
       - run: python -m pytest -q
       - run: python scripts/benchmark.py --ablation --require-90
       - run: python scripts/validate_paper.py
       - run: python scripts/validate_flux.py --cases f04 --require-90
       - run: python scripts/validate_flux.py
+      - run: python scripts/validate_ai.py --require-90
+      - run: digitizer grid --config benchmarks/cases/p01/config.json --out runs/grid/p01
       - uses: actions/upload-artifact@v4
         if: always()
         with:

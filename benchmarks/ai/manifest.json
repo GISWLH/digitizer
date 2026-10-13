@@ -1,0 +1,23 @@
+[
+  {
+    "id": "a01",
+    "source_case": "r03",
+    "title": "GPT · 同色散点填色",
+    "reference_kind": "fixture",
+    "metric": "One-to-one F1 at 1% normalized axis distance"
+  },
+  {
+    "id": "a02",
+    "source_case": "f05",
+    "title": "GPT · 真实 FLUX 清理与网格",
+    "reference_kind": "none",
+    "metric": "Unscored: no independent numerical reference"
+  },
+  {
+    "id": "a03",
+    "source_case": "f04",
+    "title": "Nano Banana · 真实 FLUX 单曲线",
+    "reference_kind": "pdf_vectors",
+    "metric": "PDF vector geometry: within 1% y-axis range; missing = miss"
+  }
+]

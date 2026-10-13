@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "config": {
+    "schema_version": 1,
+    "image": "input.png",
+    "image_sha256": "53d807efc4e3ba5d60b47ad352411865a5b58c5887fa83da3d84d3b4a3202da8",
+    "image_size": [
+      1096,
+      653
+    ],
+    "reviewed": true,
+    "review_note": "Target is solid blue measured NEE only. Red NEEmarsh, green GPP and black Reco are estimates. Shared ticks calibrated from full Fig. 5.",
+    "kind": "line",
+    "plot_bounds": [
+      128,
+      73,
+      1094,
+      642
+    ],
+    "axes": {
+      "x": {
+        "anchors": [
+          [
+            243.68205128205128,
+            2
+          ],
+          [
+            973.6687179487179,
+            22
+          ]
+        ]
+      },
+      "y": {
+        "anchors": [
+          [
+            225.67076923076922,
+            0
+          ],
+          [
+            510.67282051282046,
+            -8
+          ]
+        ]
+      }
+    },
+    "series": [
+      {
+        "name": "measured_NEE",
+        "color": "#0000ff",
+        "parameters": {
+          "tolerance": 80,
+          "sigma": 45
+        }
+      }
+    ],
+    "exclusions": [
+      {
+        "type": "rectangle",
+        "bounds": [
+          809,
+          453,
+          1083,
+          640
+        ],
+        "verified": true,
+        "reason": "Four-series legend; preserves visible NEE above it"
+      }
+    ],
+    "source_doi": "10.5194/bg-21-993-2024",
+    "figure": "Fig. 5a",
+    "unit": "umol CO2 m-2 s-1"
+  },
+  "series": "measured_NEE",
+  "mode": "line",
+  "target": "the thin jagged SOLID BLUE measured NEE curve; not dashed red NEE_marsh and not the pale blue standard-deviation band",
+  "prompt_version": "legacy-retain-others-v1",
+  "source_file": "source.png",
+  "source_sha256": "53d807efc4e3ba5d60b47ad352411865a5b58c5887fa83da3d84d3b4a3202da8",
+  "prepared_sha256": "b418d093b611a708d32a9796e20ec262ee7784fe4792d2ce992eb13b34fe101f",
+  "prompt_sha256": "7811e3b3a8ed8f92b5db78176330e3296effe2da70afc0f434db9cf5869d39a2",
+  "padding_offset": [
+    32,
+    32
+  ],
+  "canvas_size": [
+    1536,
+    1024
+  ]
+}

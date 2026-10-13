@@ -34,3 +34,26 @@ document.getElementById('close-viewer').addEventListener('click',()=>modal.close
 modal.addEventListener('click',e=>{if(e.target===modal)modal.close()});
 document.getElementById('copy').addEventListener('click',async e=>{try{await navigator.clipboard.writeText('git clone https://github.com/GISWLH/digitizer.git');e.target.textContent='已复制';setTimeout(()=>e.target.textContent='复制',1800)}catch{e.target.textContent='请选中复制'}});
 init();
+
+async function initAi(){
+ const target=document.getElementById('ai-gallery');
+ try{
+  const response=await fetch('ai/results.json');if(!response.ok)throw new Error('HTTP '+response.status);
+  const data=await response.json(),order=['a02','a03','a01'];
+  for(const id of order){
+   const m=data.cases.find(c=>c.id===id),scored=Number.isFinite(m.accuracy_pct);
+   const title={a01:'同色圆点填色，先在原图验证形状',a02:'真实盐沼 NEE：图例、色带与估算线退场',a03:'Nano Banana：只选中 Stein 蓝线'}[id];
+   const card=document.createElement('article');card.className='ai-story';
+   const modes=[['process','全流程'],['edited-aligned','AI 填色'],['support-overlay','原图复核'],[id==='a01'?'overlay':'grid-overlay',id==='a01'?'提取覆盖':'网格采样'],['recreated','CSV 重绘']];
+   card.innerHTML=`<div class="card-top"><div><span class="case-tag">${id.toUpperCase()} / ${escapeHtml(m.model)} / APIYI</span><h3>${title}</h3></div><div class="accuracy ${scored?'':'unscored'}"><strong>${scored?m.accuracy_pct.toFixed(2)+'%':'未评分'}</strong><small>${id==='a01'?'F1 / 15 OF 16':id==='a03'?'PDF / 391 OF 401':'NO REFERENCE'}</small></div></div><img class="ai-picture" src="ai/${id}/process.png" alt="${title}：完整提取过程" loading="lazy" tabindex="0"><div class="card-controls"><div class="modes" role="group" aria-label="${title} 过程步骤">${modes.map(([name,label],i)=>`<button data-ai-step="${name}" class="${i===0?'active':''}" aria-pressed="${i===0}">${label}</button>`).join('')}</div><a class="download" href="ai/${id}/data.csv" download>CSV ↓</a></div><p>${scored?`同目标直接 THU 基线 ${m.baseline_accuracy_pct.toFixed(2)}%；本例没有精度提升。${id==='a03'?'单独评价 Stein，不与双曲线评分混用。':'漏掉的 1 个观测点仍计入分母。'}`:'无独立作者数值，保留 759 列提取值；直接 THU 为 792 列。颜色支持比例不作为准确率。'}</p><div class="card-links"><a href="ai/${id}/prompt.txt">完整 prompt ↗</a><a href="ai/${id}/generated.png" target="_blank" rel="noopener">原始返回图 ↗</a><a href="ai/${id}/metrics.json">评分 JSON ↗</a><a href="ai/${id}/ai-report.json">完整报告 ↗</a>${id!=='a01'?`<a href="ai/${id}/grid.csv" download>网格 CSV ↓</a>`:''}</div>${id==='a03'?'<p>Veenendaal et al. (2007), Fig. 11 · 图件及衍生成果 CC BY-NC-SA 2.5</p>':id==='a02'?'<p>Mayen et al. (2024), Fig. 5a · CC BY 4.0</p>':'<p>用户提供书稿 · 月度 RMSE 面板 · 与 r03 相同原图</p>'}`;
+   card.querySelectorAll('[data-ai-step]').forEach(b=>b.addEventListener('click',()=>{
+    card.querySelectorAll('[data-ai-step]').forEach(x=>{x.classList.toggle('active',x===b);x.setAttribute('aria-pressed',String(x===b))});
+    const img=card.querySelector('.ai-picture');img.src=`ai/${id}/${b.dataset.aiStep}.png`;img.alt=`${title}：${b.textContent}`;
+   }));
+   const img=card.querySelector('.ai-picture');function open(){modal.querySelector('img').src=img.src;modal.querySelector('img').alt=img.alt;modal.querySelector('p').textContent=img.alt;modal.showModal()}
+   img.addEventListener('click',open);img.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open()}});
+   target.append(card);
+  }
+ }catch(error){target.innerHTML='<p class="error">AI 案例加载失败，请查看 GitHub README 的静态过程图。</p>';console.error(error)}
+}
+initAi();

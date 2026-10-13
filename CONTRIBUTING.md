@@ -27,3 +27,16 @@ scientific limitations. Update all three when behavior or claims change.
 Software contributions use MIT. Figure and reference-data licenses remain
 separate. Do not relabel CC BY-NC-SA assets as MIT. Derived material must retain
 attribution, license, modification notice and applicable reuse restrictions.
+
+## AI colour-selection cases
+
+Use `digitizer ai-prepare` to create a reviewed, source-bound bundle. Paid image
+calls are explicit (`ai-edit`); never add automatic live API calls to tests or CI.
+Publish the exact prompt, prepared image, generated image, sanitized request
+metadata and reviewed landmarks when redistribution rights permit. Keep keys,
+raw API responses, private paths and complete restricted PDFs out of commits.
+
+Replay with `scripts/validate_ai.py`. Report the same-target direct THU baseline,
+missing-point denominator and independent-reference provenance. A prompt A/B
+must use the same input and disclose generation counts. Colour support, attractive
+output and agreement with another extractor are not independent accuracy.

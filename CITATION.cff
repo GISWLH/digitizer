@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "Please cite this software and the original papers whose figures you use."
 type: software
 title: "Digitizer: legend-aware scientific figure digitization"
-version: 0.2.0
+version: 0.3.0
 date-released: 2026-10-13
 authors:
   - name: GISWLH

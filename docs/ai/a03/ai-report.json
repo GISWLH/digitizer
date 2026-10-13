@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "method": "AI spatial prior + original-pixel support + THU",
+  "prompt_version": "visible-selection-v2",
+  "source_sha256": "53492562103a6469f111dada1441d5fe127f874cacc03e38bc8912ba5423905a",
+  "generated_sha256": "ae9e182d06c716c9a29e9d68c8bc03d1bd96d4541755a60ebc2a4b2127c9b3c7",
+  "prompt_sha256": "09f8ada457d44b2a69f2c5edf9e28cbb1fcc38d620ed3731ea40699526c19a50",
+  "csv_sha256": "abe3bc1dbafd2eba9c741c78ee511973df982497a473715aaca4ffe8351883db",
+  "review": {
+    "reviewed": true,
+    "source_sha256": "53492562103a6469f111dada1441d5fe127f874cacc03e38bc8912ba5423905a",
+    "generated_sha256": "ae9e182d06c716c9a29e9d68c8bc03d1bd96d4541755a60ebc2a4b2127c9b3c7",
+    "anchor_pairs": [
+      [
+        183.5,
+        36,
+        349,
+        112.5
+      ],
+      [
+        1360.5,
+        36,
+        2300,
+        112.5
+      ],
+      [
+        183.5,
+        590.5,
+        349,
+        1032
+      ],
+      [
+        1360.5,
+        590.5,
+        2300,
+        1032
+      ]
+    ],
+    "review_note": "Nano Banana returned 2528×1696 instead of requested canvas; no dimension-based scaling used. Inspected both figures and measured four plot-spine intersections using dark-pixel runs. Blue Stein curve selected; red Oukoop removed. The zero reference line was erased, leaving a gap at its crossing. Original-colour support remains mandatory; no repaired crossing authorized."
+  },
+  "transform_edited_to_original": [
+    [
+      0.6032803690415169,
+      0.0,
+      -27.04484879548948
+    ],
+    [
+      0.0,
+      0.6030451332245785,
+      -31.84257748776509
+    ]
+  ],
+  "max_anchor_residual_px": 6.821580327600139e-13,
+  "support_radius_px": 3,
+  "prior_red_pixels": 11392,
+  "accepted_original_pixels": 10182,
+  "unsupported_red_pixels": 1,
+  "numeric_rows": 1177,
+  "grid_rows": 49,
+  "limitations": "Original pixel proximity does not prove series identity. Review crossings and false selections. No independent accuracy implied.",
+  "source_config": {
+    "schema_version": 1,
+    "image": "input.png",
+    "image_sha256": "53492562103a6469f111dada1441d5fe127f874cacc03e38bc8912ba5423905a",
+    "image_size": [
+      1416,
+      768
+    ],
+    "reviewed": true,
+    "review_note": "PDF ticks, series and event arrows visually reviewed; shared x axis for Fig. 10 a/b uses panel c. PDF paths are validation only.",
+    "kind": "line",
+    "plot_bounds": [
+      184,
+      36,
+      1360,
+      592
+    ],
+    "axes": {
+      "x": {
+        "anchors": [
+          [
+            184.36,
+            275
+          ],
+          [
+            1346.924,
+            635
+          ]
+        ]
+      },
+      "y": {
+        "anchors": [
+          [
+            590.8,
+            -10
+          ],
+          [
+            36.120000000000005,
+            15
+          ]
+        ]
+      }
+    },
+    "series": [
+      {
+        "name": "Oukoop",
+        "color": "#ed1c24",
+        "parameters": {
+          "smoothness": 0.02,
+          "tolerance": 85,
+          "sigma": 45
+        }
+      },
+      {
+        "name": "Stein",
+        "color": "#2e3092",
+        "parameters": {
+          "smoothness": 0.02,
+          "tolerance": 85,
+          "sigma": 45
+        }
+      }
+    ],
+    "exclusions": [],
+    "source_doi": "10.5194/bg-4-1027-2007",
+    "figure": "Fig. 11",
+    "unit": "mol CO2 m-2"
+  },
+  "request": {
+    "provider": "apiyi",
+    "model": "gemini-3-pro-image-preview",
+    "endpoint": "https://api.apiyi.com/v1beta/models/gemini-3-pro-image-preview:generateContent",
+    "started_at": "2026-10-13T16:01:27.653581+00:00",
+    "prompt_sha256": "09f8ada457d44b2a69f2c5edf9e28cbb1fcc38d620ed3731ea40699526c19a50",
+    "input_sha256": "38e8c23e37e88553a18aa14123212044875e4e643e99bf8df0235fc8f37972cd",
+    "status": "completed",
+    "attempts": 1,
+    "http_status": 200,
+    "response_image_sha256": "b847384accc4c0c2d6d10a2195380e1f8383180cb6dfcf2b8117ca1ccc3ad49c",
+    "output_size": [
+      2528,
+      1696
+    ],
+    "output_sha256": "ae9e182d06c716c9a29e9d68c8bc03d1bd96d4541755a60ebc2a4b2127c9b3c7",
+    "elapsed_seconds": 391.476
+  }
+}

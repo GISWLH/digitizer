@@ -1,0 +1,18 @@
+{
+  "provider": "apiyi",
+  "model": "gemini-3-pro-image-preview",
+  "endpoint": "https://api.apiyi.com/v1beta/models/gemini-3-pro-image-preview:generateContent",
+  "started_at": "2026-10-13T16:01:27.653581+00:00",
+  "prompt_sha256": "09f8ada457d44b2a69f2c5edf9e28cbb1fcc38d620ed3731ea40699526c19a50",
+  "input_sha256": "38e8c23e37e88553a18aa14123212044875e4e643e99bf8df0235fc8f37972cd",
+  "status": "completed",
+  "attempts": 1,
+  "http_status": 200,
+  "response_image_sha256": "b847384accc4c0c2d6d10a2195380e1f8383180cb6dfcf2b8117ca1ccc3ad49c",
+  "output_size": [
+    2528,
+    1696
+  ],
+  "output_sha256": "ae9e182d06c716c9a29e9d68c8bc03d1bd96d4541755a60ebc2a4b2127c9b3c7",
+  "elapsed_seconds": 391.476
+}

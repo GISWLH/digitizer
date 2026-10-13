@@ -1,0 +1,31 @@
+{
+  "id": "a03",
+  "source_case": "f04",
+  "model": "gemini-3-pro-image-preview",
+  "provider": "apiyi",
+  "metric": "PDF vector geometry: within 1% y-axis range; missing = miss",
+  "accuracy_pct": 97.50623441396509,
+  "baseline_accuracy_pct": 97.50623441396509,
+  "numeric_rows": 1177,
+  "baseline_numeric_rows": 1177,
+  "generated_sha256": "ae9e182d06c716c9a29e9d68c8bc03d1bd96d4541755a60ebc2a4b2127c9b3c7",
+  "csv_sha256": "abe3bc1dbafd2eba9c741c78ee511973df982497a473715aaca4ffe8351883db",
+  "red_pixels": 11392,
+  "unsupported_red_pixels": 1,
+  "unsupported_red_pct": 0.00877808988764045,
+  "coverage_pct": 100.0,
+  "expected": 401,
+  "matched": 391,
+  "series": [
+    {
+      "series": "Stein",
+      "expected": 401,
+      "matched": 391,
+      "extracted": 401,
+      "accuracy_pct": 97.50623441396509,
+      "coverage_pct": 100.0,
+      "nmae_pct": 0.20090054471402774
+    }
+  ],
+  "reference_sha256": "12f5d8f6101427d9780b8e3bf7f384df9afd2727da7bea1c53bd24cd76203f30"
+}

@@ -1,0 +1,84 @@
+{
+  "protocol": "frozen-ai-original-support-v1",
+  "cases": [
+    {
+      "id": "a01",
+      "source_case": "r03",
+      "model": "gpt-image-2.5-vip",
+      "provider": "apiyi",
+      "metric": "F1 @ 1% axis-distance",
+      "accuracy_pct": 96.7741935483871,
+      "baseline_accuracy_pct": 96.7741935483871,
+      "numeric_rows": 15,
+      "baseline_numeric_rows": 15,
+      "generated_sha256": "977b17cc8ee5a1de66e20751f23814cf65ad70f22fd9584cc2b79ea5cfaf6581",
+      "csv_sha256": "80bb1b124c20ec08e52e1ab6e70e0406aa28d1ae697f697ae42a32968fcc5dc2",
+      "red_pixels": 1440,
+      "unsupported_red_pixels": 225,
+      "unsupported_red_pct": 15.625,
+      "precision_pct": 100.0,
+      "recall_pct": 93.75,
+      "matched": 15,
+      "expected": 16,
+      "extracted": 15,
+      "reference_sha256": "0a768abe207873c0959b24c4e56b073b80e25b84dd3e8853c732929bb54f2fe0"
+    },
+    {
+      "id": "a02",
+      "source_case": "f05",
+      "model": "gpt-image-2.5-vip",
+      "provider": "apiyi",
+      "metric": "Unscored: no independent numerical reference",
+      "accuracy_pct": null,
+      "baseline_accuracy_pct": null,
+      "numeric_rows": 759,
+      "baseline_numeric_rows": 792,
+      "generated_sha256": "dd8c8ccb5018a555654c60fba93edffb6de0176aee8865a09748cd8267d13e00",
+      "csv_sha256": "95b0840c3d42839fb7962c67ec62fa7e7334384f7e63504d440c3cd8986e6d29",
+      "red_pixels": 4378,
+      "unsupported_red_pixels": 826,
+      "unsupported_red_pct": 18.86706258565555,
+      "accuracy_note": "No independent author numerical data; colour support is not an accuracy measure.",
+      "legacy_prompt": {
+        "red_pixels": 6667,
+        "unsupported_red_pixels": 2321,
+        "unsupported_red_pct": 34.813259337033145,
+        "numeric_rows": 788
+      }
+    },
+    {
+      "id": "a03",
+      "source_case": "f04",
+      "model": "gemini-3-pro-image-preview",
+      "provider": "apiyi",
+      "metric": "PDF vector geometry: within 1% y-axis range; missing = miss",
+      "accuracy_pct": 97.50623441396509,
+      "baseline_accuracy_pct": 97.50623441396509,
+      "numeric_rows": 1177,
+      "baseline_numeric_rows": 1177,
+      "generated_sha256": "ae9e182d06c716c9a29e9d68c8bc03d1bd96d4541755a60ebc2a4b2127c9b3c7",
+      "csv_sha256": "abe3bc1dbafd2eba9c741c78ee511973df982497a473715aaca4ffe8351883db",
+      "red_pixels": 11392,
+      "unsupported_red_pixels": 1,
+      "unsupported_red_pct": 0.00877808988764045,
+      "coverage_pct": 100.0,
+      "expected": 401,
+      "matched": 391,
+      "series": [
+        {
+          "series": "Stein",
+          "expected": 401,
+          "matched": 391,
+          "extracted": 401,
+          "accuracy_pct": 97.50623441396509,
+          "coverage_pct": 100.0,
+          "nmae_pct": 0.20090054471402774
+        }
+      ],
+      "reference_sha256": "12f5d8f6101427d9780b8e3bf7f384df9afd2727da7bea1c53bd24cd76203f30"
+    }
+  ],
+  "scored_cases": 2,
+  "unscored_cases": 1,
+  "scope": "Development examples, one captured generation per prompt. No provider ranking or generalization claim; original THU baseline separately reported."
+}

@@ -67,3 +67,21 @@ measured NEE only. Other curves are estimates, and the band is standard deviatio
 Author data are available upon request, not provided with this release. These
 four cases have no independent numerical reference and are explicitly unscored.
 No new station admission is made. No endorsement is implied.
+
+## AI-assisted adaptations added in v0.3.0
+
+- a01 adapts r03, the supplied monthly-RMSE manuscript panel.
+- a02 adapts Mayen et al. (2024) Fig. 5a / f05, **CC BY 4.0**. It includes a
+  legacy-prompt control on the identical masked input.
+- a03 adapts Veenendaal et al. (2007) Fig. 11 / f04, **CC BY-NC-SA 2.5**.
+  This license applies to its source, generated adaptation, extracted CSV and
+  process/comparison images. Original author attribution is retained.
+- The grid demonstration adapts p01 under its **CC BY 4.0** license.
+
+New changes: masked/padded API inputs, AI red target selection, reviewed
+registration, original-pixel gating, fixed-grid sampling, and process boards.
+Generated images are labelled intermediate adaptations, not original paper
+figures or recovered hidden observations. APIYI calls and full prompts are
+retained in `benchmarks/ai/`; no complete PDFs, credentials or raw API bodies are
+published. Both live model routes were served by APIYI on 2026-10-13. No author,
+provider or upstream project endorsement is implied.

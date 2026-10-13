@@ -1,0 +1,32 @@
+{
+  "reviewed": true,
+  "source_sha256": "53d807efc4e3ba5d60b47ad352411865a5b58c5887fa83da3d84d3b4a3202da8",
+  "generated_sha256": "dd8c8ccb5018a555654c60fba93edffb6de0176aee8865a09748cd8267d13e00",
+  "anchor_pairs": [
+    [
+      127,
+      72,
+      159,
+      104
+    ],
+    [
+      1084,
+      72,
+      1116,
+      104
+    ],
+    [
+      127,
+      644,
+      159,
+      675
+    ],
+    [
+      1084,
+      644,
+      1116,
+      675
+    ]
+  ],
+  "review_note": "Visually compared original and returned image. Measured plot spines/ticks, not canvas dimensions. Target identity, legend removal and missing spans inspected. No hidden-data reconstruction authorized; all final geometry gated by original colour evidence."
+}

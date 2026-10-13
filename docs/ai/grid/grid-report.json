@@ -1,0 +1,7 @@
+{
+  "grid_rows": 672,
+  "kind": "heatmap",
+  "source_sha256": "76e70242a6c2f9c5fbea0167d21191a8daf566d2328adfbb72c40420166bbbac",
+  "grid_sha256": "a7f641d8891fbc28955a75da8700018fc8b19c19440b33d80599ca8ceed12c88",
+  "note": "Line samples use nearest source column without interpolation. Heatmap values use original calibrated colours; saturated endpoints are intervals."
+}

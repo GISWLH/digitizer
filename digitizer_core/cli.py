@@ -19,6 +19,21 @@ def main(argv=None):
     p=subs.add_parser("render-pdf",help="Render one PDF page before calibrating")
     p.add_argument("pdf",type=Path);p.add_argument("--page",type=int,required=True,help="1-based page")
     p.add_argument("--dpi",type=int,default=200);p.add_argument("--out",type=Path,required=True)
+    p=subs.add_parser("ai-prepare",help="Prepare reviewed masks and a single-target image-edit prompt (offline)")
+    p.add_argument("--config",type=Path,required=True);p.add_argument("--series",required=True)
+    p.add_argument("--target",required=True);p.add_argument("--mode",choices=["line","markers"],default="line")
+    p.add_argument("--legacy-prompt",action="store_true",help="A/B control only: retain other plot content")
+    p.add_argument("--out",type=Path,required=True)
+    p=subs.add_parser("ai-edit",help="Make one paid image-edit request; explicit opt-in, no fallback")
+    p.add_argument("--bundle",type=Path,required=True);p.add_argument("--provider",choices=["apiyi","gemini"],required=True)
+    p.add_argument("--model");p.add_argument("--timeout",type=int,default=600)
+    p=subs.add_parser("ai-extract",help="Use reviewed AI colour selection to gate original-pixel extraction")
+    p.add_argument("--bundle",type=Path,required=True);p.add_argument("--review",type=Path,required=True)
+    p.add_argument("--out",type=Path,required=True);p.add_argument("--radius",type=int,default=3)
+    p.add_argument("--columns",type=int,default=49)
+    p=subs.add_parser("grid",help="Offline fixed-column line sampling or calibrated heatmap-cell extraction")
+    p.add_argument("--config",type=Path,required=True);p.add_argument("--out",type=Path,required=True)
+    p.add_argument("--columns",type=int,default=49)
     args=parser.parse_args(argv)
     try:
         if args.command=="inspect":
@@ -35,6 +50,21 @@ def main(argv=None):
             print(f"{args.out}: review {len(config['exclusions'])} proposed regions, axes and series.")
         elif args.command=="extract":
             _,report=run(args.config,args.out);print(f"{report['numeric_rows']} numeric rows; evidence: {args.out}")
+        elif args.command=="ai-prepare":
+            from .ai_assist import prepare
+            print(prepare(args.config,args.series,args.target,args.out,args.mode,args.legacy_prompt))
+        elif args.command=="ai-edit":
+            from .ai_provider import edit
+            info=edit(args.bundle,args.provider,args.model,args.timeout)
+            print(f"{info['provider']} / {info['model']}: {info['status']}")
+        elif args.command=="ai-extract":
+            from .ai_assist import extract
+            _,report=extract(args.bundle,args.review,args.out,args.radius,args.columns)
+            print(f"{report['numeric_rows']} source-supported rows; evidence: {args.out}")
+        elif args.command=="grid":
+            from .grid import extract_grid
+            report=extract_grid(args.config,args.out,args.columns)
+            print(f"{report['grid_rows']} grid rows; evidence: {args.out}")
         else:
             import fitz
             with fitz.open(args.pdf) as doc:

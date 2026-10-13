@@ -6,3 +6,6 @@
 *.json text eol=lf
 *.py text eol=lf
 *.md text eol=lf
+# Frozen prompts preserve the exact bytes sent to providers (including final LFs).
+benchmarks/ai/**/prompt.txt whitespace=-blank-at-eof
+docs/ai/**/prompt.txt whitespace=-blank-at-eof

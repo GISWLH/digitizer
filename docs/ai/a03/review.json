@@ -1,0 +1,32 @@
+{
+  "reviewed": true,
+  "source_sha256": "53492562103a6469f111dada1441d5fe127f874cacc03e38bc8912ba5423905a",
+  "generated_sha256": "ae9e182d06c716c9a29e9d68c8bc03d1bd96d4541755a60ebc2a4b2127c9b3c7",
+  "anchor_pairs": [
+    [
+      183.5,
+      36,
+      349,
+      112.5
+    ],
+    [
+      1360.5,
+      36,
+      2300,
+      112.5
+    ],
+    [
+      183.5,
+      590.5,
+      349,
+      1032
+    ],
+    [
+      1360.5,
+      590.5,
+      2300,
+      1032
+    ]
+  ],
+  "review_note": "Nano Banana returned 2528×1696 instead of requested canvas; no dimension-based scaling used. Inspected both figures and measured four plot-spine intersections using dark-pixel runs. Blue Stein curve selected; red Oukoop removed. The zero reference line was erased, leaving a gap at its crossing. Original-colour support remains mandatory; no repaired crossing authorized."
+}

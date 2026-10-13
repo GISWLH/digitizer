@@ -1,0 +1,1 @@
+Change ONLY the thin jagged SOLID BLUE measured NEE curve; not dashed red NEE_marsh and not the pale blue standard-deviation band to solid red. Keep all other lines, axes, gridlines, legend, and caption exactly as they are. Keep the full 1536×1024 canvas unchanged.

@@ -19,6 +19,58 @@
 - **Complete evidence bundle**: CSV, original, masks, overlay, CSV reconstruction, comparison, uncertainty estimates and SHA-256 provenance.
 - **Multiple chart types**: continuous lines, linear/log axes, filled/hollow scatter, bars and heatmaps. Calibration and series semantics require visual review.
 
+## AI fill-and-extract: Nano Banana / GPT image 2.5
+
+**Mask legends and clutter → colour one target red → verify original pixels → THU extraction → grid CSV.**
+The integrated [paper-figure-csv-ai skill](skills/paper-figure-csv-ai/SKILL.md) includes runnable commands, versioned prompts, source/output hashes, reviewed registration and offline replay. AI supplies a selection hint; final measurements come from the original. Hidden data remain missing.
+
+![Real FLUX: legend mask, AI colouring, source verification, grid and CSV reconstruction](docs/ai/a02/process.png)
+
+Live APIYI calls on 2026-10-13: two GPT cases plus one legacy-prompt control, and one Nano Banana case. These are **complete-pipeline scores**, alongside direct THU extraction of the same target. One successful generation per prompt is neither a model ranking nor proof that recolouring improves accuracy.
+
+| Case | Model and target | AI-assisted result | Direct THU | Process and data |
+|---|---|---:|---:|---|
+| a01 · Same-colour markers and fit (manuscript) | GPT · blue marker filling | **96.77% F1**, 15/16 matches | 96.77% | [Process](docs/ai/a01/process.png) · [CSV](docs/ai/a01/data.csv) |
+| a02 · Real salt-marsh NEE | GPT · separate blue line, band and estimates | **Unscored**; 759 numeric columns | 792 numeric columns | [Process](docs/ai/a02/process.png) · [Grid CSV](docs/ai/a02/grid.csv) |
+| a03 · Real peat-grassland cumulative NEE | Nano Banana Pro · Stein blue line | **97.51%**, 391/401 hits | 97.51% | [Process](docs/ai/a03/process.png) · [CSV](docs/ai/a03/data.csv) |
+
+Scatter uses one-to-one F1. Case a03 uses independent PDF paths with a tolerance of 1% of the y-axis range; missing samples count as misses. It evaluates only Stein, unlike f04's two-curve score of 95.39%. Case a02 has no independent author values; appearance and colour support are not accuracy. These cases are excluded from the original 11-case macro score.
+
+### What changed in the prompt
+
+The old instruction “make the target red and keep other curves and legends unchanged” retains existing red distractors. The new prompt specifies **one series, locked geometry, removal of legends and unrelated curves/bands/error bars, preserved calibration marks, and no invented hidden data**. Scatter shapes must first exist in the original, preventing AI selections from turning fragments of a fitted curve into false dots.
+
+![Old versus new prompt, same input and model](docs/ai/a02/prompt-ab.png)
+
+In this A/B with identical masked input, the registered red-pixel fraction unsupported by nearby original target colour fell from **34.81% → 18.87%**. This is a cleanup diagnostic, **not accuracy**. Final numeric columns also fell from 788 to 759; the coverage cost remains visible. [New prompt](docs/ai/a02/prompt.txt) · [Legacy prompt](docs/ai/a02/legacy-prompt.txt) · [All results](benchmarks/ai/results.json)
+
+<details><summary>Nano Banana real-paper workflow and GPT marker-filling workflow</summary>
+
+![Nano Banana: real FLUX single-curve extraction](docs/ai/a03/process.png)
+
+![GPT: marker filling and original-shape verification](docs/ai/a01/process.png)
+
+Nano Banana changed the output dimensions. Registration uses four measured frame landmarks, never automatic scaling based on dimensions. [Review](docs/ai/a03/review.json) · [Raw output](docs/ai/a03/generated.png) · [Request record](docs/ai/a03/request.json)
+
+</details>
+
+### Grid extraction: curve samples and heatmap cells
+
+Line grids use the nearest original column at fixed x positions; missing positions remain empty, with no interpolation across occlusions. The heatmap preserves labels, colour calibration and censored intervals across **32 × 21 = 672** cells. Quantitative heatmaps are measured in their original colours, without generative recolouring.
+
+![Real-paper heatmap: original, calibrated grid and cell extraction](docs/ai/grid/process.png)
+
+[672-cell CSV](docs/ai/grid/grid.csv) · [49-position line grid](docs/ai/a02/grid.csv) · [Method, live calls and offline replay](references/ai-workflow.md)
+
+```bash
+python -m pip install -e '.[ai,dev,pdf]'
+# Free offline replay of saved live outputs; no API call.
+python scripts/validate_ai.py --require-90
+digitizer grid --config benchmarks/flux/f05/config.json --columns 49 --out runs/line-grid
+digitizer grid --config benchmarks/cases/p01/config.json --out runs/heatmap-grid
+# ai-edit explicitly initiates paid calls for new figures; see the method guide.
+```
+
 ## 8 panels from real FLUX papers
 
 This update adds **8 panels and 12 curves from 2 papers**. These are digitization demonstrations, not new-station admissions; they do not populate the research subproject’s station output tables. NEE, respiration and partitioned photosynthesis retain separate semantics.

@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "config": {
+    "schema_version": 1,
+    "image": "input.png",
+    "image_sha256": "36ec70c103cfdff59dc5c2f3e01dbbfc5f94c8bdd08dc9009fbc1058f2fa7b8d",
+    "image_size": [
+      1024,
+      768
+    ],
+    "reviewed": true,
+    "review_note": "Original-image axes, target colour and legend/annotation regions visually checked; historical calibration retained. No reference values used by extractor. White-outlined compact markers are visually separable from long same-colour curve components; partial cores retain uncertainty.",
+    "kind": "scatter",
+    "plot_bounds": [
+      124,
+      101,
+      988,
+      667
+    ],
+    "axes": {
+      "x": {
+        "anchors": [
+          [
+            124,
+            1
+          ],
+          [
+            988,
+            16
+          ]
+        ],
+        "scale": "linear"
+      },
+      "y": {
+        "anchors": [
+          [
+            667,
+            0.25
+          ],
+          [
+            101,
+            0.85
+          ]
+        ],
+        "scale": "linear"
+      }
+    },
+    "series": [
+      {
+        "name": "target",
+        "color": "#345D82",
+        "parameters": {
+          "min_diameter": 4,
+          "max_diameter": 12,
+          "color_tolerance": 24
+        },
+        "marker": "isolated"
+      }
+    ],
+    "exclusions": [
+      {
+        "type": "rectangle",
+        "bounds": [
+          130,
+          112,
+          985,
+          184
+        ],
+        "verified": true,
+        "reason": "Visible legend/text annotation"
+      }
+    ]
+  },
+  "series": "target",
+  "mode": "markers",
+  "target": "the BLUE circular observation markers with white outlines belonging to S0 Ocean; markers only, NOT the smooth dark blue fitted curve",
+  "prompt_version": "visible-selection-v2",
+  "source_file": "source.png",
+  "source_sha256": "36ec70c103cfdff59dc5c2f3e01dbbfc5f94c8bdd08dc9009fbc1058f2fa7b8d",
+  "prepared_sha256": "c4afd13b84ca7a050a76ed1fa4e4b42b0099e96506217581819885f35498d2c7",
+  "prompt_sha256": "3d341dab4e8c9ab19cbd9fb42df06e785c94bec78e8f78dcf0d70dce209fb7bf",
+  "padding_offset": [
+    32,
+    32
+  ],
+  "canvas_size": [
+    1536,
+    1024
+  ]
+}

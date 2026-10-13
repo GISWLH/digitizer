@@ -1,0 +1,22 @@
+{
+  "id": "a01",
+  "source_case": "r03",
+  "model": "gpt-image-2.5-vip",
+  "provider": "apiyi",
+  "metric": "F1 @ 1% axis-distance",
+  "accuracy_pct": 96.7741935483871,
+  "baseline_accuracy_pct": 96.7741935483871,
+  "numeric_rows": 15,
+  "baseline_numeric_rows": 15,
+  "generated_sha256": "977b17cc8ee5a1de66e20751f23814cf65ad70f22fd9584cc2b79ea5cfaf6581",
+  "csv_sha256": "80bb1b124c20ec08e52e1ab6e70e0406aa28d1ae697f697ae42a32968fcc5dc2",
+  "red_pixels": 1440,
+  "unsupported_red_pixels": 225,
+  "unsupported_red_pct": 15.625,
+  "precision_pct": 100.0,
+  "recall_pct": 93.75,
+  "matched": 15,
+  "expected": 16,
+  "extracted": 15,
+  "reference_sha256": "0a768abe207873c0959b24c4e56b073b80e25b84dd3e8853c732929bb54f2fe0"
+}

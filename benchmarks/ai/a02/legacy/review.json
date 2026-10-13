@@ -1,0 +1,32 @@
+{
+  "reviewed": true,
+  "source_sha256": "53d807efc4e3ba5d60b47ad352411865a5b58c5887fa83da3d84d3b4a3202da8",
+  "generated_sha256": "8f2c46f6b6407a412da9603ea31582088e74e255d36ec5ac7e7b616a79d0ed06",
+  "anchor_pairs": [
+    [
+      127,
+      72,
+      159,
+      104
+    ],
+    [
+      1084,
+      72,
+      1116,
+      104
+    ],
+    [
+      127,
+      644,
+      159,
+      675
+    ],
+    [
+      1084,
+      644,
+      1116,
+      675
+    ]
+  ],
+  "review_note": "Matched plot-frame corners after visually inspecting both images. Legacy edit retains the red dashed distractor and blue band; this is an A/B control, not a recommended selection. Final values require original blue support."
+}

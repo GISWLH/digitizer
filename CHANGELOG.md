@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.3.0 — 2026-10-13
+
+- Integrate the paper-figure-csv-ai skill and optional GPT / Nano Banana colour-selection routes.
+- Add versioned cleanup prompts, reviewed registration, original-pixel support and original-shape scatter validation.
+- Add deterministic fixed-x sampling and calibrated heatmap-cell CSV grids.
+- Publish three live AI cases, a same-input prompt A/B, full process boards and offline replay.
+- Report 96.77% marker F1 and 97.51% FLUX single-curve score alongside equal THU baselines; retain an unscored FLUX case and two failed historical-model requests.
+- Expand all three READMEs and the gallery with AI process evidence. No image API calls run in CI.
+
 ## 0.2.0 — 2026-10-13
 
 - Add eight real FLUX paper panels and twelve curves, with calibration, source

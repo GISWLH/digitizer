@@ -1,0 +1,18 @@
+{
+  "provider": "apiyi",
+  "model": "gpt-image-2.5-vip",
+  "endpoint": "https://api.apiyi.com/v1/images/edits",
+  "started_at": "2026-10-13T16:01:14.829733+00:00",
+  "prompt_sha256": "6817c1ced959575c76370db19133a41aada1b198ae582c1676a1587929482bd7",
+  "input_sha256": "b418d093b611a708d32a9796e20ec262ee7784fe4792d2ce992eb13b34fe101f",
+  "status": "completed",
+  "attempts": 1,
+  "http_status": 200,
+  "response_image_sha256": "b635ddfb4d13aa7ec6b1b99ffee99b581f404a4536b74cf934d8581b3b28764e",
+  "output_size": [
+    1536,
+    1024
+  ],
+  "output_sha256": "dd8c8ccb5018a555654c60fba93edffb6de0176aee8865a09748cd8267d13e00",
+  "elapsed_seconds": 52.873
+}

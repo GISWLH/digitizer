@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "config": {
+    "schema_version": 1,
+    "image": "input.png",
+    "image_sha256": "53492562103a6469f111dada1441d5fe127f874cacc03e38bc8912ba5423905a",
+    "image_size": [
+      1416,
+      768
+    ],
+    "reviewed": true,
+    "review_note": "PDF ticks, series and event arrows visually reviewed; shared x axis for Fig. 10 a/b uses panel c. PDF paths are validation only.",
+    "kind": "line",
+    "plot_bounds": [
+      184,
+      36,
+      1360,
+      592
+    ],
+    "axes": {
+      "x": {
+        "anchors": [
+          [
+            184.36,
+            275
+          ],
+          [
+            1346.924,
+            635
+          ]
+        ]
+      },
+      "y": {
+        "anchors": [
+          [
+            590.8,
+            -10
+          ],
+          [
+            36.120000000000005,
+            15
+          ]
+        ]
+      }
+    },
+    "series": [
+      {
+        "name": "Oukoop",
+        "color": "#ed1c24",
+        "parameters": {
+          "smoothness": 0.02,
+          "tolerance": 85,
+          "sigma": 45
+        }
+      },
+      {
+        "name": "Stein",
+        "color": "#2e3092",
+        "parameters": {
+          "smoothness": 0.02,
+          "tolerance": 85,
+          "sigma": 45
+        }
+      }
+    ],
+    "exclusions": [],
+    "source_doi": "10.5194/bg-4-1027-2007",
+    "figure": "Fig. 11",
+    "unit": "mol CO2 m-2"
+  },
+  "series": "Stein",
+  "mode": "line",
+  "target": "the BLUE Stein cumulative NEE curve; remove the original RED Oukoop curve, preserve only visible blue stroke geometry, including overlaps where blue remains visible",
+  "prompt_version": "visible-selection-v2",
+  "source_file": "source.png",
+  "source_sha256": "53492562103a6469f111dada1441d5fe127f874cacc03e38bc8912ba5423905a",
+  "prepared_sha256": "38e8c23e37e88553a18aa14123212044875e4e643e99bf8df0235fc8f37972cd",
+  "prompt_sha256": "09f8ada457d44b2a69f2c5edf9e28cbb1fcc38d620ed3731ea40699526c19a50",
+  "padding_offset": [
+    32,
+    32
+  ],
+  "canvas_size": [
+    1536,
+    1024
+  ]
+}
