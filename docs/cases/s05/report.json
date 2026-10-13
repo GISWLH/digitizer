@@ -67,7 +67,7 @@
       "schema_version": 1,
       "extractor": "candidate_compact_scatter_distance_peaks",
       "algorithm_version": "compact-scatter-distance-peaks-v2-residual-audit",
-      "deterministic_run_id": "3ab6877beed8b68a",
+      "deterministic_run_id": "043f9bf024ecf668",
       "software": {
         "opencv": "5.0.0",
         "numpy": "2.5.4"

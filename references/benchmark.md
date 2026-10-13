@@ -57,3 +57,9 @@ python scripts/build_showcase.py
 
 The primary benchmark is fully offline. PDF and OCR are optional. Validation
 workbooks are never imported by the engine or its recreation renderer.
+
+`benchmarks/run-environment.json` records the local software versions and code
+hashes used for this release. `requirements.lock` freezes the development
+environment; use `python -m pip install -r requirements.lock` before installing
+the repository when reproducing that environment. Platform-specific native
+wheels can differ; the accuracy gate is also run independently on Linux CI.

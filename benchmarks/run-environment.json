@@ -1,0 +1,27 @@
+{
+  "python": "3.13.14",
+  "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "packages": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "pillow": "12.3.0",
+    "opencv-python-headless": "5.0.0.93",
+    "matplotlib": "3.11.2"
+  },
+  "code_sha256": {
+    "digitizer_core/__init__.py": "c0ec0bd9c809fd9f64ab41a7801231f8c7fb0e054f6dd072bad91417b42fe547",
+    "digitizer_core/engine.py": "e66d659fbb23d9ffcdfb5db8e66225ce601890af35813c21ab5bf126985e6ecf",
+    "digitizer_core/cli.py": "1b151d31b5a78afc143e4a299854139dba3390e856aaafdd4782cb6434052a02",
+    "digitizer_core/masks.py": "1308ee3f3ff32df563d80994be0e50fb1a7d58940f423eae3b6f9576f4c07c04",
+    "digitizer_core/_thu/candidate_digitize_heatmap.py": "eb2b7fe1e15c7abd44bba29fe5892823d8be4152765d8bcd6e67cd4eb6fa31f0",
+    "digitizer_core/_thu/__init__.py": "13140b4e08e498d8e477fba021b387f800189bf4018039e96d5c6cb958ca328a",
+    "digitizer_core/_thu/legend_regions.py": "b134de30377df2932029cc96d31e22e0a4e8acc005b3909d4312340eb8ce9a5d",
+    "digitizer_core/_thu/candidate_digitize_bar_chart.py": "ed3cd105c2ce4a7963c033fd4323e99704f794cdc3aa7c73e9c044463f3acc4b",
+    "digitizer_core/_thu/candidate_digitize_scatter.py": "0135e7223581c67a880c386cb08c7f82309e3de643ffac63d22123e53db01988",
+    "digitizer_core/_thu/extraction_contract.py": "4722b51576092ab86a34dda2abf8d0de1d220b2cc14d0ad793560d385ac25805",
+    "digitizer_core/_thu/raster_digitizer_core.py": "331c119d6708dec01edbb216ea606544a03ef38a6c2466244f0a7af4418bf4b6",
+    "scripts/benchmark.py": "08dc8176087966ddfd7fe8ad812a51b6bc57af5b281fbb0bb127161df5b8ad0e",
+    "scripts/validate_paper.py": "4dd8ad1f128a6eb33296878cdda66453011dad028f7fd53642cc3481acd2d660",
+    "scripts/build_showcase.py": "3af838c3de7b5123949b4e8ce723bbc459723f0049dbafe111f8ffb00189f053"
+  }
+}
