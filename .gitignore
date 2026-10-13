@@ -9,4 +9,4 @@ build/
 runs/
 .env*
 *.pdf
-node_modules/
+node_modules
