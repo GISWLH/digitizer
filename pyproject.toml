@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "legend-digitizer"
+version = "0.1.0"
+description = "Legend-aware scientific figure digitization, built on THU Digitizer"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [{name = "GISWLH"}]
+dependencies = ["numpy>=1.26", "scipy>=1.11", "Pillow>=10", "opencv-python-headless>=4.8", "matplotlib>=3.8"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "PyYAML>=6", "openpyxl>=3.1"]
+pdf = ["PyMuPDF>=1.24"]
+ocr = ["rapidocr-onnxruntime>=1.3"]
+
+[project.scripts]
+digitizer = "digitizer_core.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["digitizer_core*"]
+
+[tool.setuptools.package-data]
+"digitizer_core._thu" = ["LICENSE", "UPSTREAM.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

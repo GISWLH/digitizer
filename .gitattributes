@@ -1,0 +1,8 @@
+* text=auto
+*.csv -text whitespace=cr-at-eol
+*.png binary
+*.jpg binary
+*.xlsx binary
+*.json text eol=lf
+*.py text eol=lf
+*.md text eol=lf

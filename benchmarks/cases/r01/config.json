@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "image": "input.png",
+  "image_sha256": "a9e7ccb755761f5d5abcd35c3488dc38abeaf324a968cd26b952914589d7272a",
+  "image_size": [
+    1024,
+    768
+  ],
+  "reviewed": true,
+  "review_note": "Original-image axes, target colour and legend/annotation regions visually checked; historical calibration retained. No reference values used by extractor.",
+  "kind": "line",
+  "plot_bounds": [
+    122,
+    26,
+    988,
+    687
+  ],
+  "axes": {
+    "x": {
+      "anchors": [
+        [
+          122,
+          -80
+        ],
+        [
+          988,
+          -40
+        ]
+      ],
+      "scale": "linear"
+    },
+    "y": {
+      "anchors": [
+        [
+          687,
+          -0.08
+        ],
+        [
+          26,
+          0.25
+        ]
+      ],
+      "scale": "linear"
+    }
+  },
+  "series": [
+    {
+      "name": "target",
+      "color": "#000000"
+    }
+  ],
+  "exclusions": [
+    {
+      "type": "rectangle",
+      "bounds": [
+        155,
+        110,
+        452,
+        427
+      ],
+      "verified": true,
+      "reason": "Visible legend/text annotation"
+    },
+    {
+      "type": "rectangle",
+      "bounds": [
+        654,
+        394,
+        832,
+        447
+      ],
+      "verified": true,
+      "reason": "Visible legend/text annotation"
+    },
+    {
+      "type": "rectangle",
+      "bounds": [
+        654,
+        582,
+        842,
+        621
+      ],
+      "verified": true,
+      "reason": "Visible legend/text annotation"
+    }
+  ]
+}

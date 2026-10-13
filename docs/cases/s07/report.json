@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "engine": "THU Digitizer + GISWLH legend-aware extensions",
+  "kind": "scatter",
+  "image_sha256": "432537cb0b6bc33f2f33d46641cb6ba29d1beb2c803f65a5d956f095ed867d81",
+  "config_sha256": "03addd59f360e69d69a0befc39e23fcd32ac18d2532c32cc8b535a16f27a657d",
+  "csv_sha256": "12e8e7fa00914335fc5f86bdab754c68f71f2b39f7cad7d12877e4b26a6beab1",
+  "rows": 30,
+  "numeric_rows": 30,
+  "excluded_pixels": 0,
+  "ablation_ignore_exclusions": false,
+  "config": {
+    "schema_version": 1,
+    "image": "input.png",
+    "image_sha256": "432537cb0b6bc33f2f33d46641cb6ba29d1beb2c803f65a5d956f095ed867d81",
+    "image_size": [
+      1024,
+      768
+    ],
+    "reviewed": true,
+    "review_note": "Original-image axes, target colour and legend/annotation regions visually checked; historical calibration retained. No reference values used by extractor.",
+    "kind": "scatter",
+    "plot_bounds": [
+      123,
+      77,
+      963,
+      660
+    ],
+    "axes": {
+      "x": {
+        "anchors": [
+          [
+            123,
+            0
+          ],
+          [
+            963,
+            120
+          ]
+        ],
+        "scale": "linear"
+      },
+      "y": {
+        "anchors": [
+          [
+            660,
+            0
+          ],
+          [
+            77,
+            100
+          ]
+        ],
+        "scale": "linear"
+      }
+    },
+    "series": [
+      {
+        "name": "target",
+        "color": "#2468b4",
+        "marker": "hollow"
+      }
+    ],
+    "exclusions": []
+  },
+  "details": {
+    "target": {
+      "route": "visible_ring_interiors",
+      "status": "candidate",
+      "count": 30
+    }
+  },
+  "note": "Pixel uncertainty is an estimate, not measured accuracy. Compare separate reference data for accuracy."
+}

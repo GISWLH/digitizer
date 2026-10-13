@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "image": "input.png",
+  "image_sha256": "c5fec596dfd401829b507198205993c40409fccfc4113101e8ff2ad47c830f2c",
+  "image_size": [
+    1024,
+    768
+  ],
+  "reviewed": true,
+  "review_note": "Original-image axes, target colour and legend/annotation regions visually checked; historical calibration retained. No reference values used by extractor.",
+  "kind": "line",
+  "plot_bounds": [
+    123,
+    77,
+    963,
+    660
+  ],
+  "axes": {
+    "x": {
+      "anchors": [
+        [
+          123,
+          0
+        ],
+        [
+          963,
+          120
+        ]
+      ],
+      "scale": "linear"
+    },
+    "y": {
+      "anchors": [
+        [
+          660,
+          0
+        ],
+        [
+          77,
+          100
+        ]
+      ],
+      "scale": "linear"
+    }
+  },
+  "series": [
+    {
+      "name": "target",
+      "color": "#2468b4"
+    }
+  ],
+  "exclusions": []
+}

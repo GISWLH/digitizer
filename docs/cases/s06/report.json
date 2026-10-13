@@ -1,0 +1,2327 @@
+{
+  "schema_version": 1,
+  "engine": "THU Digitizer + GISWLH legend-aware extensions",
+  "kind": "scatter",
+  "image_sha256": "2a251b4b7e2a73a11609695ef85f7d99598219946c2ab07bcfb87b8dfd456085",
+  "config_sha256": "bfe00755cef87ed5139da2bd17b08699acb16d1d593e3b0e2891309e9132cace",
+  "csv_sha256": "196ebd4c4e264e9d2950a6e45decb7ac3eb6082285e3b1163aedbcd86d5817d7",
+  "rows": 83,
+  "numeric_rows": 83,
+  "excluded_pixels": 0,
+  "ablation_ignore_exclusions": false,
+  "config": {
+    "schema_version": 1,
+    "image": "input.png",
+    "image_sha256": "2a251b4b7e2a73a11609695ef85f7d99598219946c2ab07bcfb87b8dfd456085",
+    "image_size": [
+      1024,
+      768
+    ],
+    "reviewed": true,
+    "review_note": "Original-image axes, target colour and legend/annotation regions visually checked; historical calibration retained. No reference values used by extractor.",
+    "kind": "scatter",
+    "plot_bounds": [
+      123,
+      77,
+      963,
+      660
+    ],
+    "axes": {
+      "x": {
+        "anchors": [
+          [
+            123,
+            0
+          ],
+          [
+            963,
+            120
+          ]
+        ],
+        "scale": "linear"
+      },
+      "y": {
+        "anchors": [
+          [
+            660,
+            0
+          ],
+          [
+            77,
+            100
+          ]
+        ],
+        "scale": "linear"
+      }
+    },
+    "series": [
+      {
+        "name": "target",
+        "color": "#2468b4"
+      }
+    ],
+    "exclusions": []
+  },
+  "details": {
+    "target": {
+      "schema_version": 1,
+      "extractor": "candidate_compact_scatter_distance_peaks",
+      "algorithm_version": "compact-scatter-distance-peaks-v2-residual-audit",
+      "deterministic_run_id": "344a84391fa846eb",
+      "software": {
+        "opencv": "5.0.0",
+        "numpy": "2.5.4"
+      },
+      "status": "candidate",
+      "numeric_output_authorized": true,
+      "reason": "all configured candidate gates passed",
+      "input": {
+        "file": "benchmarks/cases/s06/input.png",
+        "sha256": "2a251b4b7e2a73a11609695ef85f7d99598219946c2ab07bcfb87b8dfd456085",
+        "dimensions": [
+          1024,
+          768
+        ]
+      },
+      "plot_bounds": [
+        123,
+        77,
+        963,
+        660
+      ],
+      "calibration": {
+        "x": {
+          "scale": "linear",
+          "anchors": [
+            {
+              "pixel": 123.0,
+              "value": 0.0
+            },
+            {
+              "pixel": 963.0,
+              "value": 120.0
+            }
+          ],
+          "pixel_slope": 0.1428571428571429,
+          "transformed_intercept": -17.571428571428598,
+          "residuals_pixels": [
+            1.49213974509621e-13,
+            -9.947598300641399e-14
+          ],
+          "rmse_transformed": 1.8115356374411762e-14,
+          "max_abs_residual_transformed": 2.1316282072803006e-14,
+          "pixel_uncertainty": 0.5,
+          "fit": "robust_huber_affine_in_transformed_value_space"
+        },
+        "y": {
+          "scale": "linear",
+          "anchors": [
+            {
+              "pixel": 660.0,
+              "value": 0.0
+            },
+            {
+              "pixel": 77.0,
+              "value": 100.0
+            }
+          ],
+          "pixel_slope": -0.17152658662092626,
+          "transformed_intercept": 113.20754716981132,
+          "residuals_pixels": [
+            -8.284928298962767e-14,
+            -0.0
+          ],
+          "rmse_transformed": 1.0048591735576161e-14,
+          "max_abs_residual_transformed": 1.4210854715202004e-14,
+          "pixel_uncertainty": 0.5,
+          "fit": "robust_huber_affine_in_transformed_value_space"
+        }
+      },
+      "detection": {
+        "marker_mode": "color",
+        "marker_color": [
+          36,
+          104,
+          180
+        ],
+        "color_tolerance": 36.0,
+        "dark_threshold": 120,
+        "light_threshold": 225,
+        "min_radius": 2.8,
+        "max_radius": 18.0,
+        "radius_consistency_ratio": 0.72,
+        "radius_reference_pixels": 5.0,
+        "radius_cutoff_pixels": 3.5999999999999996,
+        "peak_window": 5,
+        "edge_margin": 3,
+        "exclude_regions": [],
+        "foreground_pixels": 7247,
+        "raw_peak_count": 84,
+        "accepted_peak_count": 83,
+        "suppressed_peak_count": 1
+      },
+      "points": [
+        {
+          "point_id": 1,
+          "pixel_x": 181.0,
+          "pixel_y": 596.5,
+          "x": 8.28571429,
+          "y": 10.89193825,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 64,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 2,
+          "pixel_x": 184.5,
+          "pixel_y": 423.0,
+          "x": 8.78571429,
+          "y": 40.65180103,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 47,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 3,
+          "pixel_x": 204.0,
+          "pixel_y": 478.0,
+          "x": 11.57142857,
+          "y": 31.21783877,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 5.0,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9571,
+          "component_id": 59,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 4,
+          "pixel_x": 215.0,
+          "pixel_y": 338.5,
+          "x": 13.14285714,
+          "y": 55.1457976,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 21,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 5,
+          "pixel_x": 218.0,
+          "pixel_y": 459.0,
+          "x": 13.57142857,
+          "y": 34.47684391,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 57,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 6,
+          "pixel_x": 271.0,
+          "pixel_y": 431.5,
+          "x": 21.14285714,
+          "y": 39.19382504,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 52,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 7,
+          "pixel_x": 333.5,
+          "pixel_y": 500.0,
+          "x": 30.07142857,
+          "y": 27.44425386,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 60,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 8,
+          "pixel_x": 349.0,
+          "pixel_y": 267.0,
+          "x": 32.28571429,
+          "y": 67.40994854,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 9,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 9,
+          "pixel_x": 367.0,
+          "pixel_y": 458.0,
+          "x": 34.85714286,
+          "y": 34.6483705,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 5.3938,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9853,
+          "component_id": 56,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 10,
+          "pixel_x": 437.5,
+          "pixel_y": 374.0,
+          "x": 44.92857143,
+          "y": 49.05660377,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 33,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 11,
+          "pixel_x": 452.0,
+          "pixel_y": 360.5,
+          "x": 47.0,
+          "y": 51.37221269,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 30,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 12,
+          "pixel_x": 462.0,
+          "pixel_y": 572.5,
+          "x": 48.42857143,
+          "y": 15.00857633,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 62,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 13,
+          "pixel_x": 470.5,
+          "pixel_y": 345.0,
+          "x": 49.64285714,
+          "y": 54.03087479,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 23,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 14,
+          "pixel_x": 476.0,
+          "pixel_y": 293.5,
+          "x": 50.42857143,
+          "y": 62.864494,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 12,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 15,
+          "pixel_x": 479.0,
+          "pixel_y": 384.0,
+          "x": 50.85714286,
+          "y": 47.34133791,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 5.0,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9571,
+          "component_id": 35,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 2,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 16,
+          "pixel_x": 481.0,
+          "pixel_y": 423.5,
+          "x": 51.14285714,
+          "y": 40.56603774,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 48,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 17,
+          "pixel_x": 482.0,
+          "pixel_y": 345.5,
+          "x": 51.28571429,
+          "y": 53.94511149,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 24,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 18,
+          "pixel_x": 483.5,
+          "pixel_y": 586.0,
+          "x": 51.5,
+          "y": 12.69296741,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 63,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 19,
+          "pixel_x": 484.5,
+          "pixel_y": 375.0,
+          "x": 51.64285714,
+          "y": 48.88507719,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 35,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 2,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 20,
+          "pixel_x": 485.5,
+          "pixel_y": 394.0,
+          "x": 51.78571429,
+          "y": 45.62607204,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 38,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 3,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 21,
+          "pixel_x": 489.0,
+          "pixel_y": 308.5,
+          "x": 52.28571429,
+          "y": 60.2915952,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 14,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 22,
+          "pixel_x": 491.0,
+          "pixel_y": 235.5,
+          "x": 52.57142857,
+          "y": 72.81303602,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 6,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 23,
+          "pixel_x": 493.0,
+          "pixel_y": 353.0,
+          "x": 52.85714286,
+          "y": 52.65866209,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 5.0,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9571,
+          "component_id": 26,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 2,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 24,
+          "pixel_x": 494.0,
+          "pixel_y": 391.0,
+          "x": 53.0,
+          "y": 46.1406518,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 5.1969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9712,
+          "component_id": 38,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 3,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 25,
+          "pixel_x": 496.3333,
+          "pixel_y": 382.3333,
+          "x": 53.33333333,
+          "y": 47.62721555,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 38,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 3,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 26,
+          "pixel_x": 499.0,
+          "pixel_y": 352.0,
+          "x": 53.71428571,
+          "y": 52.83018868,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 5.0,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9571,
+          "component_id": 26,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 2,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 27,
+          "pixel_x": 501.0,
+          "pixel_y": 425.5,
+          "x": 54.0,
+          "y": 40.22298456,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 51,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 28,
+          "pixel_x": 502.0,
+          "pixel_y": 506.0,
+          "x": 54.14285714,
+          "y": 26.41509434,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 61,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 29,
+          "pixel_x": 510.0,
+          "pixel_y": 383.0,
+          "x": 55.28571429,
+          "y": 47.51286449,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 5.1969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9712,
+          "component_id": 41,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 2,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 30,
+          "pixel_x": 510.5,
+          "pixel_y": 358.0,
+          "x": 55.35714286,
+          "y": 51.80102916,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 29,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 31,
+          "pixel_x": 512.0,
+          "pixel_y": 390.0,
+          "x": 55.57142857,
+          "y": 46.31217839,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 5.1969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9712,
+          "component_id": 41,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 2,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 32,
+          "pixel_x": 519.0,
+          "pixel_y": 424.0,
+          "x": 56.57142857,
+          "y": 40.48027444,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 5.1969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9712,
+          "component_id": 49,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 33,
+          "pixel_x": 521.5,
+          "pixel_y": 381.0,
+          "x": 56.92857143,
+          "y": 47.85591767,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 39,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 3,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 34,
+          "pixel_x": 522.0,
+          "pixel_y": 325.5,
+          "x": 57.0,
+          "y": 57.37564322,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 19,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 35,
+          "pixel_x": 526.0,
+          "pixel_y": 410.5,
+          "x": 57.57142857,
+          "y": 42.79588336,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 45,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 3,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 36,
+          "pixel_x": 527.0,
+          "pixel_y": 391.0,
+          "x": 57.71428571,
+          "y": 46.1406518,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 5.6,
+          "core_foreground_fraction": 1.0,
+          "confidence": 1.0,
+          "component_id": 39,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 3,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 37,
+          "pixel_x": 530.0,
+          "pixel_y": 418.0,
+          "x": 58.14285714,
+          "y": 41.50943396,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 5.3938,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9853,
+          "component_id": 45,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 3,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 38,
+          "pixel_x": 531.0,
+          "pixel_y": 369.0,
+          "x": 58.28571429,
+          "y": 49.91423671,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 5.0,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9571,
+          "component_id": 31,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 39,
+          "pixel_x": 533.0,
+          "pixel_y": 356.0,
+          "x": 58.57142857,
+          "y": 52.14408233,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 5.1969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9712,
+          "component_id": 27,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 3,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 40,
+          "pixel_x": 534.0,
+          "pixel_y": 406.0,
+          "x": 58.71428571,
+          "y": 43.567753,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 5.3938,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9853,
+          "component_id": 45,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 3,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 41,
+          "pixel_x": 534.5,
+          "pixel_y": 394.0,
+          "x": 58.78571429,
+          "y": 45.62607204,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 39,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 3,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 42,
+          "pixel_x": 539.5,
+          "pixel_y": 382.0,
+          "x": 59.5,
+          "y": 47.68439108,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 40,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 43,
+          "pixel_x": 542.0,
+          "pixel_y": 356.0,
+          "x": 59.85714286,
+          "y": 52.14408233,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 6.3969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 1.0,
+          "component_id": 27,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 3,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 44,
+          "pixel_x": 545.5,
+          "pixel_y": 340.5,
+          "x": 60.35714286,
+          "y": 54.80274443,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 22,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 45,
+          "pixel_x": 549.0,
+          "pixel_y": 355.0,
+          "x": 60.85714286,
+          "y": 52.31560892,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 5.0,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9571,
+          "component_id": 27,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 3,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 46,
+          "pixel_x": 549.0,
+          "pixel_y": 410.0,
+          "x": 60.85714286,
+          "y": 42.88164666,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 46,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 47,
+          "pixel_x": 550.5,
+          "pixel_y": 454.0,
+          "x": 61.07142857,
+          "y": 35.33447684,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 55,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 48,
+          "pixel_x": 551.0,
+          "pixel_y": 382.5,
+          "x": 61.14285714,
+          "y": 47.59862779,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 42,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 49,
+          "pixel_x": 553.6667,
+          "pixel_y": 312.6667,
+          "x": 61.52380952,
+          "y": 59.57690109,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 13,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 2,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 50,
+          "pixel_x": 556.5,
+          "pixel_y": 369.0,
+          "x": 61.92857143,
+          "y": 49.91423671,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 32,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 51,
+          "pixel_x": 557.5,
+          "pixel_y": 398.0,
+          "x": 62.07142857,
+          "y": 44.93996569,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 44,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 52,
+          "pixel_x": 557.5,
+          "pixel_y": 436.0,
+          "x": 62.07142857,
+          "y": 38.4219554,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 53,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 53,
+          "pixel_x": 559.0,
+          "pixel_y": 306.5,
+          "x": 62.28571429,
+          "y": 60.63464837,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 13,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 2,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 54,
+          "pixel_x": 564.3333,
+          "pixel_y": 319.3333,
+          "x": 63.04761905,
+          "y": 58.43339051,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 15,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 3,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 55,
+          "pixel_x": 566.0,
+          "pixel_y": 287.0,
+          "x": 63.28571429,
+          "y": 63.97941681,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 5.1969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9712,
+          "component_id": 11,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 56,
+          "pixel_x": 568.0,
+          "pixel_y": 339.0,
+          "x": 63.57142857,
+          "y": 55.06003431,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 5.6,
+          "core_foreground_fraction": 1.0,
+          "confidence": 1.0,
+          "component_id": 20,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 3,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 57,
+          "pixel_x": 569.0,
+          "pixel_y": 372.5,
+          "x": 63.71428571,
+          "y": 49.31389365,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 34,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 58,
+          "pixel_x": 570.0,
+          "pixel_y": 315.25,
+          "x": 63.85714286,
+          "y": 59.13379074,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 15,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 3,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 59,
+          "pixel_x": 574.0,
+          "pixel_y": 311.0,
+          "x": 64.42857143,
+          "y": 59.86277873,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 5.3938,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9853,
+          "component_id": 15,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 3,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 60,
+          "pixel_x": 574.0,
+          "pixel_y": 445.0,
+          "x": 64.42857143,
+          "y": 36.87821612,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 5.6,
+          "core_foreground_fraction": 1.0,
+          "confidence": 1.0,
+          "component_id": 54,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 61,
+          "pixel_x": 575.5,
+          "pixel_y": 334.0,
+          "x": 64.64285714,
+          "y": 55.91766724,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 5.0,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9571,
+          "component_id": 20,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 3,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 62,
+          "pixel_x": 578.0,
+          "pixel_y": 356.0,
+          "x": 65.0,
+          "y": 52.14408233,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 5.3938,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9853,
+          "component_id": 28,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 2,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 63,
+          "pixel_x": 582.0,
+          "pixel_y": 338.5,
+          "x": 65.57142857,
+          "y": 55.1457976,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 20,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 3,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 64,
+          "pixel_x": 586.0,
+          "pixel_y": 389.0,
+          "x": 66.14285714,
+          "y": 46.48370497,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 43,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 65,
+          "pixel_x": 590.0,
+          "pixel_y": 352.0,
+          "x": 66.71428571,
+          "y": 52.83018868,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 5.1969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9712,
+          "component_id": 28,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 2,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 66,
+          "pixel_x": 596.0,
+          "pixel_y": 313.5,
+          "x": 67.57142857,
+          "y": 59.43396226,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 16,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 2,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 67,
+          "pixel_x": 604.0,
+          "pixel_y": 317.0,
+          "x": 68.71428571,
+          "y": 58.83361921,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 5.0,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9571,
+          "component_id": 16,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 2,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 68,
+          "pixel_x": 614.0,
+          "pixel_y": 375.0,
+          "x": 70.14285714,
+          "y": 48.88507719,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 5.0,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9571,
+          "component_id": 36,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 69,
+          "pixel_x": 618.0,
+          "pixel_y": 345.5,
+          "x": 70.71428571,
+          "y": 53.94511149,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 25,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 70,
+          "pixel_x": 623.5,
+          "pixel_y": 145.0,
+          "x": 71.5,
+          "y": 88.33619211,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 1,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 71,
+          "pixel_x": 626.0,
+          "pixel_y": 324.0,
+          "x": 71.85714286,
+          "y": 57.6329331,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 5.3938,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9853,
+          "component_id": 18,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 72,
+          "pixel_x": 629.5,
+          "pixel_y": 268.0,
+          "x": 72.35714286,
+          "y": 67.23842196,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 10,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 73,
+          "pixel_x": 669.5,
+          "pixel_y": 244.0,
+          "x": 78.07142857,
+          "y": 71.35506003,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 8,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 74,
+          "pixel_x": 678.0,
+          "pixel_y": 317.0,
+          "x": 79.28571429,
+          "y": 58.83361921,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 5.1969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9712,
+          "component_id": 17,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 75,
+          "pixel_x": 696.0,
+          "pixel_y": 596.5,
+          "x": 81.85714286,
+          "y": 10.89193825,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 65,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 76,
+          "pixel_x": 730.0,
+          "pixel_y": 169.0,
+          "x": 86.71428571,
+          "y": 84.21955403,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 5.0,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9571,
+          "component_id": 3,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 77,
+          "pixel_x": 744.5,
+          "pixel_y": 170.0,
+          "x": 88.78571429,
+          "y": 84.04802744,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 4,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 78,
+          "pixel_x": 745.0,
+          "pixel_y": 471.5,
+          "x": 88.85714286,
+          "y": 32.33276158,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 58,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 79,
+          "pixel_x": 787.6667,
+          "pixel_y": 423.6667,
+          "x": 94.95238095,
+          "y": 40.53744997,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 50,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 80,
+          "pixel_x": 830.5,
+          "pixel_y": 236.0,
+          "x": 101.07142857,
+          "y": 72.72727273,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 7,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 81,
+          "pixel_x": 861.0,
+          "pixel_y": 379.5,
+          "x": 105.42857143,
+          "y": 48.11320755,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 37,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 82,
+          "pixel_x": 898.5,
+          "pixel_y": 159.0,
+          "x": 110.78571429,
+          "y": 85.9348199,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 2,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 83,
+          "pixel_x": 906.0,
+          "pixel_y": 206.5,
+          "x": 111.85714286,
+          "y": 77.78730703,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 5,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        }
+      ],
+      "components": [
+        {
+          "component_id": 1,
+          "bounds": [
+            619,
+            140,
+            628,
+            150
+          ],
+          "area_pixels": 84,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 2,
+          "bounds": [
+            894,
+            154,
+            903,
+            163
+          ],
+          "area_pixels": 85,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 3,
+          "bounds": [
+            725,
+            165,
+            735,
+            174
+          ],
+          "area_pixels": 88,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 4,
+          "bounds": [
+            740,
+            165,
+            749,
+            175
+          ],
+          "area_pixels": 86,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 5,
+          "bounds": [
+            901,
+            202,
+            911,
+            211
+          ],
+          "area_pixels": 86,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 6,
+          "bounds": [
+            486,
+            231,
+            496,
+            240
+          ],
+          "area_pixels": 85,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 7,
+          "bounds": [
+            826,
+            232,
+            835,
+            241
+          ],
+          "area_pixels": 85,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 8,
+          "bounds": [
+            665,
+            239,
+            674,
+            248
+          ],
+          "area_pixels": 84,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 9,
+          "bounds": [
+            344,
+            263,
+            354,
+            272
+          ],
+          "area_pixels": 84,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 10,
+          "bounds": [
+            625,
+            264,
+            634,
+            273
+          ],
+          "area_pixels": 85,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 11,
+          "bounds": [
+            561,
+            282,
+            571,
+            292
+          ],
+          "area_pixels": 87,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 12,
+          "bounds": [
+            471,
+            289,
+            480,
+            298
+          ],
+          "area_pixels": 85,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 13,
+          "bounds": [
+            549,
+            302,
+            564,
+            317
+          ],
+          "area_pixels": 160,
+          "peak_count": 2,
+          "split_status": "distance_transform_split"
+        },
+        {
+          "component_id": 14,
+          "bounds": [
+            484,
+            304,
+            493,
+            313
+          ],
+          "area_pixels": 84,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 15,
+          "bounds": [
+            560,
+            306,
+            579,
+            324
+          ],
+          "area_pixels": 215,
+          "peak_count": 3,
+          "split_status": "distance_transform_split"
+        },
+        {
+          "component_id": 16,
+          "bounds": [
+            591,
+            309,
+            608,
+            322
+          ],
+          "area_pixels": 167,
+          "peak_count": 2,
+          "split_status": "distance_transform_split"
+        },
+        {
+          "component_id": 17,
+          "bounds": [
+            673,
+            312,
+            683,
+            322
+          ],
+          "area_pixels": 88,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 18,
+          "bounds": [
+            621,
+            319,
+            631,
+            329
+          ],
+          "area_pixels": 89,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 19,
+          "bounds": [
+            518,
+            321,
+            527,
+            330
+          ],
+          "area_pixels": 85,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 20,
+          "bounds": [
+            561,
+            329,
+            587,
+            347
+          ],
+          "area_pixels": 315,
+          "peak_count": 3,
+          "split_status": "distance_transform_split"
+        },
+        {
+          "component_id": 21,
+          "bounds": [
+            211,
+            334,
+            220,
+            343
+          ],
+          "area_pixels": 85,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 22,
+          "bounds": [
+            541,
+            336,
+            550,
+            345
+          ],
+          "area_pixels": 88,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 23,
+          "bounds": [
+            466,
+            341,
+            475,
+            350
+          ],
+          "area_pixels": 85,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 24,
+          "bounds": [
+            477,
+            341,
+            487,
+            350
+          ],
+          "area_pixels": 84,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 25,
+          "bounds": [
+            613,
+            341,
+            623,
+            350
+          ],
+          "area_pixels": 85,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 26,
+          "bounds": [
+            488,
+            347,
+            504,
+            358
+          ],
+          "area_pixels": 151,
+          "peak_count": 2,
+          "split_status": "distance_transform_split"
+        },
+        {
+          "component_id": 27,
+          "bounds": [
+            528,
+            347,
+            555,
+            366
+          ],
+          "area_pixels": 335,
+          "peak_count": 3,
+          "split_status": "distance_transform_split"
+        },
+        {
+          "component_id": 28,
+          "bounds": [
+            573,
+            347,
+            595,
+            362
+          ],
+          "area_pixels": 216,
+          "peak_count": 2,
+          "split_status": "distance_transform_split"
+        },
+        {
+          "component_id": 29,
+          "bounds": [
+            506,
+            353,
+            515,
+            362
+          ],
+          "area_pixels": 85,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 30,
+          "bounds": [
+            447,
+            356,
+            457,
+            365
+          ],
+          "area_pixels": 85,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 31,
+          "bounds": [
+            526,
+            364,
+            536,
+            373
+          ],
+          "area_pixels": 88,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 32,
+          "bounds": [
+            552,
+            364,
+            561,
+            374
+          ],
+          "area_pixels": 84,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 33,
+          "bounds": [
+            433,
+            369,
+            442,
+            379
+          ],
+          "area_pixels": 86,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 34,
+          "bounds": [
+            564,
+            368,
+            573,
+            377
+          ],
+          "area_pixels": 86,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 35,
+          "bounds": [
+            474,
+            370,
+            489,
+            389
+          ],
+          "area_pixels": 173,
+          "peak_count": 2,
+          "split_status": "distance_transform_split"
+        },
+        {
+          "component_id": 36,
+          "bounds": [
+            609,
+            370,
+            618,
+            380
+          ],
+          "area_pixels": 88,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 37,
+          "bounds": [
+            856,
+            375,
+            866,
+            384
+          ],
+          "area_pixels": 83,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 38,
+          "bounds": [
+            481,
+            377,
+            501,
+            399
+          ],
+          "area_pixels": 247,
+          "peak_count": 3,
+          "split_status": "distance_transform_split"
+        },
+        {
+          "component_id": 39,
+          "bounds": [
+            517,
+            376,
+            539,
+            399
+          ],
+          "area_pixels": 266,
+          "peak_count": 3,
+          "split_status": "distance_transform_split"
+        },
+        {
+          "component_id": 40,
+          "bounds": [
+            535,
+            377,
+            544,
+            386
+          ],
+          "area_pixels": 85,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 41,
+          "bounds": [
+            505,
+            378,
+            519,
+            399
+          ],
+          "area_pixels": 207,
+          "peak_count": 2,
+          "split_status": "distance_transform_split"
+        },
+        {
+          "component_id": 42,
+          "bounds": [
+            546,
+            378,
+            556,
+            387
+          ],
+          "area_pixels": 85,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 43,
+          "bounds": [
+            581,
+            385,
+            590,
+            394
+          ],
+          "area_pixels": 83,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 44,
+          "bounds": [
+            553,
+            394,
+            562,
+            403
+          ],
+          "area_pixels": 84,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 45,
+          "bounds": [
+            521,
+            401,
+            539,
+            423
+          ],
+          "area_pixels": 251,
+          "peak_count": 3,
+          "split_status": "distance_transform_split"
+        },
+        {
+          "component_id": 46,
+          "bounds": [
+            545,
+            406,
+            554,
+            415
+          ],
+          "area_pixels": 83,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 47,
+          "bounds": [
+            180,
+            418,
+            189,
+            428
+          ],
+          "area_pixels": 84,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 48,
+          "bounds": [
+            477,
+            419,
+            486,
+            428
+          ],
+          "area_pixels": 85,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 49,
+          "bounds": [
+            514,
+            419,
+            524,
+            429
+          ],
+          "area_pixels": 88,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 50,
+          "bounds": [
+            783,
+            419,
+            792,
+            428
+          ],
+          "area_pixels": 87,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 51,
+          "bounds": [
+            496,
+            421,
+            505,
+            430
+          ],
+          "area_pixels": 85,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 52,
+          "bounds": [
+            266,
+            427,
+            276,
+            436
+          ],
+          "area_pixels": 86,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 53,
+          "bounds": [
+            553,
+            431,
+            562,
+            441
+          ],
+          "area_pixels": 86,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 54,
+          "bounds": [
+            569,
+            440,
+            579,
+            450
+          ],
+          "area_pixels": 101,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 55,
+          "bounds": [
+            546,
+            449,
+            555,
+            459
+          ],
+          "area_pixels": 85,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 56,
+          "bounds": [
+            362,
+            453,
+            372,
+            463
+          ],
+          "area_pixels": 89,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 57,
+          "bounds": [
+            213,
+            454,
+            222,
+            464
+          ],
+          "area_pixels": 84,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 58,
+          "bounds": [
+            740,
+            467,
+            749,
+            476
+          ],
+          "area_pixels": 85,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 59,
+          "bounds": [
+            199,
+            473,
+            208,
+            483
+          ],
+          "area_pixels": 88,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 60,
+          "bounds": [
+            329,
+            495,
+            338,
+            505
+          ],
+          "area_pixels": 84,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 61,
+          "bounds": [
+            497,
+            501,
+            506,
+            510
+          ],
+          "area_pixels": 84,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 62,
+          "bounds": [
+            457,
+            568,
+            467,
+            577
+          ],
+          "area_pixels": 85,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 63,
+          "bounds": [
+            479,
+            581,
+            488,
+            591
+          ],
+          "area_pixels": 86,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 64,
+          "bounds": [
+            177,
+            592,
+            186,
+            601
+          ],
+          "area_pixels": 85,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 65,
+          "bounds": [
+            692,
+            592,
+            701,
+            601
+          ],
+          "area_pixels": 85,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        }
+      ],
+      "suppressed_peaks": [
+        {
+          "x": 513.0,
+          "y": 393.0,
+          "radius": 5.1968994140625,
+          "plateau_pixels": 1.0,
+          "reason": "peak_too_close_to_stronger_peak",
+          "selected_peak": {
+            "x": 512.0,
+            "y": 390.0
+          },
+          "separation_pixels": 3.1622776601683795,
+          "required_separation_pixels": 4.3653955078125
+        }
+      ],
+      "residual_audit": {
+        "strategy": "relaxed_negative_space_peak_pass",
+        "role": "authorization_gate_only_never_adds_points",
+        "threshold_delta": 24,
+        "color_tolerance_ratio": 1.35,
+        "radius_ratio_range": [
+          0.72,
+          1.45
+        ],
+        "core_fraction_min": 0.7,
+        "relaxed_raw_peak_count": 85,
+        "residual_candidate_count": 0,
+        "status": "clear",
+        "candidates": []
+      },
+      "validation": {
+        "role": "validation only; the annotation is never used to add, remove, or move points",
+        "annotated_pearson_r": null,
+        "pearson_tolerance": 0.03,
+        "recomputed_pearson_r": 0.4693497028194028,
+        "absolute_difference": null,
+        "status": "computed_without_annotation"
+      },
+      "required_review": [
+        "Open the overlay at original resolution and verify every accepted ring is centred on a visible marker.",
+        "Review every multi-peak component and every suppressed peak before publishing numeric output.",
+        "The residual audit must be clear; residual candidates must be resolved by verified exclusions or configuration, never promoted by eye."
+      ],
+      "limitations": [
+        "This candidate recovers compact filled visible marker centres only.",
+        "Perfectly coincident, fully occluded, hollow, or non-compact markers are not recovered by this route.",
+        "A supplied correlation annotation validates the result but never changes detected geometry.",
+        "Axes, curves, text, and legends that are as thick and compact as markers may require a verified exclusion region."
+      ]
+    }
+  },
+  "note": "Pixel uncertainty is an estimate, not measured accuracy. Compare separate reference data for accuracy."
+}

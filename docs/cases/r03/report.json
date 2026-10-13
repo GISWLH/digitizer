@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "engine": "THU Digitizer + GISWLH legend-aware extensions",
+  "kind": "scatter",
+  "image_sha256": "36ec70c103cfdff59dc5c2f3e01dbbfc5f94c8bdd08dc9009fbc1058f2fa7b8d",
+  "config_sha256": "21c1b17912a4adf6cbe02c5ddbffdbbfe0bd7b461af7bbd978ec110f236d1226",
+  "csv_sha256": "80bb1b124c20ec08e52e1ab6e70e0406aa28d1ae697f697ae42a32968fcc5dc2",
+  "rows": 15,
+  "numeric_rows": 15,
+  "excluded_pixels": 62488,
+  "ablation_ignore_exclusions": false,
+  "config": {
+    "schema_version": 1,
+    "image": "input.png",
+    "image_sha256": "36ec70c103cfdff59dc5c2f3e01dbbfc5f94c8bdd08dc9009fbc1058f2fa7b8d",
+    "image_size": [
+      1024,
+      768
+    ],
+    "reviewed": true,
+    "review_note": "Original-image axes, target colour and legend/annotation regions visually checked; historical calibration retained. No reference values used by extractor. White-outlined compact markers are visually separable from long same-colour curve components; partial cores retain uncertainty.",
+    "kind": "scatter",
+    "plot_bounds": [
+      124,
+      101,
+      988,
+      667
+    ],
+    "axes": {
+      "x": {
+        "anchors": [
+          [
+            124,
+            1
+          ],
+          [
+            988,
+            16
+          ]
+        ],
+        "scale": "linear"
+      },
+      "y": {
+        "anchors": [
+          [
+            667,
+            0.25
+          ],
+          [
+            101,
+            0.85
+          ]
+        ],
+        "scale": "linear"
+      }
+    },
+    "series": [
+      {
+        "name": "target",
+        "color": "#345D82",
+        "parameters": {
+          "min_diameter": 4,
+          "max_diameter": 12,
+          "color_tolerance": 24
+        },
+        "marker": "isolated"
+      }
+    ],
+    "exclusions": [
+      {
+        "type": "rectangle",
+        "bounds": [
+          130,
+          112,
+          985,
+          184
+        ],
+        "verified": true,
+        "reason": "Visible legend/text annotation"
+      }
+    ]
+  },
+  "details": {
+    "target": {
+      "route": "isolated_compact_cores",
+      "status": "candidate",
+      "count": 15,
+      "limitations": "Fused or fully occluded cores are not recoverable. Partial cores have increased uncertainty."
+    }
+  },
+  "note": "Pixel uncertainty is an estimate, not measured accuracy. Compare separate reference data for accuracy."
+}

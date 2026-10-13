@@ -1,0 +1,27 @@
+{
+  "id": "s03",
+  "title": "阶梯线与遮挡",
+  "reference_kind": "synthetic_ground_truth",
+  "metric": "Within 1% of y-axis range (missing = miss)",
+  "accuracy_pct": 97.16981132075472,
+  "coverage_pct": 97.16981132075472,
+  "nmae_pct": 0.054061405407805616,
+  "expected": 318,
+  "matched": 309,
+  "extracted": 309,
+  "hidden_values": 0,
+  "input_sha256": "c5fec596dfd401829b507198205993c40409fccfc4113101e8ff2ad47c830f2c",
+  "config_sha256": "72c3ea5408f964b272a73d26d04d3eccbe86dbd68bfa95ee0a98b43fd94cb142",
+  "csv_sha256": "c77d10d3d9ffda75de3cd8f7712a01eb15e3ff03cca9d04e6e34d71571aa5ae2",
+  "truth_sha256": "c04c02210ab45e87331354cea83cb524f2518cec7d3ee53c383f31433358a9f7",
+  "unmasked": {
+    "metric": "Within 1% of y-axis range (missing = miss)",
+    "accuracy_pct": 97.16981132075472,
+    "coverage_pct": 97.16981132075472,
+    "nmae_pct": 0.054061405407805616,
+    "expected": 318,
+    "matched": 309,
+    "extracted": 309,
+    "hidden_values": 0
+  }
+}

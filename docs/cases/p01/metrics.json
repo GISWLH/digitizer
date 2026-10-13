@@ -1,0 +1,23 @@
+{
+  "id": "p01",
+  "title": "Nature Medicine · proteomics heatmap",
+  "reference_kind": "author_source_workbook_rounded_2dp",
+  "metric": "Within 1% palette range + reference rounding interval",
+  "accuracy_pct": 98.78892733564014,
+  "raw_within_1pct_range_pct": 84.60207612456747,
+  "reference_rounding_half_width": 0.005,
+  "palette_tolerance": 0.006,
+  "numeric_cells": 578,
+  "expected": 578,
+  "extracted": 578,
+  "endpoint_censored_cells": 94,
+  "endpoint_interval_consistent": 94,
+  "mae": 0.003288145233919511,
+  "input_sha256": "76e70242a6c2f9c5fbea0167d21191a8daf566d2328adfbb72c40420166bbbac",
+  "config_sha256": "58c97b148e94d193e997ba47ed453710ed33aa76f4e6ce58f958b632d73f1319",
+  "csv_sha256": "d5e48a34fdab946d7c9a0641258be06ceba6e6ce1d0fd9c33cb9d5c227aa2d54",
+  "truth_sha256": "8e4d81ba6e62dcf72596a560b2d4c18259a5d0cc802bfeff3ff7c1dcd929f9f3",
+  "article_url": "https://www.nature.com/articles/s41591-026-04303-y",
+  "license": "CC BY 4.0; cropped Figure 4c, original authors credited in benchmarks/SOURCES.md",
+  "scope": "Supplementary source validation. Separate from the 11-case line/scatter benchmark. Endpoint bounds excluded from numeric accuracy; all reported separately."
+}

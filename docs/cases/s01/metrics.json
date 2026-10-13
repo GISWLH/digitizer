@@ -1,0 +1,27 @@
+{
+  "id": "s01",
+  "title": "简洁彩色折线",
+  "reference_kind": "synthetic_ground_truth",
+  "metric": "Within 1% of y-axis range (missing = miss)",
+  "accuracy_pct": 100.0,
+  "coverage_pct": 100.0,
+  "nmae_pct": 0.10565697073237161,
+  "expected": 373,
+  "matched": 373,
+  "extracted": 373,
+  "hidden_values": 0,
+  "input_sha256": "7b3e4a9ab569d82757cac6cfe85f66a2f84470cc3b4a462ddd52b5de0edd381f",
+  "config_sha256": "fc022c337b40e7284c82dbd13253e1ac673c632e3ea5377fbe59610edf35c7ce",
+  "csv_sha256": "24acd1b1209360cfec855fcb3399d9b2374f4bc64b7bb7b3a4380e1bbc03374e",
+  "truth_sha256": "fc4de296f4a6a87ec73af6f8d2795fa16d67e9366d6280d05118775b51d63cab",
+  "unmasked": {
+    "metric": "Within 1% of y-axis range (missing = miss)",
+    "accuracy_pct": 100.0,
+    "coverage_pct": 100.0,
+    "nmae_pct": 0.10565697073237161,
+    "expected": 373,
+    "matched": 373,
+    "extracted": 373,
+    "hidden_values": 0
+  }
+}

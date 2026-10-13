@@ -1,0 +1,27 @@
+{
+  "id": "r02",
+  "title": "书稿：RMSE 平滑曲线",
+  "reference_kind": "manuscript_source_data",
+  "metric": "Within 1% of y-axis range (missing = miss)",
+  "accuracy_pct": 93.51620947630923,
+  "coverage_pct": 95.51122194513715,
+  "nmae_pct": 0.179667336488436,
+  "expected": 401,
+  "matched": 375,
+  "extracted": 383,
+  "hidden_values": 0,
+  "input_sha256": "36ec70c103cfdff59dc5c2f3e01dbbfc5f94c8bdd08dc9009fbc1058f2fa7b8d",
+  "config_sha256": "1067982d2c509585324e8c5bbb43a03980ad3c00e594116a9a1c421b84d662dc",
+  "csv_sha256": "9406fbf20e560b7523fc82b3fa635a39e0077d8f2a6dc74f956fb32a68205992",
+  "truth_sha256": "28174ea425adab5685e1fbfdf62159cdda6441b23c1ade27c3aae9431c5a0a0c",
+  "unmasked": {
+    "metric": "Within 1% of y-axis range (missing = miss)",
+    "accuracy_pct": 91.77057356608479,
+    "coverage_pct": 95.26184538653366,
+    "nmae_pct": 1.376238005589316,
+    "expected": 401,
+    "matched": 368,
+    "extracted": 382,
+    "hidden_values": 0
+  }
+}

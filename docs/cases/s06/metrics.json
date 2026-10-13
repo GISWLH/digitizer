@@ -1,0 +1,25 @@
+{
+  "id": "s06",
+  "title": "密集重叠散点",
+  "reference_kind": "synthetic_ground_truth",
+  "metric": "F1 @ 1% axis-distance",
+  "accuracy_pct": 95.95375722543352,
+  "precision_pct": 100.0,
+  "recall_pct": 92.22222222222223,
+  "matched": 83,
+  "expected": 90,
+  "extracted": 83,
+  "input_sha256": "2a251b4b7e2a73a11609695ef85f7d99598219946c2ab07bcfb87b8dfd456085",
+  "config_sha256": "bfe00755cef87ed5139da2bd17b08699acb16d1d593e3b0e2891309e9132cace",
+  "csv_sha256": "196ebd4c4e264e9d2950a6e45decb7ac3eb6082285e3b1163aedbcd86d5817d7",
+  "truth_sha256": "eaf8df8d98d9e9660abf7e596d467c578cc4e3b64476a8ac82d0c29a770d718e",
+  "unmasked": {
+    "metric": "F1 @ 1% axis-distance",
+    "accuracy_pct": 95.95375722543352,
+    "precision_pct": 100.0,
+    "recall_pct": 92.22222222222223,
+    "matched": 83,
+    "expected": 90,
+    "extracted": 83
+  }
+}

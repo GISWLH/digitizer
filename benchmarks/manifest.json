@@ -1,0 +1,299 @@
+[
+  {
+    "id": "s01",
+    "title": "简洁彩色折线",
+    "kind": "line",
+    "bounds": [
+      123,
+      77,
+      963,
+      660
+    ],
+    "xlim": [
+      0,
+      120
+    ],
+    "ylim": [
+      0,
+      100
+    ],
+    "color": "#2468b4",
+    "description": "blue target",
+    "source": "Existing Digitizer benchmark / synthetic seed 20260924",
+    "input_sha256": "7b3e4a9ab569d82757cac6cfe85f66a2f84470cc3b4a462ddd52b5de0edd381f",
+    "xscale": "linear",
+    "truth_representation": "line",
+    "occlusion": null,
+    "reference_kind": "synthetic_ground_truth"
+  },
+  {
+    "id": "s02",
+    "title": "同色交叉：实线与虚线",
+    "kind": "line",
+    "bounds": [
+      123,
+      77,
+      963,
+      660
+    ],
+    "xlim": [
+      0,
+      120
+    ],
+    "ylim": [
+      0,
+      100
+    ],
+    "color": "#222222",
+    "description": "solid black Target; exclude dashed black Distractor",
+    "source": "Existing Digitizer benchmark / synthetic seed 20260924",
+    "input_sha256": "9c2d0503b61f9d766e0b12c4c14709476204b3886ecd5cdef861a3046f488aac",
+    "xscale": "linear",
+    "truth_representation": "line",
+    "occlusion": null,
+    "reference_kind": "synthetic_ground_truth"
+  },
+  {
+    "id": "s03",
+    "title": "阶梯线与遮挡",
+    "kind": "line",
+    "bounds": [
+      123,
+      77,
+      963,
+      660
+    ],
+    "xlim": [
+      0,
+      120
+    ],
+    "ylim": [
+      0,
+      100
+    ],
+    "color": "#2468b4",
+    "description": "blue step line; white occlusion x=48..59 must remain missing",
+    "source": "Existing Digitizer benchmark / synthetic seed 20260924",
+    "input_sha256": "c5fec596dfd401829b507198205993c40409fccfc4113101e8ff2ad47c830f2c",
+    "xscale": "linear",
+    "truth_representation": "step_post",
+    "occlusion": [
+      48,
+      59
+    ],
+    "reference_kind": "synthetic_ground_truth"
+  },
+  {
+    "id": "s04",
+    "title": "对数坐标折线",
+    "kind": "line",
+    "bounds": [
+      123,
+      77,
+      963,
+      660
+    ],
+    "xlim": [
+      1,
+      1000
+    ],
+    "ylim": [
+      0,
+      100
+    ],
+    "color": "#2468b4",
+    "description": "blue target",
+    "source": "Existing Digitizer benchmark / synthetic seed 20260924",
+    "input_sha256": "51b0b285abf818e6cca791c7df7a1e8d0bfd473500f9f8a4be1b63caced26580",
+    "xscale": "log10",
+    "truth_representation": "line",
+    "occlusion": null,
+    "reference_kind": "synthetic_ground_truth"
+  },
+  {
+    "id": "s05",
+    "title": "稀疏填充散点",
+    "kind": "scatter",
+    "bounds": [
+      123,
+      77,
+      963,
+      660
+    ],
+    "xlim": [
+      0,
+      120
+    ],
+    "ylim": [
+      0,
+      100
+    ],
+    "color": "#2468b4",
+    "description": "all blue data markers; exclude axes and grid; preserve individual points",
+    "source": "Existing Digitizer benchmark / synthetic seed 20260924",
+    "input_sha256": "cba7f9671627145d981394329d73e693ad4a1ee02ec01256921585528f9182fd",
+    "xscale": "linear",
+    "truth_representation": "scatter",
+    "occlusion": null,
+    "reference_kind": "synthetic_ground_truth"
+  },
+  {
+    "id": "s06",
+    "title": "密集重叠散点",
+    "kind": "scatter",
+    "bounds": [
+      123,
+      77,
+      963,
+      660
+    ],
+    "xlim": [
+      0,
+      120
+    ],
+    "ylim": [
+      0,
+      100
+    ],
+    "color": "#2468b4",
+    "description": "all blue data markers; exclude axes and grid; preserve individual points",
+    "source": "Existing Digitizer benchmark / synthetic seed 20260924",
+    "input_sha256": "2a251b4b7e2a73a11609695ef85f7d99598219946c2ab07bcfb87b8dfd456085",
+    "xscale": "linear",
+    "truth_representation": "scatter",
+    "occlusion": null,
+    "reference_kind": "synthetic_ground_truth"
+  },
+  {
+    "id": "s07",
+    "title": "空心散点与网格",
+    "kind": "scatter",
+    "bounds": [
+      123,
+      77,
+      963,
+      660
+    ],
+    "xlim": [
+      0,
+      120
+    ],
+    "ylim": [
+      0,
+      100
+    ],
+    "color": "#2468b4",
+    "description": "all blue data markers; exclude axes and grid; preserve individual points",
+    "source": "Existing Digitizer benchmark / synthetic seed 20260924",
+    "input_sha256": "432537cb0b6bc33f2f33d46641cb6ba29d1beb2c803f65a5d956f095ed867d81",
+    "xscale": "linear",
+    "truth_representation": "scatter",
+    "occlusion": null,
+    "reference_kind": "synthetic_ground_truth"
+  },
+  {
+    "id": "s08",
+    "title": "低分辨率 JPEG 折线",
+    "kind": "line",
+    "bounds": [
+      123,
+      77,
+      963,
+      660
+    ],
+    "xlim": [
+      0,
+      120
+    ],
+    "ylim": [
+      0,
+      100
+    ],
+    "color": "#2468b4",
+    "description": "blue line; 384x288 JPEG quality 38 upsampled to common canvas",
+    "source": "Existing Digitizer benchmark / synthetic seed 20260924",
+    "input_sha256": "882d1377c0585ed374d0f9236f1c7cd4cc86e41467262f0a76b95b7157030e8f",
+    "xscale": "linear",
+    "truth_representation": "line",
+    "occlusion": null,
+    "reference_kind": "synthetic_ground_truth"
+  },
+  {
+    "id": "r01",
+    "title": "书稿：海洋热输送实线",
+    "kind": "line",
+    "bounds": [
+      122,
+      26,
+      988,
+      687
+    ],
+    "xlim": [
+      -80,
+      -40
+    ],
+    "ylim": [
+      -0.08,
+      0.25
+    ],
+    "color": "#000000",
+    "description": "thick solid black HR change; exclude thin black dashed CMIP5 higher, black text and legend",
+    "source": "Existing Digitizer benchmark / local research manuscript, retained reference data",
+    "input_sha256": "a9e7ccb755761f5d5abcd35c3488dc38abeaf324a968cd26b952914589d7272a",
+    "xscale": "linear",
+    "truth_representation": "line",
+    "reference_kind": "manuscript_source_data"
+  },
+  {
+    "id": "r02",
+    "title": "书稿：RMSE 平滑曲线",
+    "kind": "line",
+    "bounds": [
+      124,
+      101,
+      988,
+      667
+    ],
+    "xlim": [
+      1,
+      16
+    ],
+    "ylim": [
+      0.25,
+      0.85
+    ],
+    "color": "#345D82",
+    "description": "dark blue solid S0 Ocean smooth curve ONLY; exclude circular observation markers, error bars, ribbons and legend",
+    "source": "Existing Digitizer benchmark / local research manuscript, retained reference data",
+    "input_sha256": "36ec70c103cfdff59dc5c2f3e01dbbfc5f94c8bdd08dc9009fbc1058f2fa7b8d",
+    "xscale": "linear",
+    "truth_representation": "smoothed_curve",
+    "reference_kind": "manuscript_source_data"
+  },
+  {
+    "id": "r03",
+    "title": "书稿：RMSE 月度散点",
+    "kind": "scatter",
+    "bounds": [
+      124,
+      101,
+      988,
+      667
+    ],
+    "xlim": [
+      1,
+      16
+    ],
+    "ylim": [
+      0.25,
+      0.85
+    ],
+    "color": "#345D82",
+    "description": "dark blue filled circular S0 Ocean observation markers ONLY; exclude continuous fitted curve, error bars, ribbons and legend",
+    "source": "Existing Digitizer benchmark / local research manuscript, retained reference data",
+    "input_sha256": "36ec70c103cfdff59dc5c2f3e01dbbfc5f94c8bdd08dc9009fbc1058f2fa7b8d",
+    "xscale": "linear",
+    "truth_representation": "monthly_observations",
+    "reference_kind": "manuscript_source_data"
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "id": "s04",
+  "title": "对数坐标折线",
+  "reference_kind": "synthetic_ground_truth",
+  "metric": "Within 1% of y-axis range (missing = miss)",
+  "accuracy_pct": 100.0,
+  "coverage_pct": 100.0,
+  "nmae_pct": 0.133330877283995,
+  "expected": 339,
+  "matched": 339,
+  "extracted": 339,
+  "hidden_values": 0,
+  "input_sha256": "51b0b285abf818e6cca791c7df7a1e8d0bfd473500f9f8a4be1b63caced26580",
+  "config_sha256": "f71709366d3e8a3707c88e8483966e129c88040d846faef36d68214c7cabafdc",
+  "csv_sha256": "069e6f034ffdb1b551d02ae50f6a51ba6268eb6e0de12065b461d6d52c49d363",
+  "truth_sha256": "3e2010ba03767701dee91ae29d994bc852623608af47e29eb193618147098932",
+  "unmasked": {
+    "metric": "Within 1% of y-axis range (missing = miss)",
+    "accuracy_pct": 100.0,
+    "coverage_pct": 100.0,
+    "nmae_pct": 0.133330877283995,
+    "expected": 339,
+    "matched": 339,
+    "extracted": 339,
+    "hidden_values": 0
+  }
+}

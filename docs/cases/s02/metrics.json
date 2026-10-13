@@ -1,0 +1,27 @@
+{
+  "id": "s02",
+  "title": "同色交叉：实线与虚线",
+  "reference_kind": "synthetic_ground_truth",
+  "metric": "Within 1% of y-axis range (missing = miss)",
+  "accuracy_pct": 100.0,
+  "coverage_pct": 100.0,
+  "nmae_pct": 0.10446283333119649,
+  "expected": 373,
+  "matched": 373,
+  "extracted": 373,
+  "hidden_values": 0,
+  "input_sha256": "9c2d0503b61f9d766e0b12c4c14709476204b3886ecd5cdef861a3046f488aac",
+  "config_sha256": "70b2ccd19bfd9d21d9b2a2f8b580853960767aad1e2fb56c08c43b5211b0d969",
+  "csv_sha256": "a808098b36f151c712ba945f5bb87c63a6bda3aa5d0c9b44c9cc03366b411098",
+  "truth_sha256": "fc4de296f4a6a87ec73af6f8d2795fa16d67e9366d6280d05118775b51d63cab",
+  "unmasked": {
+    "metric": "Within 1% of y-axis range (missing = miss)",
+    "accuracy_pct": 95.97855227882037,
+    "coverage_pct": 100.0,
+    "nmae_pct": 2.5364154954999982,
+    "expected": 373,
+    "matched": 358,
+    "extracted": 373,
+    "hidden_values": 0
+  }
+}

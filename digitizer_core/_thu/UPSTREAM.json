@@ -1,0 +1,14 @@
+{
+  "url": "https://github.com/Rimagination/thu-digitizer",
+  "license": "MIT",
+  "snapshot": "local thu-digitizer-main, including pre-existing legend changes",
+  "snapshot_date": "2026-10-13",
+  "original_sha256": {
+    "raster_digitizer_core.py": "d97e98eb837f71ce285cff64c823c535e98af93ca52ce211e84ace1a91696a18",
+    "legend_regions.py": "b134de30377df2932029cc96d31e22e0a4e8acc005b3909d4312340eb8ce9a5d",
+    "candidate_digitize_scatter.py": "4da05c79fd2c068ff233eee8eb7391c500a7a455943fcdc1eb85e7c89ca3b10a",
+    "candidate_digitize_bar_chart.py": "ed3cd105c2ce4a7963c033fd4323e99704f794cdc3aa7c73e9c044463f3acc4b",
+    "candidate_digitize_heatmap.py": "eb2b7fe1e15c7abd44bba29fe5892823d8be4152765d8bcd6e67cd4eb6fa31f0",
+    "extraction_contract.py": "4722b51576092ab86a34dda2abf8d0de1d220b2cc14d0ad793560d385ac25805"
+  }
+}

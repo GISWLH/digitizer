@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="520" viewBox="0 0 1280 520">
+<rect width="1280" height="520" rx="28" fill="#142723"/><g fill="none" stroke="#315043" opacity=".5"><path d="M760 72v340h444M760 150h444M760 230h444M760 310h444M860 72v340M960 72v340M1060 72v340M1160 72v340"/></g>
+<text x="64" y="65" font-family="Arial,sans-serif" font-size="22" font-weight="bold" fill="#d9f99d">digitizer</text>
+<text x="64" y="105" font-family="Arial,sans-serif" font-size="12" letter-spacing="3" fill="#a5bcae">SCIENTIFIC FIGURES → REUSABLE DATA</text>
+<text x="60" y="210" font-family="Arial,sans-serif" font-size="79" font-weight="bold" letter-spacing="-3" fill="#fff">FIGURES IN.</text>
+<text x="60" y="302" font-family="Arial,sans-serif" font-size="79" font-weight="bold" letter-spacing="-3" fill="#d9f99d">DATA OUT.</text>
+<text x="64" y="351" font-family="Arial,sans-serif" font-size="17" fill="#b7cbbd">Precise legend masks. Reproducible CSV. Visible evidence.</text>
+<rect x="64" y="395" width="235" height="56" rx="8" fill="#d9f99d"/><text x="83" y="430" font-family="Arial,sans-serif" font-size="24" font-weight="bold" fill="#142723">98.20%</text><text x="178" y="429" font-family="Arial,sans-serif" font-size="12" fill="#142723">11-case macro</text>
+<text x="324" y="416" font-family="Arial,sans-serif" font-size="13" fill="#c8d5cd">Built on THU Digitizer</text><text x="324" y="439" font-family="Arial,sans-serif" font-size="12" fill="#92aa9a">Enhanced by GISWLH · MIT</text>
+<path d="M772 350C850 342 815 190 900 180S982 309 1043 270 1115 154 1190 109" stroke="#d9f99d" stroke-width="5" fill="none"/>
+<g fill="#fff"><circle cx="772" cy="350" r="6"/><circle cx="900" cy="180" r="6"/><circle cx="1043" cy="270" r="6"/><circle cx="1190" cy="109" r="6"/></g>
+<rect x="789" y="84" width="171" height="65" rx="5" fill="#f54a8b" fill-opacity=".18" stroke="#f54a8b" stroke-dasharray="6 4"/><text x="804" y="111" font-family="Arial,sans-serif" font-size="11" fill="#fcb7d0">LEGEND EXCLUDED</text><path d="M805 131h42" stroke="#d9f99d" stroke-width="4"/><path d="M860 131h73" stroke="#b0c5b7" stroke-width="3"/>
+<text x="803" y="463" font-family="Arial,sans-serif" font-size="10" letter-spacing="2" fill="#8ba692">MASK → TRACE → CSV → VERIFY</text>
+<text x="64" y="490" font-family="Arial,sans-serif" font-size="10" fill="#80988a">Assisted regression: 8 synthetic + 3 manuscript tasks. Not an unseen-paper guarantee. Graphic at right is schematic.</text></svg>

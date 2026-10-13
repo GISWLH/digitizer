@@ -1,0 +1,27 @@
+{
+  "id": "r01",
+  "title": "书稿：海洋热输送实线",
+  "reference_kind": "manuscript_source_data",
+  "metric": "Within 1% of y-axis range (missing = miss)",
+  "accuracy_pct": 100.0,
+  "coverage_pct": 100.0,
+  "nmae_pct": 0.13265832353283713,
+  "expected": 399,
+  "matched": 399,
+  "extracted": 399,
+  "hidden_values": 0,
+  "input_sha256": "a9e7ccb755761f5d5abcd35c3488dc38abeaf324a968cd26b952914589d7272a",
+  "config_sha256": "261998f0ba9d783b53e590fe920cb8be418c7262f8aff89ada2040b0f27fe826",
+  "csv_sha256": "fc1990b65d1716678cff324c76614de00d44db86518c178623e87bc3a9ce8cf2",
+  "truth_sha256": "fb2e86fe6b5e82e863875ad3b88c86fc12be4692ea27b80427a9167c1c013c6d",
+  "unmasked": {
+    "metric": "Within 1% of y-axis range (missing = miss)",
+    "accuracy_pct": 96.2406015037594,
+    "coverage_pct": 98.99749373433583,
+    "nmae_pct": 0.8741959682318865,
+    "expected": 399,
+    "matched": 384,
+    "extracted": 395,
+    "hidden_values": 0
+  }
+}

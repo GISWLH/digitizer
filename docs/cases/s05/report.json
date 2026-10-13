@@ -1,0 +1,1045 @@
+{
+  "schema_version": 1,
+  "engine": "THU Digitizer + GISWLH legend-aware extensions",
+  "kind": "scatter",
+  "image_sha256": "cba7f9671627145d981394329d73e693ad4a1ee02ec01256921585528f9182fd",
+  "config_sha256": "f5de05add2f70528790b15fe04be3924b312b3537a4b54fa65c29348d481ab6d",
+  "csv_sha256": "8a985b800959b8fd767b8d75b2359705262801612c97a45806f936f9ee3ab7e4",
+  "rows": 30,
+  "numeric_rows": 30,
+  "excluded_pixels": 0,
+  "ablation_ignore_exclusions": false,
+  "config": {
+    "schema_version": 1,
+    "image": "input.png",
+    "image_sha256": "cba7f9671627145d981394329d73e693ad4a1ee02ec01256921585528f9182fd",
+    "image_size": [
+      1024,
+      768
+    ],
+    "reviewed": true,
+    "review_note": "Original-image axes, target colour and legend/annotation regions visually checked; historical calibration retained. No reference values used by extractor.",
+    "kind": "scatter",
+    "plot_bounds": [
+      123,
+      77,
+      963,
+      660
+    ],
+    "axes": {
+      "x": {
+        "anchors": [
+          [
+            123,
+            0
+          ],
+          [
+            963,
+            120
+          ]
+        ],
+        "scale": "linear"
+      },
+      "y": {
+        "anchors": [
+          [
+            660,
+            0
+          ],
+          [
+            77,
+            100
+          ]
+        ],
+        "scale": "linear"
+      }
+    },
+    "series": [
+      {
+        "name": "target",
+        "color": "#2468b4"
+      }
+    ],
+    "exclusions": []
+  },
+  "details": {
+    "target": {
+      "schema_version": 1,
+      "extractor": "candidate_compact_scatter_distance_peaks",
+      "algorithm_version": "compact-scatter-distance-peaks-v2-residual-audit",
+      "deterministic_run_id": "3ab6877beed8b68a",
+      "software": {
+        "opencv": "5.0.0",
+        "numpy": "2.5.4"
+      },
+      "status": "candidate",
+      "numeric_output_authorized": true,
+      "reason": "all configured candidate gates passed",
+      "input": {
+        "file": "benchmarks/cases/s05/input.png",
+        "sha256": "cba7f9671627145d981394329d73e693ad4a1ee02ec01256921585528f9182fd",
+        "dimensions": [
+          1024,
+          768
+        ]
+      },
+      "plot_bounds": [
+        123,
+        77,
+        963,
+        660
+      ],
+      "calibration": {
+        "x": {
+          "scale": "linear",
+          "anchors": [
+            {
+              "pixel": 123.0,
+              "value": 0.0
+            },
+            {
+              "pixel": 963.0,
+              "value": 120.0
+            }
+          ],
+          "pixel_slope": 0.1428571428571429,
+          "transformed_intercept": -17.571428571428598,
+          "residuals_pixels": [
+            1.49213974509621e-13,
+            -9.947598300641399e-14
+          ],
+          "rmse_transformed": 1.8115356374411762e-14,
+          "max_abs_residual_transformed": 2.1316282072803006e-14,
+          "pixel_uncertainty": 0.5,
+          "fit": "robust_huber_affine_in_transformed_value_space"
+        },
+        "y": {
+          "scale": "linear",
+          "anchors": [
+            {
+              "pixel": 660.0,
+              "value": 0.0
+            },
+            {
+              "pixel": 77.0,
+              "value": 100.0
+            }
+          ],
+          "pixel_slope": -0.17152658662092626,
+          "transformed_intercept": 113.20754716981132,
+          "residuals_pixels": [
+            -8.284928298962767e-14,
+            -0.0
+          ],
+          "rmse_transformed": 1.0048591735576161e-14,
+          "max_abs_residual_transformed": 1.4210854715202004e-14,
+          "pixel_uncertainty": 0.5,
+          "fit": "robust_huber_affine_in_transformed_value_space"
+        }
+      },
+      "detection": {
+        "marker_mode": "color",
+        "marker_color": [
+          36,
+          104,
+          180
+        ],
+        "color_tolerance": 36.0,
+        "dark_threshold": 120,
+        "light_threshold": 225,
+        "min_radius": 2.8,
+        "max_radius": 18.0,
+        "radius_consistency_ratio": 0.72,
+        "radius_reference_pixels": 5.147674560546875,
+        "radius_cutoff_pixels": 3.7063256835937497,
+        "peak_window": 5,
+        "edge_margin": 3,
+        "exclude_regions": [],
+        "foreground_pixels": 2578,
+        "raw_peak_count": 30,
+        "accepted_peak_count": 30,
+        "suppressed_peak_count": 0
+      },
+      "points": [
+        {
+          "point_id": 1,
+          "pixel_x": 189.5,
+          "pixel_y": 256.0,
+          "x": 9.5,
+          "y": 69.29674099,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 10,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 2,
+          "pixel_x": 208.0,
+          "pixel_y": 425.5,
+          "x": 12.14285714,
+          "y": 40.22298456,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 20,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 3,
+          "pixel_x": 223.6667,
+          "pixel_y": 573.3333,
+          "x": 14.38095238,
+          "y": 14.86563751,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 30,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 4,
+          "pixel_x": 253.0,
+          "pixel_y": 541.0,
+          "x": 18.57142857,
+          "y": 20.41166381,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 5.1969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9712,
+          "component_id": 26,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 5,
+          "pixel_x": 255.5,
+          "pixel_y": 483.0,
+          "x": 18.92857143,
+          "y": 30.36020583,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 23,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 6,
+          "pixel_x": 267.0,
+          "pixel_y": 176.5,
+          "x": 20.57142857,
+          "y": 82.93310463,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 4,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 7,
+          "pixel_x": 270.0,
+          "pixel_y": 213.0,
+          "x": 21.0,
+          "y": 76.67238422,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 5.0,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9571,
+          "component_id": 8,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 8,
+          "pixel_x": 278.0,
+          "pixel_y": 357.0,
+          "x": 22.14285714,
+          "y": 51.97255575,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 17,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 9,
+          "pixel_x": 281.5,
+          "pixel_y": 557.0,
+          "x": 22.64285714,
+          "y": 17.66723842,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 28,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 10,
+          "pixel_x": 288.5,
+          "pixel_y": 140.0,
+          "x": 23.64285714,
+          "y": 89.19382504,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 2,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 11,
+          "pixel_x": 335.0,
+          "pixel_y": 311.0,
+          "x": 30.28571429,
+          "y": 59.86277873,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 5.1969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9712,
+          "component_id": 13,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 12,
+          "pixel_x": 349.5,
+          "pixel_y": 473.0,
+          "x": 32.35714286,
+          "y": 32.0754717,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 22,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 13,
+          "pixel_x": 373.5,
+          "pixel_y": 556.0,
+          "x": 35.78571429,
+          "y": 17.83876501,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 27,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 14,
+          "pixel_x": 375.0,
+          "pixel_y": 422.0,
+          "x": 36.0,
+          "y": 40.82332762,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 5.1969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9712,
+          "component_id": 19,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 15,
+          "pixel_x": 419.0,
+          "pixel_y": 350.0,
+          "x": 42.28571429,
+          "y": 53.17324185,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 16,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 16,
+          "pixel_x": 464.0,
+          "pixel_y": 377.0,
+          "x": 48.71428571,
+          "y": 48.54202401,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 5.1969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9712,
+          "component_id": 18,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 17,
+          "pixel_x": 476.0,
+          "pixel_y": 231.5,
+          "x": 50.42857143,
+          "y": 73.49914237,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 9,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 18,
+          "pixel_x": 492.0,
+          "pixel_y": 197.5,
+          "x": 52.71428571,
+          "y": 79.33104631,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 7,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 19,
+          "pixel_x": 545.0,
+          "pixel_y": 535.0,
+          "x": 60.28571429,
+          "y": 21.44082333,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 25,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 20,
+          "pixel_x": 557.6667,
+          "pixel_y": 271.3333,
+          "x": 62.0952381,
+          "y": 66.66666667,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 12,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 21,
+          "pixel_x": 573.0,
+          "pixel_y": 335.0,
+          "x": 64.28571429,
+          "y": 55.74614065,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 5.3938,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9853,
+          "component_id": 14,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 22,
+          "pixel_x": 582.5,
+          "pixel_y": 448.0,
+          "x": 65.64285714,
+          "y": 36.36363636,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 21,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 23,
+          "pixel_x": 640.0,
+          "pixel_y": 188.0,
+          "x": 73.85714286,
+          "y": 80.96054889,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 5.3938,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9853,
+          "component_id": 6,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 24,
+          "pixel_x": 656.0,
+          "pixel_y": 558.5,
+          "x": 76.14285714,
+          "y": 17.40994854,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 29,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 25,
+          "pixel_x": 708.5,
+          "pixel_y": 139.0,
+          "x": 83.64285714,
+          "y": 89.36535163,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 1,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 26,
+          "pixel_x": 792.0,
+          "pixel_y": 502.0,
+          "x": 95.57142857,
+          "y": 27.10120069,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 5.1969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9712,
+          "component_id": 24,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 27,
+          "pixel_x": 801.0,
+          "pixel_y": 182.0,
+          "x": 96.85714286,
+          "y": 81.9897084,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 5.3938,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9853,
+          "component_id": 5,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 28,
+          "pixel_x": 846.5,
+          "pixel_y": 263.0,
+          "x": 103.35714286,
+          "y": 68.09605489,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 11,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 29,
+          "pixel_x": 853.0,
+          "pixel_y": 144.5,
+          "x": 104.28571429,
+          "y": 88.4219554,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 3,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        },
+        {
+          "point_id": 30,
+          "pixel_x": 886.0,
+          "pixel_y": 344.0,
+          "x": 109.0,
+          "y": 54.20240137,
+          "x_uncertainty": 0.06428571,
+          "y_uncertainty": 0.07718696,
+          "marker_radius_evidence_pixels": 4.9969,
+          "core_foreground_fraction": 1.0,
+          "confidence": 0.9569,
+          "component_id": 15,
+          "status": "visible_marker_candidate",
+          "component_peak_count": 1,
+          "value_status": "visible_marker_candidate"
+        }
+      ],
+      "components": [
+        {
+          "component_id": 1,
+          "bounds": [
+            704,
+            134,
+            713,
+            144
+          ],
+          "area_pixels": 86,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 2,
+          "bounds": [
+            284,
+            136,
+            293,
+            145
+          ],
+          "area_pixels": 84,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 3,
+          "bounds": [
+            848,
+            140,
+            858,
+            149
+          ],
+          "area_pixels": 85,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 4,
+          "bounds": [
+            262,
+            172,
+            272,
+            181
+          ],
+          "area_pixels": 86,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 5,
+          "bounds": [
+            796,
+            177,
+            806,
+            187
+          ],
+          "area_pixels": 89,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 6,
+          "bounds": [
+            635,
+            183,
+            645,
+            193
+          ],
+          "area_pixels": 89,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 7,
+          "bounds": [
+            487,
+            193,
+            496,
+            202
+          ],
+          "area_pixels": 85,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 8,
+          "bounds": [
+            266,
+            208,
+            275,
+            218
+          ],
+          "area_pixels": 88,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 9,
+          "bounds": [
+            472,
+            227,
+            481,
+            236
+          ],
+          "area_pixels": 85,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 10,
+          "bounds": [
+            185,
+            251,
+            194,
+            260
+          ],
+          "area_pixels": 85,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 11,
+          "bounds": [
+            842,
+            259,
+            851,
+            268
+          ],
+          "area_pixels": 86,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 12,
+          "bounds": [
+            553,
+            267,
+            562,
+            276
+          ],
+          "area_pixels": 86,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 13,
+          "bounds": [
+            330,
+            306,
+            340,
+            316
+          ],
+          "area_pixels": 87,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 14,
+          "bounds": [
+            568,
+            330,
+            578,
+            340
+          ],
+          "area_pixels": 89,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 15,
+          "bounds": [
+            881,
+            339,
+            891,
+            348
+          ],
+          "area_pixels": 84,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 16,
+          "bounds": [
+            414,
+            345,
+            424,
+            354
+          ],
+          "area_pixels": 86,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 17,
+          "bounds": [
+            273,
+            352,
+            282,
+            361
+          ],
+          "area_pixels": 84,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 18,
+          "bounds": [
+            459,
+            372,
+            469,
+            382
+          ],
+          "area_pixels": 88,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 19,
+          "bounds": [
+            370,
+            417,
+            380,
+            427
+          ],
+          "area_pixels": 88,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 20,
+          "bounds": [
+            203,
+            421,
+            213,
+            430
+          ],
+          "area_pixels": 86,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 21,
+          "bounds": [
+            578,
+            443,
+            587,
+            453
+          ],
+          "area_pixels": 85,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 22,
+          "bounds": [
+            345,
+            468,
+            354,
+            478
+          ],
+          "area_pixels": 87,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 23,
+          "bounds": [
+            251,
+            478,
+            260,
+            487
+          ],
+          "area_pixels": 84,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 24,
+          "bounds": [
+            787,
+            497,
+            797,
+            507
+          ],
+          "area_pixels": 87,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 25,
+          "bounds": [
+            541,
+            531,
+            550,
+            540
+          ],
+          "area_pixels": 83,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 26,
+          "bounds": [
+            248,
+            536,
+            258,
+            546
+          ],
+          "area_pixels": 87,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 27,
+          "bounds": [
+            369,
+            551,
+            378,
+            561
+          ],
+          "area_pixels": 82,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 28,
+          "bounds": [
+            277,
+            552,
+            286,
+            561
+          ],
+          "area_pixels": 85,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 29,
+          "bounds": [
+            652,
+            554,
+            661,
+            563
+          ],
+          "area_pixels": 86,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        },
+        {
+          "component_id": 30,
+          "bounds": [
+            219,
+            569,
+            228,
+            578
+          ],
+          "area_pixels": 86,
+          "peak_count": 1,
+          "split_status": "single_peak"
+        }
+      ],
+      "suppressed_peaks": [],
+      "residual_audit": {
+        "strategy": "relaxed_negative_space_peak_pass",
+        "role": "authorization_gate_only_never_adds_points",
+        "threshold_delta": 24,
+        "color_tolerance_ratio": 1.35,
+        "radius_ratio_range": [
+          0.72,
+          1.45
+        ],
+        "core_fraction_min": 0.7,
+        "relaxed_raw_peak_count": 30,
+        "residual_candidate_count": 0,
+        "status": "clear",
+        "candidates": []
+      },
+      "validation": {
+        "role": "validation only; the annotation is never used to add, remove, or move points",
+        "annotated_pearson_r": null,
+        "pearson_tolerance": 0.03,
+        "recomputed_pearson_r": 0.26182983133290416,
+        "absolute_difference": null,
+        "status": "computed_without_annotation"
+      },
+      "required_review": [
+        "Open the overlay at original resolution and verify every accepted ring is centred on a visible marker.",
+        "Review every multi-peak component and every suppressed peak before publishing numeric output.",
+        "The residual audit must be clear; residual candidates must be resolved by verified exclusions or configuration, never promoted by eye."
+      ],
+      "limitations": [
+        "This candidate recovers compact filled visible marker centres only.",
+        "Perfectly coincident, fully occluded, hollow, or non-compact markers are not recovered by this route.",
+        "A supplied correlation annotation validates the result but never changes detected geometry.",
+        "Axes, curves, text, and legends that are as thick and compact as markers may require a verified exclusion region."
+      ]
+    }
+  },
+  "note": "Pixel uncertainty is an estimate, not measured accuracy. Compare separate reference data for accuracy."
+}

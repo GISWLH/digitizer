@@ -1,0 +1,25 @@
+{
+  "id": "r03",
+  "title": "书稿：RMSE 月度散点",
+  "reference_kind": "manuscript_source_data",
+  "metric": "F1 @ 1% axis-distance",
+  "accuracy_pct": 96.7741935483871,
+  "precision_pct": 100.0,
+  "recall_pct": 93.75,
+  "matched": 15,
+  "expected": 16,
+  "extracted": 15,
+  "input_sha256": "36ec70c103cfdff59dc5c2f3e01dbbfc5f94c8bdd08dc9009fbc1058f2fa7b8d",
+  "config_sha256": "21c1b17912a4adf6cbe02c5ddbffdbbfe0bd7b461af7bbd978ec110f236d1226",
+  "csv_sha256": "80bb1b124c20ec08e52e1ab6e70e0406aa28d1ae697f697ae42a32968fcc5dc2",
+  "truth_sha256": "0a768abe207873c0959b24c4e56b073b80e25b84dd3e8853c732929bb54f2fe0",
+  "unmasked": {
+    "metric": "F1 @ 1% axis-distance",
+    "accuracy_pct": 96.7741935483871,
+    "precision_pct": 100.0,
+    "recall_pct": 93.75,
+    "matched": 15,
+    "expected": 16,
+    "extracted": 15
+  }
+}

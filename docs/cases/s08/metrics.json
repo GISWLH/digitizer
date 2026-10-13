@@ -1,0 +1,27 @@
+{
+  "id": "s08",
+  "title": "低分辨率 JPEG 折线",
+  "reference_kind": "synthetic_ground_truth",
+  "metric": "Within 1% of y-axis range (missing = miss)",
+  "accuracy_pct": 96.7828418230563,
+  "coverage_pct": 96.7828418230563,
+  "nmae_pct": 0.11940538592269512,
+  "expected": 373,
+  "matched": 361,
+  "extracted": 361,
+  "hidden_values": 0,
+  "input_sha256": "882d1377c0585ed374d0f9236f1c7cd4cc86e41467262f0a76b95b7157030e8f",
+  "config_sha256": "1bd2de864067b522b9e6eb82899d03588ff93ab5dc1bd313aa8e7b48c3033649",
+  "csv_sha256": "e2328d2f3a04c4df20778d8eda7137e683a2960a689b1c364853003847c67736",
+  "truth_sha256": "fc4de296f4a6a87ec73af6f8d2795fa16d67e9366d6280d05118775b51d63cab",
+  "unmasked": {
+    "metric": "Within 1% of y-axis range (missing = miss)",
+    "accuracy_pct": 96.7828418230563,
+    "coverage_pct": 96.7828418230563,
+    "nmae_pct": 0.11940538592269512,
+    "expected": 373,
+    "matched": 361,
+    "extracted": 361,
+    "hidden_values": 0
+  }
+}

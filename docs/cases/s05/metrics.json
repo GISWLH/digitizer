@@ -1,0 +1,25 @@
+{
+  "id": "s05",
+  "title": "稀疏填充散点",
+  "reference_kind": "synthetic_ground_truth",
+  "metric": "F1 @ 1% axis-distance",
+  "accuracy_pct": 100.0,
+  "precision_pct": 100.0,
+  "recall_pct": 100.0,
+  "matched": 30,
+  "expected": 30,
+  "extracted": 30,
+  "input_sha256": "cba7f9671627145d981394329d73e693ad4a1ee02ec01256921585528f9182fd",
+  "config_sha256": "f5de05add2f70528790b15fe04be3924b312b3537a4b54fa65c29348d481ab6d",
+  "csv_sha256": "8a985b800959b8fd767b8d75b2359705262801612c97a45806f936f9ee3ab7e4",
+  "truth_sha256": "f5f4cec1c62cff5f20a5a621c825603ca8ca4fab70f81890ad7b001b3e09ad35",
+  "unmasked": {
+    "metric": "F1 @ 1% axis-distance",
+    "accuracy_pct": 100.0,
+    "precision_pct": 100.0,
+    "recall_pct": 100.0,
+    "matched": 30,
+    "expected": 30,
+    "extracted": 30
+  }
+}

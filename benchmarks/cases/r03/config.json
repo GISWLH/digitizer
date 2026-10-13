@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "image": "input.png",
+  "image_sha256": "36ec70c103cfdff59dc5c2f3e01dbbfc5f94c8bdd08dc9009fbc1058f2fa7b8d",
+  "image_size": [
+    1024,
+    768
+  ],
+  "reviewed": true,
+  "review_note": "Original-image axes, target colour and legend/annotation regions visually checked; historical calibration retained. No reference values used by extractor. White-outlined compact markers are visually separable from long same-colour curve components; partial cores retain uncertainty.",
+  "kind": "scatter",
+  "plot_bounds": [
+    124,
+    101,
+    988,
+    667
+  ],
+  "axes": {
+    "x": {
+      "anchors": [
+        [
+          124,
+          1
+        ],
+        [
+          988,
+          16
+        ]
+      ],
+      "scale": "linear"
+    },
+    "y": {
+      "anchors": [
+        [
+          667,
+          0.25
+        ],
+        [
+          101,
+          0.85
+        ]
+      ],
+      "scale": "linear"
+    }
+  },
+  "series": [
+    {
+      "name": "target",
+      "color": "#345D82",
+      "parameters": {
+        "min_diameter": 4,
+        "max_diameter": 12,
+        "color_tolerance": 24
+      },
+      "marker": "isolated"
+    }
+  ],
+  "exclusions": [
+    {
+      "type": "rectangle",
+      "bounds": [
+        130,
+        112,
+        985,
+        184
+      ],
+      "verified": true,
+      "reason": "Visible legend/text annotation"
+    }
+  ]
+}

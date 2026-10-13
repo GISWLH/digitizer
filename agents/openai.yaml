@@ -1,0 +1,4 @@
+interface:
+  display_name: "Digitizer"
+  short_description: "Turn scientific figures into CSV with precise legend masks"
+  default_prompt: "Use $digitizer to extract this scientific figure into CSV, review its legend exclusions, and show original, overlay and recreation."
