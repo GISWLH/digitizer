@@ -386,6 +386,7 @@
           ]
         }
       },
+      "context_image": null,
       "group": "flux",
       "doi": "10.5194/bg-4-1027-2007",
       "license": "CC BY-NC-SA 2.5",
@@ -411,6 +412,7 @@
         "source_data_semantics": "Seasonal diurnal mean of measured eddy-covariance NEE, 2020. Blue shaded area is standard deviation; it is not extracted as data.",
         "accuracy_note": "Authors provide raw data on request. No independent reference available; do not assign accuracy from pixel support or visual similarity."
       },
+      "context_image": "../context/mayen-figure5.png",
       "group": "flux",
       "doi": "10.5194/bg-21-993-2024",
       "license": "CC BY 4.0",
@@ -436,6 +438,7 @@
         "source_data_semantics": "Seasonal diurnal mean of measured eddy-covariance NEE, 2020. Blue shaded area is standard deviation; it is not extracted as data.",
         "accuracy_note": "Authors provide raw data on request. No independent reference available; do not assign accuracy from pixel support or visual similarity."
       },
+      "context_image": "../context/mayen-figure5.png",
       "group": "flux",
       "doi": "10.5194/bg-21-993-2024",
       "license": "CC BY 4.0",
@@ -461,6 +464,7 @@
         "source_data_semantics": "Seasonal diurnal mean of measured eddy-covariance NEE, 2020. Blue shaded area is standard deviation; it is not extracted as data.",
         "accuracy_note": "Authors provide raw data on request. No independent reference available; do not assign accuracy from pixel support or visual similarity."
       },
+      "context_image": "../context/mayen-figure5.png",
       "group": "flux",
       "doi": "10.5194/bg-21-993-2024",
       "license": "CC BY 4.0",
@@ -486,6 +490,7 @@
         "source_data_semantics": "Seasonal diurnal mean of measured eddy-covariance NEE, 2020. Blue shaded area is standard deviation; it is not extracted as data.",
         "accuracy_note": "Authors provide raw data on request. No independent reference available; do not assign accuracy from pixel support or visual similarity."
       },
+      "context_image": "../context/mayen-figure5.png",
       "group": "flux",
       "doi": "10.5194/bg-21-993-2024",
       "license": "CC BY 4.0",
@@ -560,6 +565,7 @@
           ]
         }
       },
+      "context_image": "../context/veenendaal-figure10.png",
       "group": "flux",
       "doi": "10.5194/bg-4-1027-2007",
       "license": "CC BY-NC-SA 2.5",
@@ -634,6 +640,7 @@
           ]
         }
       },
+      "context_image": "../context/veenendaal-figure10.png",
       "group": "flux",
       "doi": "10.5194/bg-4-1027-2007",
       "license": "CC BY-NC-SA 2.5",
@@ -708,6 +715,7 @@
           ]
         }
       },
+      "context_image": "../context/veenendaal-figure10.png",
       "group": "flux",
       "doi": "10.5194/bg-4-1027-2007",
       "license": "CC BY-NC-SA 2.5",

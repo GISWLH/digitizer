@@ -22,8 +22,8 @@
     "digitizer_core/engine.py": "e66d659fbb23d9ffcdfb5db8e66225ce601890af35813c21ab5bf126985e6ecf",
     "digitizer_core/masks.py": "1308ee3f3ff32df563d80994be0e50fb1a7d58940f423eae3b6f9576f4c07c04",
     "scripts/benchmark.py": "08dc8176087966ddfd7fe8ad812a51b6bc57af5b281fbb0bb127161df5b8ad0e",
-    "scripts/build_showcase.py": "bc3d6466846d8f50f49be11a18f2524835a00fd9f63639829916b26ff7e905b5",
-    "scripts/prepare_flux.py": "d9c207b40adfbe04c1b759fc52a7c35263a684da85fab067e012fc45e4f4cc64",
+    "scripts/build_showcase.py": "b25b78918ce8b468d92f3e9735f6f6371c9367cff48532897f0af9dfd76f1e5d",
+    "scripts/prepare_flux.py": "ec52e32ec76c5478584b7a58fa32e1d295464610747e7a625d2389bedd6d9cbf",
     "scripts/validate_flux.py": "221645e34745b2c38a38d556be2ec94dfe1c11ba6679a8abf047fc1d02edc19e",
     "scripts/validate_paper.py": "4dd8ad1f128a6eb33296878cdda66453011dad028f7fd53642cc3481acd2d660"
   }

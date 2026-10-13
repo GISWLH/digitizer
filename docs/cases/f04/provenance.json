@@ -16,6 +16,7 @@
   ],
   "render_scale": 4,
   "reference_kind": "independent_pdf_vector_geometry",
+  "context_image": null,
   "reference_path_indices": [
     214,
     217

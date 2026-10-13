@@ -27,11 +27,12 @@ def main():
   extra={}
   if cid.startswith('f'):
    prov=json.loads((ROOT/'benchmarks/flux'/cid/'provenance.json').read_text());save_json(dest/'provenance.json',prov)
-   extra=dict(group='flux',doi=prov['doi'],license=prov['license'],title_en=manifest[cid]['title_en'],title_ja=manifest[cid]['title_ja'])
+   extra=dict(context_image=prov.get('context_image'),group='flux',doi=prov['doi'],license=prov['license'],title_en=manifest[cid]['title_en'],title_ja=manifest[cid]['title_ja'])
   cases.append(dict(id=cid,title=manifest[cid]['title'] if cid.startswith('f') else TITLES[cid],kind='heatmap' if cid=='p01' else manifest[cid]['kind'],source_label='FLUX 论文' if cid.startswith('f') else '论文' if cid=='p01' else '合成回归' if cid.startswith('s') else '书稿',metrics=case,**extra))
  # Only explicitly retired showcase folders are removed. Fixtures remain in benchmarks.
  for cid in ['s01','s04','s05','s07']:
   if (ROOT/'docs/cases'/cid).exists():shutil.rmtree(ROOT/'docs/cases'/cid)
+ shutil.copytree(ROOT/'benchmarks/flux/context',ROOT/'docs/cases/context',dirs_exist_ok=True)
  cases.sort(key=lambda c:ORDER.index(c['id']))
  save_json(ROOT/'docs/cases.json',dict(macro_accuracy_pct=summary['macro_accuracy_pct'],flux_summary=flux,cases=cases))
  save_json(ROOT/'benchmarks/results.json',summary);save_json(ROOT/'benchmarks/flux/results.json',flux);(ROOT/'docs/.nojekyll').touch()

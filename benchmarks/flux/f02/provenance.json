@@ -16,6 +16,7 @@
   ],
   "render_scale": 4,
   "reference_kind": "independent_pdf_vector_geometry",
+  "context_image": "../context/veenendaal-figure10.png",
   "reference_path_indices": [
     344,
     347
