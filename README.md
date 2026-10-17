@@ -1,3 +1,7 @@
+<!-- readme-visual-refresh:banner -->
+![digitizer — hand-drawn project banner](assets/readme/banner.svg)
+<!-- /readme-visual-refresh:banner -->
+
 <p align="center"><img src="docs/assets/icon.svg" width="64" alt="Digitizer logo"></p>
 
 ![Digitizer — Figures in. Evidence out.](docs/assets/banner.svg)
@@ -167,3 +171,7 @@ digitizer extract --config figure.json --out runs/my-figure
 软件采用 MIT；核心数字化能力来自 THU Digitizer。图件许可独立：Mayen et al. (2024) 为 CC BY 4.0；Veenendaal et al. (2007) 图件及改编证据为 **CC BY-NC-SA 2.5**，不适用软件的 MIT 许可。请同时引用软件及实际使用的论文。
 
 [Figure provenance](benchmarks/SOURCES.md) · [THU attribution](THIRD_PARTY_NOTICES.md) · [CITATION.cff](CITATION.cff)
+
+<!-- readme-visual-refresh:artwork-source -->
+[Editable banner artwork · Excalidraw](assets/readme/banner.excalidraw)
+<!-- /readme-visual-refresh:artwork-source -->
